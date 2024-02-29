@@ -5,14 +5,17 @@ ODOO16_ZIP=odoo-16-hernad
 
 URL=https://download.cloud.out.ba/${ODOO16_ZIP}.zip
 
-curl -LO $URL
+if [ ! -f "${ODOO16_ZIP}.zip" ]; then
+   curl -LO $URL
+else
+   echo "postoji ${ODOO16_ZIP}.zip"
+fi
 
 DIR_ZIP=$ODOO16_ZIP
 [ -d "$DIR_ZIP" ] && echo rm "$DIR_ZIP" && rm -rf $DIR_ZIP
 
 DIR=$ODOO16
 [ -d "$DIR" ] && echo "rm $DIR" & rm -rf $DIR
-
 
 unzip ${ODOO16_ZIP}.zip
 
@@ -33,4 +36,4 @@ cp -vs ../odoo.conf .
 cp -vs ../python311 .
 
 
-scripts/set_bs_addons_odoo-data.sh
+scripts/set_addons_odoo_data.sh
