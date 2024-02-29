@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<odoo>
+		<record id="ir_seq_hr_payroll_input_add" model="ir.sequence">
+			<field name="name">Payroll add Request</field>
+			<field name="code">hr.payroll.input.add.seq</field>
+			<field name="prefix">ADD/</field>
+			<field name="padding">4</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+</odoo>

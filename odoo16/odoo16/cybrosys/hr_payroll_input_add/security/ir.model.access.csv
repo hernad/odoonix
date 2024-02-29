@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payroll_input_add_user,hr.payroll.input.add.group_user,model_hr_payroll_input_add,base.group_user,1,1,1,0
+access_hr_jobuser,hr.job.group_user,hr.model_hr_job,base.group_user,1,1,1,0
+access_hr_payroll_input_add_officer,hr.payroll.input.add.group_hr_user,model_hr_payroll_input_add,hr.group_hr_user,1,1,1,1
+access_hr_payroll_input_add_manager,hr.payroll.input.add,model_hr_payroll_input_add,hr.group_hr_manager,1,1,1,1

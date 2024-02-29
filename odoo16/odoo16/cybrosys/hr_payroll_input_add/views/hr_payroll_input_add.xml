@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--Payroll Input Add Tree view-->
+    <record id="hr_payroll_input_add_tree_view" model="ir.ui.view">
+        <field name="name">hr.payroll.input.add.tree</field>
+        <field name="model">hr.payroll.input.add</field>
+        <field name="arch" type="xml">
+            <tree string="Payroll ADD Requests">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="add_amount"/>
+                <field name="date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--Payroll Input Add Form view-->
+    <record id="hr_payroll_input_add_form_view" model="ir.ui.view">
+        <field name="name">hr.payroll.input.add.form</field>
+        <field name="model">hr.payroll.input.add</field>
+        <field name="arch" type="xml">
+            <form string="Payroll Add Request">
+                <header>
+                    <button name="action_submit" type="object" string="Submit" states="draft" class="oe_highlight"/>
+                    <button name="action_cancel" type="object" string="Cancel" states="draft" />
+                    <button name="action_approve" type="object" string="Approve" states="waiting_approval_1" class="oe_highlight" groups="hr.group_hr_manager,hr.group_hr_user"/>
+                    <button name="action_refuse" type="object" string="Refuse" states="draft,waiting_approval_1" class="oe_highlight" groups="hr.group_hr_manager,hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,waiting_approval_1,approve" />
+                </header>
+
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group col="4">
+                        <field name="employee_id" options="{'no_create': True}" attrs="{'readonly':[('state','=','approve')]}"/>
+                        <field name="date"/>
+                        <field name="department_id"/>
+                        <field name="job_position"/>
+                        <field name="add_amount" attrs="{'readonly':[('state','=','approve')]}"/>
+                        <field name="payment_date" attrs="{'readonly':[('state','=','approve')]}"/>
+                        <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        <field name="currency_id" options="{'no_create': True}" />
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!--payroll add search view-->
+    <record id="view_payroll_add_request_search_form" model="ir.ui.view">
+        <field name="name">hr.payroll.input.add.search.form</field>
+        <field name="model">hr.payroll.input.add</field>
+        <field name="arch" type="xml">
+           <search string="Payroll Add">
+               <filter string="My Requests" name="myrequest" domain="[('employee_id.user_id.id', '=', uid)]" />
+                <field name="employee_id" string="Employee"/>
+                <field name="department_id" string="Department"/>
+                    <filter string="Employee" name="employee_id" context="{'group_by':'employee_id'}"/>
+                    <filter string="Department" name="department_id" context="{'group_by':'department_id'}"/>
+                    <filter string="Status" name="status" context="{'group_by':'state'}"/>
+            </search>
+        </field>
+    </record>
+
+
+    <!--loan 
+    <menuitem name="Loans &amp; Advances"
+        id="menu_hr_loans_and_advances" parent="hr.menu_hr_root"
+        sequence="20"/>
+    menu-->
+    <menuitem name="Payroll Adds"
+        id="menu_hr_payroll_adds" parent="hr.menu_hr_root"
+        sequence="30"/>
+    
+    <record id="action_hr_payroll_add_request" model="ir.actions.act_window">
+        <field name="name">Request for Payroll Add</field>
+        <field name="res_model">hr.payroll.input.add</field>
+        <field name="view_mode">tree,form</field>
+        <!--
+        <field name="context">{'search_default_myrequest': 1}</field>
+        -->
+        <field name="search_view_id" ref="view_payroll_add_request_search_form"/>
+         <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new Payroll add request.
+            </p><p>
+                Use this menu to create payroll add requests.
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Payroll add"
+        id="menu_base_hr_payroll_add_request"
+        parent = "menu_hr_payroll_adds"
+        sequence="1"/>
+
+    <menuitem name="Request for Payroll add"
+        parent="menu_base_hr_payroll_add_request"
+        id="menu_hr_payroll_add_request"
+        action="action_hr_payroll_add_request"/>
+
+    <!-- Shortcuts -->
+    <record id="act_hr_employee_payroll_add_request" model="ir.actions.act_window">
+        <field name="name">Payroll adds</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.payroll.input.add</field>
+        <field name="binding_model_id" ref="hr.model_hr_employee"/>
+        <field name="view_mode">tree,form</field>
+        <!--
+        <field name="context">{'search_default_myadd': 1}</field>
+        -->
+        <field name="view_id" eval="hr_payroll_input_add_tree_view"/>
+    </record>
+
+
+    <!-- HR employee inherit Payroll Adds -->
+    <record id="view_employee_form_payroll_input_add_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.payroll.input.add.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="%(act_hr_employee_payroll_add_request)d"
+                    type="action"
+                    class="oe_stat_button"
+                    icon="fa-calendar"
+                    groups="hr.group_hr_manager,hr.group_hr_user">
+                    <field name="payroll_add_count" widget="statinfo" string="Payroll Adds"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="action_status_draft" model="ir.actions.server">
+            <field name="name">Prebaci u pripremu</field>
+            <field name="model_id" ref="hr_payroll_input_add.model_hr_payroll_input_add"/>
+            <field name="binding_model_id" ref="hr_payroll_input_add.model_hr_payroll_input_add"/>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.action_move_to_status_draft()
+            </field>
+    </record>
+</odoo>

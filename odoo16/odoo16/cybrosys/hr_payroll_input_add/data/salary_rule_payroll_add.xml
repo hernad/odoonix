@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!--Adding a salary rule for payroll input add-->
+    <!--
+	<data noupdate="0">
+
+
+		<record id="hr_rule_payroll_input_add" model="hr.salary.rule">
+            <field name="code">ADD</field>
+            <field name="name">Stimulacija</field>
+            <field name="category_id" ref="l10n_bs_hr_payroll_fuelboss.OBUST"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = inputs.ADD and - (inputs.ADD.amount)</field>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="sequence" eval="60"/>
+            <field name="company_id" search="[('name','ilike','Fuelboss doo Zenica')]" model="res.company"/>
+        </record>
+
+        <record id="hr_rule_input_payroll_input_add" model="hr.rule.input">
+            <field name="code">ADD</field>
+            <field name="name">Stimulacija</field>
+            <field name="input_id" ref="hr_rule_payroll_input_add"/>
+        </record>
+
+
+	  </data>
+	-->
+</odoo>
