@@ -182,11 +182,12 @@ in
         
 
         ln -sf ${python-311}/bin/python ./python311
-        
+
+
+        ln -sf ${python-311}/bin/python ./odoo16/python311        
         ln -sf ${python-311}/bin/python ./odoo17/python311
 
 
-        ln -sf ${python-311}/bin/python ./odoo16/python311
 
         echo ok
         
