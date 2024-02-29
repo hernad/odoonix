@@ -37,5 +37,4 @@ cd $ODOO16
 cp -vs ../odoo.conf .
 cp -vs ../python311 .
 
-
-scripts/set_bs_addons_odoo-data.sh
+scripts/set_addons_odoo_data.sh
