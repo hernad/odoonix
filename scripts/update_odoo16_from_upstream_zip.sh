@@ -5,11 +5,12 @@ ODOO16_ZIP=odoo_16.0.latest
 
 URL=https://nightly.odoo.com/16.0/nightly/src/${ODOO16_ZIP}.zip
 
-if [! -f "${ODOO16_ZIP}.zip" ]; then
+if [ ! -f "${ODOO16_ZIP}.zip" ]; then
    curl -LO $URL
 else
    echo "postoji ${ODOO16_ZIP}.zip"
 fi
+
 
 DIR_ZIP=$ODOO16_ZIP
 [ -d "$DIR_ZIP" ] && echo rm "$DIR_ZIP" && rm -rf $DIR_ZIP
