@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="wt_std_f" model="hr.timesheet.work_type">
+            <field name="name">Standard &amp; Food ALW</field>
+            <field name="code">10_SF</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">True</field>
+        </record>
+
+        <record id="wt_std" model="hr.timesheet.work_type">
+            <field name="name">Standard</field>
+            <field name="code">11_S</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">True</field>
+        </record>
+
+        <record id="wt_night_f" model="hr.timesheet.work_type">
+            <field name="name">Night &amp; Food ALW</field>
+            <field name="code">20_NF</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">True</field>
+        </record>
+
+        <record id="wt_night" model="hr.timesheet.work_type">
+            <field name="name">Night</field>
+            <field name="code">21_N</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">True</field>
+        </record>
+
+        <record id="wt_w_holi_f" model="hr.timesheet.work_type">
+            <field name="name">Work on holiday &amp; Food ALW</field>
+            <field name="code">30_WF</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+        <record id="wt_w_holi" model="hr.timesheet.work_type">
+            <field name="name">Work on holiday</field>
+            <field name="code">31_W</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+        <record id="wt_w_holi_n_f" model="hr.timesheet.work_type">
+            <field name="name">Night Work on holiday &amp; Food ALW</field>
+            <field name="code">40_XF</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+        <record id="wt_w_holi_n" model="hr.timesheet.work_type">
+            <field name="name">Night Work on holiday</field>
+            <field name="code">41_X</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+<!--
+        <record id="wt_rel_f" model="hr.timesheet.work_type">
+            <field name="name">Rad na vjerski praznik</field>
+            <field name="code">50_VF</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+        <record id="wt_rel" model="hr.timesheet.work_type">
+            <field name="name">Rad na vjerski praznik bez TO</field>
+            <field name="code">51_V</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+-->
+        <record id="wt_w_godm" model="hr.timesheet.work_type">
+            <field name="name">Godišnji odmor neiskorišten</field>
+            <field name="code">60_G</field>
+            <field name="food_included">False</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+        <record id="wt_w_toonly" model="hr.timesheet.work_type">
+            <field name="name">Topli obrok bez radnih sati</field>
+            <field name="code">70_T</field>
+            <field name="food_included">True</field>
+            <field name="hours_fond_included">False</field>
+        </record>
+
+    </data>
+
+</odoo>

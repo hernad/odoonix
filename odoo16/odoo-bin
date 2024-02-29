@@ -1,0 +1,33 @@
+#!./python311
+
+# set server timezone in UTC before time module imported
+__import__('os').environ['TZ'] = 'UTC'
+
+import pdb
+
+#pdb.set_trace()
+
+import odoo
+
+import sys
+#import debugpy
+
+#__import__('os').environ['GEVENT_SUPPORT'] = 'true'
+
+#try:
+#  debugpy.listen(('0.0.0.0', 52000))
+#except:
+#  print("vec zakacen")
+  
+#print("Waiting for debugger attach")
+#debugpy.wait_for_client()
+
+#https://github.com/microsoft/debugpy/issues/1206
+
+print("python:", sys. version)
+
+from importlib import metadata
+for pkg in ['werkzeug','reportlab', 'pypdf2', 'pillow', 'xlrd', 'zeep', 'gevent', 'psycopg2','freezegun','greenlet','jinja2','libsass','lxml','markupsafe','urllib3','vobject','xlwt','pydot','pyopenssl','python-ldap','pytz','qrcode','requests','rjsmin','XlsxWriter']: print(pkg, ':', metadata.version(pkg))
+
+if __name__ == "__main__":
+    odoo.cli.main()

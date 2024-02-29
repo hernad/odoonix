@@ -12,3 +12,4 @@ odoo/requirements.txt
 odoo/setup.cfg
 odoo/setup.py
 odoo/PKG/INFO
+pgdata
