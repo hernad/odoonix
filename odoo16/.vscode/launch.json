@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "odoo-bin",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./odoo-bin",
+            "console": "integratedTerminal",
+            "args": [
+                "gevent",
+                "-c",
+                "odoo.conf"
+            ],
+            "env": {
+               "GEVENT_SUPPORT": "True"
+            },
+            "python": "./python311"
+        },
+        {
+            "name": "odoo-bin-i18n",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./odoo-bin",
+            "console": "integratedTerminal",
+            "args": [
+                "gevent",
+                "-c",
+                "odoo.conf",
+                "--i18n-overwrite",
+                "-u",
+                "base,hr_timesheet,payroll,l10n_bs_hr_timesheet,l10n_bs_hr_payroll,l10n_bs_hr_payroll_fuelboss"
+            ],
+            "env": {
+               "GEVENT_SUPPORT": "True"
+            },
+            "python": "./python311"
+        }
+    ]
+}
