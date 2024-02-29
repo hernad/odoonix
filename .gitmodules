@@ -1,4 +1,4 @@
 [submodule "odoo16/bringout_p"]
-	path = odoo16/bringout_p
+	path = odoo16/addons/bringout_p
 	url = git@github.com:bringout/odoo_bringout_p.git
 	branch = main
