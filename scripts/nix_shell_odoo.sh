@@ -1,0 +1,1 @@
+nix_shell_odoo_python_311.sh
