@@ -15,7 +15,7 @@
       sha256 = "sha256-VG6zbO6NtAw+qkbDUeZ//ubutfomULcbxMdYopobKbI=";
     };
 
-    pillow = {
+    Pillow = {
        version = "10.1.0";
       #format = "pyproject";
       hash = "sha256-5r+N5sNu2WyG6jtuHVJzxT9G71GKBiRkzX713Sz5Ljg=";
@@ -92,6 +92,10 @@
     };
 
     numpy = {
+      doCheck = false;
+    };
+
+    xdist = {
       doCheck = false;
     };
 

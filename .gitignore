@@ -1,0 +1,14 @@
+nginx-log
+odoo-data
+__pycache__
+odoo*zip
+#odoo/odoo
+odoo/setup
+LICENSE
+MANIFEST.in
+odoo/README.md
+odoo/odoo.egg-info
+odoo/requirements.txt
+odoo/setup.cfg
+odoo/setup.py
+odoo/PKG/INFO
