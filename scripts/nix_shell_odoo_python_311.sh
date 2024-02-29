@@ -12,7 +12,7 @@ echo - run ngnix server with:
 echo "nginx-start&"
 
 nix shell .#nginx-start \
-          .#postgresql-start \
+          .#postgresql-start .#postgresql-stop \
           .#odoo-python-311 \
           .#my-wkhtmltopdf \
           nixpkgs#pkgs.unzip nixpkgs#pkgs.zip \

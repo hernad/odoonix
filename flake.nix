@@ -134,6 +134,7 @@ in
       
        nginx-start = import ./nginx_start.nix { inherit stdenv pkgs; };
        postgresql-start = import ./postgresql_start.nix { inherit stdenv pkgs; };
+       postgresql-stop = import ./postgresql_stop.nix { inherit stdenv pkgs; };
        
        
        my-odoo-16 = import ./odoo.nix  { inherit pkgs; odooVersion = odooVersion16; python = python-311; };

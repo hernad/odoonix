@@ -99,6 +99,10 @@
       doCheck = false;
     };
 
+    pandas = {
+      doCheck = false;
+    };
+
     reportlab = {
       #pname = "reportlab";
       version = "3.6.13";
