@@ -27,3 +27,11 @@ Ubacuje u shell sve komande potrebne za razvoj
     .#odoo-python-311
     .#my-wkhtmltopdf
 
+
+## Postgresql
+
+    psql -h 127.0.0.1 -p 15432 postgres
+
+
+    CREATE ROLE odoo WITH LOGIN PASSWORD 'odoo' CREATEDB;
+
