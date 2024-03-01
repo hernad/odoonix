@@ -11851,3 +11851,45 @@ msgstr "Ulazni računi u kašnjenju"
 #: model_terms:ir.ui.view,arch_db:account.view_account_form
 msgid "Account Name"
 msgstr "Naziv konta"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_account__account_type__off_balance
+#: model:ir.model.fields.selection,name:account.selection__account_account_template__account_type__off_balance
+msgid "Off-Balance Sheet"
+msgstr "Vanbilansna evidencija"
+
+#. module: account
+#. odoo-javascript
+#: code:addons/account/static/src/components/account_type_selection/account_type_selection.js:0
+#: code:addons/account/static/src/js/legacy_account_selection.js:0
+#, python-format
+msgid "Other"
+msgstr "Ostalo"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.open_account_journal_dashboard_kanban
+msgid "Accounting Dashboard"
+msgstr "Računovodstvo - pregled"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/company.py:0
+#: model_terms:ir.ui.view,arch_db:account.onboarding_fiscal_year_step
+#, python-format
+msgid "Accounting Periods"
+msgstr "Računovodstveni periodi"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_bank_account_step
+msgid "Add a bank account"
+msgstr "Dodaj bankovni račun"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_taxes_step
+msgid "Set default Taxes for sales and purchase transactions."
+msgstr "Postavi tekuće vrijednosti PDV kod nabavke i prodaje."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_chart_of_account_step
+msgid "Setup your chart of accounts and record initial balances."
+msgstr "Postavi kontni plan i početne vrijednosti konta."
