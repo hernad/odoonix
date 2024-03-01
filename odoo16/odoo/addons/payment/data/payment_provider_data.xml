@@ -111,6 +111,7 @@
             ])]"/>
     </record>
 
+<!-- CE-bosnia only
     <record id="payment_provider_mercado_pago" model="payment.provider">
         <field name="name">Mercado Pago</field>
         <field name="display_as">Credit Card (powered by Mercado Pago)</field>
@@ -119,9 +120,6 @@
                file="payment_mercado_pago/static/description/icon.png"/>
         <field name="module_id" ref="base.module_payment_mercado_pago"/>
 
-         <!-- Payment methods must be fetched from the API. See
-            https://www.mercadopago.com.ar/developers/en/reference/payment_methods/_payment_methods/
-        -->
         <field name="payment_icon_ids"
                eval="[(6, 0, [
                     ref('payment.payment_icon_cc_mastercard'),
@@ -131,6 +129,7 @@
                     ref('payment.payment_icon_citibanamex')
                ])]"/>
     </record>
+-->
 
     <record id="payment_provider_mollie" model="payment.provider">
         <field name="name">Mollie</field>
@@ -190,6 +189,8 @@
                ])]"/>
     </record>
 
+<!-- CE-bosnia only
+
     <record id="payment_provider_sepa_direct_debit" model="payment.provider">
         <field name="name">SEPA Direct Debit</field>
         <field name="sequence">20</field>
@@ -198,6 +199,7 @@
                file="base/static/img/icons/payment_sepa_direct_debit.png"/>
         <field name="module_id" ref="base.module_payment_sepa_direct_debit"/>
     </record>
+-->
 
     <record id="payment_provider_sips" model="payment.provider">
         <field name="name">Sips</field>
