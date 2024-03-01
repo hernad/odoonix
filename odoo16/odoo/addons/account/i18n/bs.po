@@ -7112,23 +7112,14 @@ msgstr "Početno stanje"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__opening_credit
-msgid "Opening credit"
-msgstr "Početno potraživanje"
+msgid "Opening Credit"
+msgstr "Početno potražuje"
 
-#. module: account
-#: model:ir.model.fields,help:account.field_account_account__opening_credit
-msgid "Opening credit value for this account."
-msgstr ""
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__opening_debit
-msgid "Opening debit"
-msgstr "Početno dugovanje"
-
-#. module: account
-#: model:ir.model.fields,help:account.field_account_account__opening_debit
-msgid "Opening debit value for this account."
-msgstr ""
+msgid "Opening Debit"
+msgstr "Početno duguje"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
@@ -11853,4 +11844,10 @@ msgstr "Fakture u kašnjenju"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "Late Bills"
-msgstr "Računi u kašnjenju"
+msgstr "Ulazni računi u kašnjenju"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_account__name
+#: model_terms:ir.ui.view,arch_db:account.view_account_form
+msgid "Account Name"
+msgstr "Naziv konta"
