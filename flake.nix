@@ -77,6 +77,9 @@ let
     
     nginx-start = self.packages.${system}.nginx-start;
     my-wkhtmltopdf = self.packages.${system}.my-wkhtmltopdf;
+    postgresql-start = self.packages.${system}.postgresql-start;
+    postgresql-stop = self.packages.${system}.postgresql-stop;
+
 
     odoo-16-start = pkgs.writeShellScriptBin "odoo-16-start" ''
       #export PATH=${pkgs.wkhtmltopdf-bin}/bin:$PATH
@@ -167,6 +170,8 @@ in
      
         odoo-16-start
         odoo-17-start
+        postgresql-start
+        postgresql-stop
 
         my-wkhtmltopdf
         
@@ -175,6 +180,10 @@ in
       shellHook = ''
         echo Let’s Nix with nginx !
         echo run: nginx-start\&
+        echo "run: export PGDATA=\$(pwd)/pgdata"
+        echo "run: postgresql-start / postgresql-stop"
+        echo "run psql client: psql -h 127.0.0.1 -U postgres -p 15432 postgres"
+        echo "create odoo in local database: CREATE ROLE odoo WITH LOGIN PASSWORD 'odoo' CREATEDB;"
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
 
