@@ -6,7 +6,7 @@ ADDONS=odoo-data/addons/16.0
 
 sudo chmod -R +w odoo-data
 
-for dir in akretion bringout cybrosys OCA bringout_p
+for dir in akretion bringout cybrosys OCA bringout_p odoomates
 do 
    ln -sf `pwd`/addons/${dir}/* $ADDONS/
 done
