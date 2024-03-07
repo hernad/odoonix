@@ -410,7 +410,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_remove__company_id
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_account_asset_report__company_id
 msgid "Company"
-msgstr "Kompanija"
+msgstr "Preduzeće"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__currency_id

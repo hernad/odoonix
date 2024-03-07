@@ -4478,3 +4478,8 @@ msgstr "radni list"
 #, python-format
 msgid "Print Labels"
 msgstr "Štampa labela"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
+msgid "Forecasted"
+msgstr "Projekcija"
