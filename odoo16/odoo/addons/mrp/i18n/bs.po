@@ -4483,3 +4483,8 @@ msgstr "Štampa labela"
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
 msgid "Forecasted"
 msgstr "Projekcija"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__components_availability
+msgid "Component Status"
+msgstr "Status komponente"

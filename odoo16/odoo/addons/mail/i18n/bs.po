@@ -6180,3 +6180,11 @@ msgstr ""
 #: selection:mail.activity.type,delay_unit:0
 msgid "weeks"
 msgstr ""
+
+#. module: mail
+#. odoo-javascript
+#: code:addons/mail/static/src/js/activity.js:0
+#: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_form
+#, python-format
+msgid "Next Activity"
+msgstr "Sljedeća aktivnost"
