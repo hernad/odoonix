@@ -58,8 +58,8 @@
             <field name="image_1920" type="base64" file="base/static/img/partner_root-image.jpg"/>
         </record>
 
-        <record id="base.baer_admin" model="res.users">
-            <field name="signature" type="html"><span>-- <br/>Mitchell Admin</span></field>
+        <record id="base.user_admin" model="res.users">
+            <field name="signature" type="html"><span>-- <br/>Jasmin Beganovic</span></field>
         </record>
 
         <!-- Portal : partner and user -->
