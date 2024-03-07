@@ -3712,7 +3712,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_account_move_line__debit
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "Debit"
-msgstr "Dugovanje"
+msgstr "Duguje"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__debit_cash_basis
