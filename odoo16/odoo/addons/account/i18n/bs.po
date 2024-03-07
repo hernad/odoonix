@@ -11893,3 +11893,8 @@ msgstr "Postavi tekuće vrijednosti PDV kod nabavke i prodaje."
 #: model_terms:ir.ui.view,arch_db:account.onboarding_chart_of_account_step
 msgid "Setup your chart of accounts and record initial balances."
 msgstr "Postavi kontni plan i početne vrijednosti konta."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Isporučiti:</strong>"
