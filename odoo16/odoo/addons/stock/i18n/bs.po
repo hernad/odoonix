@@ -7089,3 +7089,14 @@ msgstr "Rezervisano sa zaliha"
 #, python-format
 msgid "Forecasted Inventory"
 msgstr "Projekcija zaliha"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_product_replenish
+msgid ""
+"Use this assistant to replenish your stock.\n"
+"                Depending on your product configuration, launching a replenishment may trigger a request for quotation,\n"
+"                a manufacturing order or a transfer."
+msgstr ""
+"Upotrijebite ovog asistenta za dopunu zaliha. Ovisno o tome kakva je "
+"konfiguracija za artikal, pokretanje nadopune može pokrenuti zahtjev za"
+" ponudu, narudžbu za proizvodnju ili prijenos."
