@@ -722,3 +722,11 @@ msgstr "_Primjeni"
 #: model:ir.model.fields,field_description:stock_account.field_stock_return_picking_line__to_refund
 msgid "Update quantities on SO/PO"
 msgstr "Ažuriraj količine na narudžbenicama (nabavka/prodaja)"
+
+
+#. module: stock_account
+#. odoo-javascript
+#: code:addons/stock_account/static/src/stock_account_forecasted/forecasted_header.xml:0
+#, python-format
+msgid "Value On Hand:"
+msgstr "Vrijednost na stanju:"
