@@ -523,12 +523,12 @@ msgstr "Dates d'amortissement"
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__account_depreciation_id
 msgid "Depreciation Entries: Asset Account"
-msgstr "Écritures d'amortissement : compte d'immobilisations"
+msgstr "Amortizacija konto sredstva:"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__account_depreciation_expense_id
 msgid "Depreciation Entries: Expense Account"
-msgstr "Écritures d'amortissement : compte de dépenses"
+msgstr "Amortizacija konto troška:"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_depreciation_line__move_id
