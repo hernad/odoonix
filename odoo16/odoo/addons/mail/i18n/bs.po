@@ -59,14 +59,14 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:278
 #, python-format
 msgid "%s created"
-msgstr "%s kreiran"
+msgstr "%s kreiran/a"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/js/models/threads/thread_typing_mixin/thread_typing_mixin.js:131
 #, python-format
 msgid "%s is typing..."
-msgstr ""
+msgstr "%s tipka..."
 
 #. module: mail
 #. openerp-web
@@ -4788,7 +4788,7 @@ msgstr "Poslano"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_notification_email
 msgid "Sent by"
-msgstr ""
+msgstr "Pošaljilac"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_notification__is_email
@@ -4815,7 +4815,7 @@ msgstr "Kratke šifre"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_shortcode__source
 msgid "Shortcut"
-msgstr "Prečica"
+msgstr "Kratica"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_search
@@ -4827,7 +4827,7 @@ msgstr "Prikaži sve zapise koji imaju datum sljedeće akcije prije danas"
 #: code:addons/mail/models/mail_channel.py:914
 #, python-format
 msgid "Show an helper message"
-msgstr "Prikaži pomoćnu poruku"
+msgstr "Prikaži objašnjenje"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_email_template_preview__ref_ir_act_window
