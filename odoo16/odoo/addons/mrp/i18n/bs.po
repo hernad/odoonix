@@ -4488,3 +4488,23 @@ msgstr "Projekcija"
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__components_availability
 msgid "Component Status"
 msgstr "Status komponente"
+
+#. module: mrp
+#. odoo-javascript
+#: code:addons/mrp/static/src/components/bom_overview_line/mrp_bom_overview_line.xml:0
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
+#, python-format
+msgid "Forecast Report"
+msgstr "Projekcije zaliha"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
+msgid "Forecasted"
+msgstr "Projicirano"
+
+#. module: mrp
+#. odoo-javascript
+#: code:addons/mrp/static/src/mrp_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Component of Draft MO"
+msgstr "Komponenta MO-a u pripremi"
