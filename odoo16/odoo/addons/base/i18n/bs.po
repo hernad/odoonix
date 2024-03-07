@@ -10001,7 +10001,7 @@ msgstr "Zaposleni"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract
 msgid "Employee Contracts"
-msgstr "Ugovori zaposlinih"
+msgstr "Ugovori zaposlenih"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_employee_form
