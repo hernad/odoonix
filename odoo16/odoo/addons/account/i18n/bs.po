@@ -3365,7 +3365,7 @@ msgstr "Kreirano"
 #: model:ir.model.fields,field_description:account.field_account_move_line__credit
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "Credit"
-msgstr "Potraživanje"
+msgstr "Potražuje"
 
 #. module: account
 #: model:account.account.type,name:account.data_account_type_credit_card
