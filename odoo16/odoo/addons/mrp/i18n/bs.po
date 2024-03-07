@@ -3615,11 +3615,6 @@ msgid "To Process"
 msgstr "Za obradu"
 
 #. module: mrp
-#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
-msgid "To Produce"
-msgstr "Za proizvesti"
-
-#. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.action_mrp_workorder_production
 msgid ""
 "To manufacture or assemble products, and use raw materials and\n"
@@ -4479,10 +4474,6 @@ msgstr "radni list"
 msgid "Print Labels"
 msgstr "Štampa labela"
 
-#. module: mrp
-#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
-msgid "Forecasted"
-msgstr "Projekcija"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__components_availability
@@ -4508,3 +4499,27 @@ msgstr "Projicirano"
 #, python-format
 msgid "Component of Draft MO"
 msgstr "Komponenta MO-a u pripremi"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_tree_view
+msgid "Next Activity"
+msgstr "Sljedeća aktivnost"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
+msgid "Forecasted"
+msgstr "Projekcija"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
+#: model_terms:ir.ui.view,arch_db:mrp.view_stock_move_operations_finished
+msgid "To Produce"
+msgstr "Proizvesti"
+
+#. module: mrp
+#. odoo-javascript
+#: code:addons/mrp/static/src/mrp_forecasted/forecasted_buttons.xml:0
+#: code:addons/mrp/static/src/mrp_forecasted/forecasted_buttons.xml:0
+#, python-format
+msgid "Manufacturing Forecast"
+msgstr "Projekcija proizvodnje"

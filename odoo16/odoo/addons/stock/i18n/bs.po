@@ -7067,3 +7067,18 @@ msgstr "Slobodna zaliha"
 #, python-format
 msgid "Forecasted with Pending"
 msgstr "Projicirano sa dolazećim artilima"
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/stock_forecasted/forecasted_header.xml:0
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+#, python-format
+msgid "Forecasted"
+msgstr "Projekcija"
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Forecasted Inventory"
+msgstr "Projekcija zaliha"
