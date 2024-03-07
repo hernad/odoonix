@@ -4523,3 +4523,18 @@ msgstr "Proizvesti"
 #, python-format
 msgid "Manufacturing Forecast"
 msgstr "Projekcija proizvodnje"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__module_mrp_subcontracting
+msgid "Subcontracting"
+msgstr "Podizvođači"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
+msgid "Process operations at specific work centers"
+msgstr "Obrada u posebnim radnim centrima"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__group_mrp_reception_report
+msgid "Allocation Report for Manufacturing Orders"
+msgstr "Izvještaj o alikaciji za proizvodne naloge"
