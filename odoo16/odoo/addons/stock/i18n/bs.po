@@ -2440,10 +2440,7 @@ msgstr "Datum inventure"
 msgid "Inventory"
 msgstr "Skladište"
 
-#. module: stock
-#: model_terms:ir.ui.view,arch_db:stock.view_inventory_form
-msgid "Inventory Adjustment"
-msgstr "Inventura"
+
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_inventory_form
@@ -7003,3 +7000,20 @@ msgid ""
 msgstr ""
 "<span class=\"o_stat_text\"> Ulaz: </span>\n"
 "                                    <span class=\"o_stat_text\"> Izlaz: </span>"
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/stock_forecasted/stock_forecasted.js:0
+#: code:addons/stock/static/src/widgets/forecast_widget.xml:0
+#: model:ir.actions.client,name:stock.stock_replenishment_product_product_action
+#: model:ir.actions.client,name:stock.stock_replenishment_product_template_action
+#, python-format
+msgid "Forecasted Report"
+msgstr "Projekcija zaliha"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
+#: model_terms:ir.ui.view,arch_db:stock.view_inventory_form
+msgid "Inventory Adjustment"
+msgstr "Inventurisanje"
