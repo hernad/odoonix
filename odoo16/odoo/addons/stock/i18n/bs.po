@@ -6903,7 +6903,7 @@ msgstr "Zahtjev"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Set quantities"
-msgstr "Postavi količine"
+msgstr "Potvrdi količine"
 
 #. module: stock
 #. odoo-javascript
