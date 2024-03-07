@@ -1842,7 +1842,7 @@ msgstr "Prodajna cijena"
 #: model:product.category,name:product.product_category_1
 #: model:product.category,name:product.product_category_6
 msgid "Saleable"
-msgstr "Prodajni"
+msgstr "Za prodaju"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view

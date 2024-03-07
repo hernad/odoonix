@@ -4113,13 +4113,13 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_product_replenish
 msgid "Product Replenish"
-msgstr ""
+msgstr "Nadopuna artikala"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_stock_rule
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_rules_report
 msgid "Product Routes Report"
-msgstr ""
+msgstr "Izvještaj ruta nabavke"
 
 #. module: stock
 #: model:ir.model,name:stock.model_product_template
@@ -4127,32 +4127,32 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_move__product_tmpl_id
 #: model:ir.model.fields,field_description:stock.field_stock_quant__product_tmpl_id
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Šablon artikla"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_tmpl_id
 #: model:ir.model.fields,field_description:stock.field_stock_rules_report__product_tmpl_id
 msgid "Product Tmpl"
-msgstr ""
+msgstr "Šablon art."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__type
 #: model:ir.model.fields,field_description:stock.field_stock_move__product_type
 msgid "Product Type"
-msgstr "Tip proizvoda"
+msgstr "Tip artikla"
 
 #. module: stock
 #: model:ir.model,name:stock.model_uom_uom
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_line__product_uom_id
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__product_uom
 msgid "Product Unit of Measure"
-msgstr "Jedinica mjere proizvoda"
+msgstr "Jedinica mjere artikla"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.stock_product_normal_action
 #: model:ir.ui.menu,name:stock.product_product_menu
 msgid "Product Variants"
-msgstr "Varijante proizvoda"
+msgstr "Varijante artikala"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_production_lot_form
@@ -6190,11 +6190,14 @@ msgid ""
 "                Depending on your product configuration, launching a replenishment may trigger a request for quotation,\n"
 "                a manufacturing order or a transfer."
 msgstr ""
+"Sa ovim asistentom ćete nadopuniti zalihe. \n"
+"                Zavisno od konfiguracije artikla, može se automatski pokrenuti nabavka,\n"
+"                nalog za proizvodnju ili transfer zaliha."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Use your own routes and putaway strategies"
-msgstr ""
+msgstr "Korištenje sopstvenih ruta za metode uklanjanja"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__sequence
@@ -6215,7 +6218,7 @@ msgstr "Odobri"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_form
 msgid "Validate Inventory"
-msgstr "Vrednuj inventuru"
+msgstr "Vrednovanje zaliha"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_filter
@@ -6262,7 +6265,7 @@ msgstr "Pregled"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__view_location_id
 msgid "View Location"
-msgstr "Lokacija pogleda"
+msgstr "Lokacija za pregled"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
@@ -6324,7 +6327,7 @@ msgstr "Konfiguracija skladišta"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__warehouse_count
 msgid "Warehouse Count"
-msgstr ""
+msgstr "Broj skladišta"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_warehouse_config
@@ -6334,7 +6337,7 @@ msgstr "Upravljanje skladištem"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_rule__propagate_warehouse_id
 msgid "Warehouse to Propagate"
-msgstr "Skladište na koje se propagira"
+msgstr "Skladište koje se popunjava"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:827
@@ -6355,12 +6358,12 @@ msgstr "Skladišta"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warn_insufficient_qty
 msgid "Warn Insufficient Quantity"
-msgstr ""
+msgstr "Upozorenje za nedostatak količina"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warn_insufficient_qty_scrap
 msgid "Warn Insufficient Scrap Quantity"
-msgstr ""
+msgstr "Upozorenje za nedostatak količina otpada"
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:129
@@ -6373,7 +6376,7 @@ msgstr "Upozorenje"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_partner_stock_warnings_form
 msgid "Warning on the Picking"
-msgstr "Upozorenje na prikupljanjima proizvoda"
+msgstr "Upozorenje na preuzimanju artikala"
 
 #. module: stock
 #: code:addons/stock/models/product.py:306
@@ -6389,7 +6392,7 @@ msgstr "Upozorenja"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_warning_stock
 msgid "Warnings for Stock"
-msgstr ""
+msgstr "Upozorenja na zalihe"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__website_message_ids
@@ -6406,7 +6409,7 @@ msgstr ""
 #. module: stock
 #: selection:barcode.rule,type:0
 msgid "Weighted Product"
-msgstr "Proizvod za vaganje"
+msgstr "Artikal za vaganje"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location_route__warehouse_selectable
@@ -6420,7 +6423,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.picking,move_type:0
 msgid "When all products are ready"
-msgstr ""
+msgstr "Kada su svi artikli spremni"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location_route__product_selectable
