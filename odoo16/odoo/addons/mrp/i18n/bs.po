@@ -961,7 +961,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__delivery_count
 msgid "Delivery Orders"
-msgstr "Dostavnice"
+msgstr "Otpremnice"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__description

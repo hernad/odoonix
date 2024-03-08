@@ -1052,12 +1052,12 @@ msgstr "Referenca"
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_asset_form
 msgid "Residual"
-msgstr "Rezident"
+msgstr "Preostalo"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__value_residual
 msgid "Residual Value"
-msgstr "Rezidentna vrijednost"
+msgstr "Sadašnja vrijednost"
 
 #. module: om_account_asset
 #: model:ir.model.fields.selection,name:om_account_asset.selection__account_asset_asset__state__open
@@ -1084,7 +1084,7 @@ msgstr "Prodaja"
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__salvage_value
 msgid "Salvage Value"
-msgstr "Spašena vrijednost"
+msgstr "Dio koji koji se ne amortizuje"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_category_search

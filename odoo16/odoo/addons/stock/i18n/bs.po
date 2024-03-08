@@ -1570,7 +1570,7 @@ msgstr "Objašnjenje za primke"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__description_pickingout
 msgid "Description on Delivery Orders"
-msgstr "Objašnjenje za dostavnice"
+msgstr "Objašnjenje na otpremnicama"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__description_picking

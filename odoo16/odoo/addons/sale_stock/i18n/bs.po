@@ -157,7 +157,7 @@ msgstr "Isporuka"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order__delivery_count
 msgid "Delivery Orders"
-msgstr "Dostavnice"
+msgstr "Otpremnice"
 
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_display_incoterm
