@@ -150,17 +150,17 @@ msgstr "Date de fin de l'actif"
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_asset_modify__asset_method_time
 msgid "Asset Method Time"
-msgstr "Actif Méthode Temps"
+msgstr "Vremenski metod sredstva"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__name
 msgid "Asset Name"
-msgstr "Nom de l'actif"
+msgstr "Ime sredstva"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_move_line__asset_start_date
 msgid "Asset Start Date"
-msgstr "Date de début de l’immo"
+msgstr "Sredstvo početni datum"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__name
@@ -430,105 +430,105 @@ msgstr "Amortissement cumulé"
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_depreciation_line__currency_id
 #, python-format
 msgid "Currency"
-msgstr "Devise"
+msgstr "Valuta"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_search
 msgid "Current"
-msgstr "Actuel"
+msgstr "Tekuća"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_depreciation_line__amount
 msgid "Current Depreciation"
-msgstr "Amortissement actuel"
+msgstr "Trenutna amortizacija"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__date
 #: model:ir.model.fields,field_description:om_account_asset.field_asset_asset_report__date
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_search
 msgid "Date"
-msgstr "Fecha"
+msgstr "Datum"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_asset_form
 msgid "Date of asset"
-msgstr "Date de l’Immobilisation"
+msgstr "Datum sredstva"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_asset_asset_report_search
 msgid "Date of asset purchase"
-msgstr "Date d’achat"
+msgstr "Datum nabavke"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_asset_asset_report_search
 msgid "Date of depreciation"
-msgstr "Date d'amortissement"
+msgstr "Datum amortizacije"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_category_form
 msgid "Deferred Revenue Account"
-msgstr "Compte de revenus différé"
+msgstr "Konto otpisane vrijednosti"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_product_product__deferred_revenue_category_id
 #: model:ir.model.fields,field_description:om_account_asset.field_product_template__deferred_revenue_category_id
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_category_form
 msgid "Deferred Revenue Type"
-msgstr "Type de revenus reportés"
+msgstr "Tip otpisane vrijednosti"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_category_search
 msgid "Deferred Revenues"
-msgstr "Revenus différés"
+msgstr "Otpisane vrijednosti"
 
 #. module: om_account_asset
 #: model:ir.model.fields.selection,name:om_account_asset.selection__account_asset_asset__method__degressive
 #: model:ir.model.fields.selection,name:om_account_asset.selection__account_asset_category__method__degressive
 msgid "Degressive"
-msgstr "Dégressive"
+msgstr ""
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__method_progress_factor
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__method_progress_factor
 msgid "Degressive Factor"
-msgstr "Facteur dégressif"
+msgstr ""
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_asset_form
 msgid "Depreciation"
-msgstr "Amortissement"
+msgstr "Amortizacija"
 
 #. module: om_account_asset
 #: model_terms:ir.ui.view,arch_db:om_account_asset.view_account_asset_asset_form
 msgid "Depreciation Board"
-msgstr "Commission d'amortissement"
+msgstr "Pregled amortizacije"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_asset_asset_report__depreciation_nbr
 msgid "Depreciation Count"
-msgstr "Compte d'amortissement"
+msgstr "Broj stavki amortizacije"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_depreciation_line__depreciation_date
 #: model:ir.model.fields,field_description:om_account_asset.field_asset_asset_report__depreciation_date
 msgid "Depreciation Date"
-msgstr "Date d'amortissement"
+msgstr "Datum amortizacije"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_asset__date_first_depreciation
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__date_first_depreciation
 msgid "Depreciation Dates"
-msgstr "Dates d'amortissement"
+msgstr "Datumi amortizacije"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__account_depreciation_id
 msgid "Depreciation Entries: Asset Account"
-msgstr "Amortizacija konto sredstva:"
+msgstr "Unos amortizacije - konto sredstva:"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_category__account_depreciation_expense_id
 msgid "Depreciation Entries: Expense Account"
-msgstr "Amortizacija konto troška:"
+msgstr "Unos amortizacije - konto troška:"
 
 #. module: om_account_asset
 #: model:ir.model.fields,field_description:om_account_asset.field_account_asset_depreciation_line__move_id
