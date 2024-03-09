@@ -394,13 +394,13 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_routes_form
 msgid "Add a new route"
-msgstr ""
+msgstr "Dodaj novu rutu"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid ""
 "Add an internal note that will be printed on the Picking Operations sheet"
-msgstr ""
+msgstr "Dodaj internu zabilješku koja će biti štampana na prijemnim listama"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_res_config_settings__group_stock_adv_location
@@ -438,12 +438,12 @@ msgstr "Adresa"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_rule__partner_address_id
 msgid "Address where goods should be delivered. Optional."
-msgstr ""
+msgstr "Adresa gdje će artikli biti isporučeni. Opciono."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Advanced Scheduling"
-msgstr ""
+msgstr "Napredno zakazivanje termina"
 
 #. module: stock
 #: selection:stock.move,procure_method:0
@@ -476,6 +476,7 @@ msgid ""
 "All items couldn't be shipped, the remaining ones will be shipped as soon as"
 " they become available."
 msgstr ""
+"Svi artikli ne mogu biti isporučeni. Preostali će biti isporučeni kada budu na raspolaganju."
 
 #. module: stock
 #: code:addons/stock/models/stock_inventory.py:113
@@ -488,7 +489,8 @@ msgstr "Svi proizvodi"
 msgid ""
 "All products could not be reserved. Click on the \"Check Availability\" "
 "button to try to reserve products"
-msgstr ""
+msgstr "Svi artikli ne mogu biti rezervisani. Pokreni \"Provjeri dostupnost\" dugme "
+"da bi se pokušala izvršiti rezervacija"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__returned_move_ids
@@ -499,7 +501,7 @@ msgstr "Svi povrati"
 #: model:ir.model.fields,help:stock.field_stock_location__putaway_strategy_id
 msgid ""
 "Allows to suggest the exact location (shelf) where to store the product."
-msgstr ""
+msgstr "Dozvoljava sugestu tačne lokacije (police) gdje će se pohraniti artikal."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_rule_form
@@ -531,7 +533,7 @@ msgstr "Primjenjivo na skladište"
 msgid ""
 "Apply specific route(s) for the replenishment instead of product's default "
 "routes."
-msgstr ""
+msgstr "Primjeni specifične rute za nadopunu umjesto standardne rute postavljene za artikal"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_location_route_view_search
@@ -549,16 +551,18 @@ msgid ""
 "Are you sure you want to confirm this operation? This may lead to "
 "inconsistencies in your inventory."
 msgstr ""
+"Jeste li sigurni da želite potvrditi ovu operaciju? To može dovesti "
+"do inkozistentnosti vašeg skladišta."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_overprocessed_transfer
 msgid "Are you sure you want to validate this picking?"
-msgstr ""
+msgstr "Jeste li sigurni da želite izvršiti validaciju ovog preuzimanja"
 
 #. module: stock
 #: selection:stock.picking,move_type:0
 msgid "As soon as possible"
-msgstr ""
+msgstr "Čim bude moguće"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
@@ -573,13 +577,13 @@ msgstr "Dodijeljena kretanja"
 #. module: stock
 #: selection:stock.quantity.history,compute_at_date:0
 msgid "At a Specific Date"
-msgstr ""
+msgstr "Na specifični datum"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__message_attachment_count
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_variants_action
@@ -676,7 +680,7 @@ msgstr "Nomenklature barkodova"
 #. module: stock
 #: model:ir.model,name:stock.model_barcode_rule
 msgid "Barcode Rule"
-msgstr ""
+msgstr "Pravilo barkoda"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_stock_barcode
@@ -686,7 +690,7 @@ msgstr "Barkod čitač"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_stock_picking_batch
 msgid "Batch Pickings"
-msgstr ""
+msgstr "Grupna preuzimanja"
 
 #. module: stock
 #: selection:res.partner,picking_warn:0
@@ -696,7 +700,7 @@ msgstr "Blokiranje poruke"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_package__quant_ids
 msgid "Bulk Content"
-msgstr ""
+msgstr "Hrpa"
 
 #. module: stock
 #: selection:stock.rule,action:0
@@ -7144,3 +7148,30 @@ msgstr "Istorija"
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_rules_report
 msgid "Overview"
 msgstr "Pregled"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_move__date
+#: model_terms:ir.ui.view,arch_db:stock.view_move_form
+msgid "Date Scheduled"
+msgstr "Zakazani datum"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_move__date_deadline
+#: model:ir.model.fields,field_description:stock.field_stock_picking__date_deadline
+msgid "Deadline"
+msgstr "Krajnji rok"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_move__lot_ids
+msgid "Serial Numbers"
+msgstr "Serijski brojevi"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+msgid "Receive From"
+msgstr "Primljeno od"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+msgid "Other Information"
+msgstr ""

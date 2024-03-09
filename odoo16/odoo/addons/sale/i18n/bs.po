@@ -2275,10 +2275,11 @@ msgstr "Narudžbe za dodatno fakturisanje (upsell)"
 msgid "Organize your sales activities with the <b>Sales Management app</b>."
 msgstr ""
 
+
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Other Information"
-msgstr "Ostali podaci"
+msgstr "Ostale informacije"
 
 #. module: sale
 #: selection:sale.order,activity_state:0

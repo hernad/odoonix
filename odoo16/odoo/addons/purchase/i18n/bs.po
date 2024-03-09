@@ -1091,7 +1091,7 @@ msgstr "Narudžbe"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Other Information"
-msgstr "Ostali podaci"
+msgstr "Ostale informacije"
 
 #. module: purchase
 #: selection:purchase.order,activity_state:0
