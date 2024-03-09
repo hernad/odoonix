@@ -4548,3 +4548,11 @@ msgstr "Istorija"
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_routing_workcenter_bom_tree_view
 msgid "Add a line"
 msgstr "Dodaj stavku"
+
+#. module: mrp
+#. odoo-javascript
+#: code:addons/mrp/static/src/components/bom_overview_line/mrp_bom_overview_line.xml:0
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
+#, python-format
+msgid "Forecast Report"
+msgstr "Projekcija zaliha"
