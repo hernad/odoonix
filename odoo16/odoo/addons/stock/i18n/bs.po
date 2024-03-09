@@ -7106,3 +7106,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_lot_on_delivery_slip
 msgid "Display Lots & Serial Numbers on Delivery Slips"
 msgstr "Prikaz lotova/SN na otpremnicama"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_production_lot
+msgid "Lots & Serial Numbers"
+msgstr "LOT-ovi i Serijski brojevi"
