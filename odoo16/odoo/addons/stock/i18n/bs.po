@@ -991,7 +991,7 @@ msgstr "Potvrđeno"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_tracking_owner
 msgid "Consignment"
-msgstr "Pošiljka"
+msgstr "Konsignacija"
 
 #. module: stock
 #: selection:product.template,type:0
@@ -1001,7 +1001,7 @@ msgstr "Potrošni"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__consume_line_ids
 msgid "Consume Line"
-msgstr ""
+msgstr "Potrošne stavke"
 
 #. module: stock
 #: model:ir.model,name:stock.model_res_partner
