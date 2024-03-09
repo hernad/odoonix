@@ -7137,3 +7137,10 @@ msgstr "Dostupnost"
 #, python-format
 msgid "History"
 msgstr "Istorija"
+
+
+#. module: stock
+#: model:ir.ui.menu,name:stock.stock_picking_type_menu
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_rules_report
+msgid "Overview"
+msgstr "Pregled"
