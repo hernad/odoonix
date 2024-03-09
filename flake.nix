@@ -187,7 +187,7 @@ in
         echo "ako je lokalna postgresql baza napravljena, dovoljno je pokreniti skriptu:"
         echo " "
         echo "run: scripts/start_nginx_then_local_postgresql.sh"
-
+        echo " "
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
 
@@ -198,7 +198,8 @@ in
         ln -sf ${python-311}/bin/python ./odoo16/python311        
         ln -sf ${python-311}/bin/python ./odoo17/python311
 
-        echo ok
+        echo "type 'exit' to go to nix shell"
+
         
       '';
 
