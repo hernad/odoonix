@@ -293,7 +293,7 @@ msgstr ""
 #. module: uom
 #: model:uom.category,name:uom.product_uom_categ_unit
 msgid "Unit"
-msgstr "Jedinica"
+msgstr "kom"
 
 #. module: uom
 #: model:ir.model.fields,field_description:uom.field_uom_uom__name
@@ -308,7 +308,7 @@ msgstr "Kategorija jedinice mjere"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_unit
 msgid "Units"
-msgstr "Jedinice"
+msgstr "kom"
 
 #. module: uom
 #: model:ir.actions.act_window,name:uom.product_uom_form_action
