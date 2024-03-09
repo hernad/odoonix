@@ -626,19 +626,19 @@ msgstr "Dostupni proizvodi"
 #: model:ir.model.fields,field_description:stock.field_stock_move__backorder_id
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_id
 msgid "Back Order of"
-msgstr "Zaostali nalog od"
+msgstr "Predhodna narudžba"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_ids
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "Back Orders"
-msgstr "Zaostale narudžbe"
+msgstr "Predhodne narudžbe"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_backorder_confirmation.py:28
 #, python-format
 msgid "Back order <em>%s</em> <b>cancelled</b>."
-msgstr "Zaostala narudžba <em>%s</em> <b>otkazana</b>."
+msgstr "Predhodna narudžba <em>%s</em> je <b>otkazana</b>."
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_backorder_confirmation
@@ -7186,3 +7186,8 @@ msgstr "<strong>Datum otpreme:</strong>"
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "Forecast Report"
 msgstr "Projekcija zaliha"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+msgid "Details"
+msgstr "Detalji"
