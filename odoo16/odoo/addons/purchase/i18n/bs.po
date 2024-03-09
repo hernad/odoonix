@@ -1846,7 +1846,7 @@ msgstr "Jedinica mjere kategorija"
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_uom_form_action
 msgid "Units of Measure"
-msgstr "Jedinice mere"
+msgstr "Jedinice mjere"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form

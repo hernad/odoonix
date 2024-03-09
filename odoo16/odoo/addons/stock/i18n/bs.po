@@ -1511,7 +1511,7 @@ msgstr "Dostave"
 #: model:stock.picking.type,name:stock.picking_type_out
 #, python-format
 msgid "Delivery Orders"
-msgstr "Dostavnice"
+msgstr "Otpremnice"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_tracking_lot
@@ -1526,7 +1526,7 @@ msgstr "Ruta dostave"
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_delivery
 msgid "Delivery Slip"
-msgstr "Potvrda dostave"
+msgstr "Otpremnica"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_procurement_group__move_type
@@ -1555,12 +1555,12 @@ msgstr "Opis"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
 msgid "Description for Delivery Orders"
-msgstr ""
+msgstr "Opis za otpremnice"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
 msgid "Description for Internal Transfers"
-msgstr ""
+msgstr "Opis za interne transfere"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
@@ -1570,7 +1570,7 @@ msgstr "Objašnjenje za primke"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__description_pickingout
 msgid "Description on Delivery Orders"
-msgstr "Objašnjenje na otpremnicama"
+msgstr "Opis na otpremnicama"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__description_picking
@@ -4367,7 +4367,7 @@ msgstr "Količina na zalihi koja još uvijek može biti rezervisana"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move__product_qty
 msgid "Quantity in the default UoM of the product"
-msgstr "Količina u zadanoj jedinici mijere proizvoda"
+msgstr "Količina u zadanoj jedinici mjere proizvoda"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__incoming_qty
@@ -6082,12 +6082,12 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_unit_measure_stock
 msgid "Units of Measure"
-msgstr "Jedinice mere"
+msgstr "Jedinice mjere"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.product_uom_menu
 msgid "Units of Measures"
-msgstr "Jedinica mijere"
+msgstr "Jedinica mjere"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
@@ -7100,3 +7100,9 @@ msgstr ""
 "Upotrijebite ovog asistenta za dopunu zaliha. Ovisno o tome kakva je "
 "konfiguracija za artikal, pokretanje nadopune može pokrenuti zahtjev za"
 " ponudu, narudžbu za proizvodnju ili prijenos."
+
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_res_config_settings__group_lot_on_delivery_slip
+msgid "Display Lots & Serial Numbers on Delivery Slips"
+msgstr "Prikaz lotova/SN na otpremnicama"

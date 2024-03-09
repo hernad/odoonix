@@ -255,7 +255,7 @@ msgstr "Način dostave"
 #: model:ir.ui.menu,name:delivery.sale_menu_action_delivery_carrier_form
 #: model_terms:ir.ui.view,arch_db:delivery.res_config_settings_view_form
 msgid "Delivery Methods"
-msgstr "Metode ispuruke"
+msgstr "Metode isporuke"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_choose_delivery_package
