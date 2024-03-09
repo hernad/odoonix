@@ -184,6 +184,10 @@ in
         echo "run: postgresql-start / postgresql-stop"
         echo "run psql client: psql -h 127.0.0.1 -U postgres -p 15432 postgres"
         echo "create odoo in local database: CREATE ROLE odoo WITH LOGIN PASSWORD 'odoo' CREATEDB;"
+        echo "ako je lokalna postgresql baza napravljena, dovoljno je pokreniti skriptu:"
+        echo " "
+        echo "run: scripts/start_nginx_then_local_postgresql.sh"
+
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
 
