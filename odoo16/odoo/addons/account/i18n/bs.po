@@ -11898,3 +11898,11 @@ msgstr "Postavi kontni plan i početne vrijednosti konta."
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<strong>Shipping Address:</strong>"
 msgstr "<strong>Isporučiti:</strong>"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__partner_shipping_id
+#: model:ir.model.fields,field_description:account.field_account_move__partner_shipping_id
+#: model:ir.model.fields,field_description:account.field_account_payment__partner_shipping_id
+#: model:res.groups,name:account.group_delivery_invoice_address
+msgid "Delivery Address"
+msgstr "Adresa za dostavu"

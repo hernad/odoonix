@@ -7174,4 +7174,9 @@ msgstr "Primljeno od"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Other Information"
-msgstr ""
+msgstr "Ostale informacije"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
+msgid "<strong>Shipping Date:</strong>"
+msgstr "<strong>Datum otpreme:</strong>"
