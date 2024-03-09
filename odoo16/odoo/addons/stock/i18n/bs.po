@@ -7111,3 +7111,14 @@ msgstr "Prikaz lotova/SN na otpremnicama"
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_production_lot
 msgid "Lots & Serial Numbers"
 msgstr "LOT-ovi i Serijski brojevi"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+msgid "Free to Use"
+msgstr "Slobodno"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__qty_forecast
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+msgid "Forecast"
+msgstr "Projekcija"
