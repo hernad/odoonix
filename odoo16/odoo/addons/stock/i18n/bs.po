@@ -7127,3 +7127,13 @@ msgstr "Projekcija"
 #: model:ir.model.fields,field_description:stock.field_stock_picking__products_availability
 msgid "Product Availability"
 msgstr "Dostupnost"
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_quant.py:0
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
+#, python-format
+msgid "History"
+msgstr "Istorija"

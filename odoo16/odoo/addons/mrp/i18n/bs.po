@@ -4538,3 +4538,8 @@ msgstr "Obrada u posebnim radnim centrima"
 #: model:ir.model.fields,field_description:mrp.field_res_config_settings__group_mrp_reception_report
 msgid "Allocation Report for Manufacturing Orders"
 msgstr "Izvještaj o alikaciji za proizvodne naloge"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_document_form
+msgid "History"
+msgstr "Istorija"
