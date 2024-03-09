@@ -7122,3 +7122,8 @@ msgstr "Slobodno"
 #: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
 msgid "Forecast"
 msgstr "Projekcija"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_picking__products_availability
+msgid "Product Availability"
+msgstr "Dostupnost"
