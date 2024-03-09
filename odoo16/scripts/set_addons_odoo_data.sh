@@ -13,4 +13,5 @@ done
 
 echo " "
 echo ====================== installed addons ===========================
+rm ./$ADDONS/'*'
 ls -1 ./$ADDONS
