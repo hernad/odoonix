@@ -236,7 +236,7 @@ msgstr ""
 #. module: uom
 #: model:uom.category,name:uom.uom_categ_surface
 msgid "Surface"
-msgstr ""
+msgstr "Površina"
 
 #. module: uom
 #: model:ir.model.fields,help:uom.field_uom_uom__rounding
@@ -263,12 +263,12 @@ msgstr ""
 #. module: uom
 #: model:ir.model.constraint,message:uom.constraint_uom_uom_factor_reference_is_one
 msgid "The reference unit must have a conversion factor equal to 1."
-msgstr ""
+msgstr "Referentna jedinica mora imat faktor konverzije 1."
 
 #. module: uom
 #: model:ir.model.constraint,message:uom.constraint_uom_uom_rounding_gt_zero
 msgid "The rounding precision must be strictly positive."
-msgstr ""
+msgstr "Preciznost zaokruženja mora biti pozitivna."
 
 #. module: uom
 #: code:addons/uom/models/uom_uom.py:0
@@ -380,7 +380,7 @@ msgstr "Težina"
 #. module: uom
 #: model:uom.category,name:uom.uom_categ_wtime
 msgid "Working Time"
-msgstr "Radno Vrijeme"
+msgstr "Radno vrijeme"
 
 #. module: uom
 #: model_terms:ir.actions.act_window,help:uom.product_uom_form_action
