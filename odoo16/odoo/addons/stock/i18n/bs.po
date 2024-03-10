@@ -7227,3 +7227,17 @@ msgstr "Pravila odlaganja"
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
 msgid "Putaway:"
 msgstr "Odložiti:"
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_quant.py:0
+#, python-format
+msgid "Product Quantity Confirmed"
+msgstr "Količina potvrđena inventurom"
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_quant.py:0
+#, python-format
+msgid "Product Quantity Updated"
+msgstr "Količina ažurirana inventurom"
