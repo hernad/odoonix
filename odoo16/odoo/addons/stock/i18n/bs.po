@@ -4841,7 +4841,8 @@ msgid ""
 msgstr ""
 
 #. module: stock
-#: code:addons/stock/models/stock_picking.py:1062
+#. odoo-python
+#: code:addons/stock/models/stock_picking.py:0
 #: model:ir.model,name:stock.model_stock_scrap
 #: model:ir.model.fields,field_description:stock.field_stock_move__scrap_ids
 #: model:ir.model.fields,field_description:stock.field_stock_warn_insufficient_qty_scrap__scrap_id
@@ -4851,7 +4852,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #, python-format
 msgid "Scrap"
-msgstr "Otpis"
+msgstr "Otpad"
+
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__scrap_location_id
@@ -7191,3 +7193,9 @@ msgstr "Projekcija zaliha"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Details"
 msgstr "Detalji"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
+msgid "Inventory Adjustment"
+msgstr "Inventurisanje"

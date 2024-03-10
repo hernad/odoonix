@@ -2989,7 +2989,7 @@ msgstr "Zakazani datum po mjesecima"
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
 #, python-format
 msgid "Scrap"
-msgstr "Otpis"
+msgstr "Otpad"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__scrap_count
