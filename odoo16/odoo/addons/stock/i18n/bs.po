@@ -7261,3 +7261,8 @@ msgstr "Kategorišite svoje lokacije za pametnija pravila odlaganja"
 #: model_terms:ir.ui.view,arch_db:stock.stock_storage_category_tree
 msgid "Storage Categories"
 msgstr "Kategorije skladišta"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
+msgid "<strong>Ordered</strong>"
+msgstr "<strong>Naručeno</strong>"
