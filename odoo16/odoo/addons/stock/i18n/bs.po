@@ -4209,7 +4209,7 @@ msgstr "Proizvodi: "
 #. module: stock
 #: selection:stock.rule,group_propagation_option:0
 msgid "Propagate"
-msgstr "Proslijedi"
+msgstr "Propagiraj"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__propagate
@@ -4220,7 +4220,7 @@ msgstr "Propagiraj otkazivanja i rastavljanja"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_rule_form
 msgid "Propagation"
-msgstr ""
+msgstr "Propagiranje"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_rule__group_propagation_option
@@ -4230,17 +4230,17 @@ msgstr "Prosljeđivanje grupe naručivanja"
 #. module: stock
 #: selection:stock.rule,action:0
 msgid "Pull & Push"
-msgstr ""
+msgstr "Povuci & Gurni"
 
 #. module: stock
 #: selection:stock.rule,action:0
 msgid "Pull From"
-msgstr ""
+msgstr "Povuci od"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
 msgid "Pull Rule"
-msgstr ""
+msgstr "Pravilo povuci"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
