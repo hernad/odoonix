@@ -1397,7 +1397,7 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Grant discounts on sales order lines"
-msgstr ""
+msgstr "Dozvoli popuste na stavkama prodajne narudžbe"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report__weight
@@ -4145,3 +4145,8 @@ msgstr "Prodaja: slanje ponude"
 #: model:ir.ui.menu,name:sale.menu_tag_config
 msgid "Tags"
 msgstr "Oznake"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
+msgid "Add several variants to an order from a grid"
+msgstr "Dodajte nekoliko varijanti za narudžbu iz tabele"

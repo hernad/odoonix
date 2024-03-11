@@ -4245,17 +4245,17 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
 msgid "Push Rule"
-msgstr "Pravilo gurni"
+msgstr "Pravilo 'guranja'"
 
 #. module: stock
 #: selection:stock.rule,action:0
 msgid "Push To"
-msgstr ""
+msgstr "gurni"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_fixed_putaway_strat__putaway_id
 msgid "Put Away Method"
-msgstr "Metoda skladištenja"
+msgstr "Metoda odlaganja"
 
 #. module: stock
 #: model:ir.model,name:stock.model_product_putaway
