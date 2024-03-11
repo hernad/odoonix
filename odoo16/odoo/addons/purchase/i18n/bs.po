@@ -2093,7 +2093,7 @@ msgstr "Dodaj bilješku"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Add a product"
-msgstr "Dodaj proizvod"
+msgstr "Dodaj artikal"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
