@@ -730,3 +730,8 @@ msgstr "Ažuriraj količine na narudžbenicama (nabavka/prodaja)"
 #, python-format
 msgid "Value On Hand:"
 msgstr "Vrijednost na stanju:"
+
+#. module: stock_account
+#: model_terms:ir.ui.view,arch_db:stock_account.stock_valuation_layer_form
+msgid "Other Info"
+msgstr "Ostale informacije"
