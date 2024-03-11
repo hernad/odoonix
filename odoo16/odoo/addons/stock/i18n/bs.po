@@ -1974,12 +1974,12 @@ msgstr "Budući prijemi"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Get a full traceability from vendors to customers"
-msgstr ""
+msgstr "Obezbjediti praćenje od dobavljača do kupaca"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Get informative or blocking warnings on partners"
-msgstr ""
+msgstr "Informativna ili blokirajuća upozorenja za partnere"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_fixed_putaway_strat__sequence
@@ -2016,7 +2016,7 @@ msgstr "Grupiši po..."
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__has_move_lines
 msgid "Has Move Lines"
-msgstr ""
+msgstr "Ima stavke pomjeranja"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__move_line_exist
@@ -2026,23 +2026,23 @@ msgstr "Ima operaciju pakovanja"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__has_packages
 msgid "Has Packages"
-msgstr ""
+msgstr "Ima pakete"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__has_scrap_move
 msgid "Has Scrap Moves"
-msgstr "Ima otpisno kretanje"
+msgstr "Ima stavke otpisa"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__has_tracking
 msgid "Has Tracking"
-msgstr ""
+msgstr "Ima praćenje"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_has_variants
 #: model:ir.model.fields,field_description:stock.field_stock_rules_report__product_has_variants
 msgid "Has variants"
-msgstr ""
+msgstr "Ima varijante"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__posz
@@ -2103,7 +2103,7 @@ msgstr "ID"
 #: code:addons/stock/models/stock_inventory.py:431
 #, python-format
 msgid "INV:"
-msgstr ""
+msgstr "INV:"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_change_product_qty.py:88
@@ -2117,6 +2117,9 @@ msgid ""
 "If a product is not at the right place, set the checked quantity to 0 and "
 "create a new line with correct location."
 msgstr ""
+"Ako artikal nije na ispravnom mjestu, postavi količinu na 0 i "
+"kreiraj novu liniju sa ispravnom lokacijom."
+
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__message_unread
@@ -2128,13 +2131,13 @@ msgstr "Ako je označeno nove poruke će zahtjevati vašu pažnju."
 #: model:ir.model.fields,help:stock.field_stock_picking__message_needaction
 #: model:ir.model.fields,help:stock.field_stock_production_lot__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Ako je zakačeno, nove poruke će zahtjevati vašu pažnju"
+msgstr "Ako je označeno, nove poruke će zahtjevati vašu pažnju"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__message_has_error
 #: model:ir.model.fields,help:stock.field_stock_production_lot__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Ako je označeno, nee poruke imaju grešku u isporuci."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move__propagate
@@ -2146,7 +2149,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move_line__result_package_id
 msgid "If set, the operations are packed into this package"
-msgstr ""
+msgstr "Ako je postavljeno, operacije su zapakovane u ovaj paket"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__active
@@ -2154,7 +2157,7 @@ msgid ""
 "If the active field is set to False, it will allow you to hide the "
 "orderpoint without removing it."
 msgstr ""
-"Ako je polje aktivno postavljeno na netačno, omogućiće Vam da sakrijete "
+"Ako je polje aktivno postavljeno na netačno, omogućiće vam da sakrijete "
 "tačku naručivanja bez da je uklonite."
 
 #. module: stock
@@ -2193,6 +2196,9 @@ msgid ""
 " operations. If not, the picking lines will represent an aggregate of "
 "detailed stock operations."
 msgstr ""
+"Ako je ovaj checkbox označen, stavke preuzimanja će predstavljati detaljne operacije zaliha. "
+"Ako nije, linije preuzimanja će predstavljati sumirano stanje "
+"pojedinačnih operacija zaliha."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move_line__picking_type_use_create_lots
@@ -2233,7 +2239,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_rule__active
 msgid "If unchecked, it will allow you to hide the rule without removing it."
 msgstr ""
-"Ako nije zakačeno, dozvoliti će vam da sakrijete pravilo bez da ga "
+"Ako nije potvrđeno, dozvoliti će vam da sakrijete pravilo bez da ga "
 "uklanjate."
 
 #. module: stock
@@ -2267,7 +2273,7 @@ msgstr "Odmah prenesi?"
 #. module: stock
 #: selection:res.config.settings,module_procurement_jit:0
 msgid "Immediately after sales order confirmation"
-msgstr ""
+msgstr "Odman nakon potvrde prodajne narudžbe"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_filter
@@ -6147,12 +6153,12 @@ msgstr "Ukloni rezervaciju"
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_line_tree2
 #: model_terms:ir.ui.view,arch_db:stock.view_inventory_form
 msgid "UoM"
-msgstr "JM"
+msgstr "JMJ"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_uom_categ_form_action
 msgid "UoM Categories"
-msgstr ""
+msgstr "Kategorije JMJ"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_change_product_quantity
@@ -7241,3 +7247,17 @@ msgstr "Količina potvrđena inventurom"
 #, python-format
 msgid "Product Quantity Updated"
 msgstr "Količina ažurirana inventurom"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
+msgid "Categorize your locations for smarter putaway rules"
+msgstr "Kategorišite svoje lokacije za pametnija pravila odlaganja"
+
+#. module: stock
+#: model:ir.actions.act_window,name:stock.action_storage_category
+#: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_storage_categories
+#: model:ir.ui.menu,name:stock.menu_storage_categoty_config
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:stock.stock_storage_category_tree
+msgid "Storage Categories"
+msgstr "Kategorije skladišta"
