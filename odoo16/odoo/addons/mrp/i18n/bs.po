@@ -1757,7 +1757,7 @@ msgstr "Ručno trajanje"
 #: selection:stock.rule,action:0
 #, python-format
 msgid "Manufacture"
-msgstr "Proizvedi"
+msgstr "Proizvodnja"
 
 #. module: mrp
 #: code:addons/mrp/models/stock_warehouse.py:95
@@ -2546,7 +2546,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_product_produce_line__product_produce_id
 msgid "Product Produce"
-msgstr "Proizvedi proizvod"
+msgstr "Pokreni proizvodnju"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_product_template

@@ -3035,7 +3035,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.rule,action:0
 msgid "Manufacture"
-msgstr "Proizvedi"
+msgstr "Proizvodnja"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search
@@ -7266,3 +7266,8 @@ msgstr "Kategorije skladišta"
 #: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
 msgid "<strong>Ordered</strong>"
 msgstr "<strong>Naručeno</strong>"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
+msgid "View Diagram"
+msgstr "Pregled dijagrama"
