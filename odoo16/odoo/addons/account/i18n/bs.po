@@ -11905,3 +11905,8 @@ msgstr "<strong>Isporučiti:</strong>"
 #: model:res.groups,name:account.group_delivery_invoice_address
 msgid "Delivery Address"
 msgstr "Adresa za dostavu"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Accounting Firms mode"
+msgstr "Način rada za računovodstvena preduzeća"
