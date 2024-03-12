@@ -3041,7 +3041,7 @@ msgstr "Pretraži za radnim centrima proizvodnje"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid "Security Lead Time"
-msgstr "Sigurnostn dani vođenja"
+msgstr "Sigurnosni dani vođenja"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_res_company__manufacturing_lead
