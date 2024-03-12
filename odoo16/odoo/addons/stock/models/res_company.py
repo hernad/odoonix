@@ -69,7 +69,7 @@ class Company(models.Model):
         parent_location = self.env.ref('stock.stock_location_locations_virtual', raise_if_not_found=False)
         for company in self:
             inventory_loss_location = self.env['stock.location'].create({
-                'name': 'Inventory adjustment',
+                'name': 'Inventurisanje',  # CE-bosnian Inventory adjustment
                 'usage': 'inventory',
                 'location_id': parent_location.id,
                 'company_id': company.id,
@@ -85,7 +85,7 @@ class Company(models.Model):
         parent_location = self.env.ref('stock.stock_location_locations_virtual', raise_if_not_found=False)
         for company in self:
             production_location = self.env['stock.location'].create({
-                'name': 'Production',
+                'name': 'Proizvodnja', # CE-bosnian Production
                 'usage': 'production',
                 'location_id': parent_location.id,
                 'company_id': company.id,
