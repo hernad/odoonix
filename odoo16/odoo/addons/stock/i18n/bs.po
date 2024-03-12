@@ -1481,10 +1481,11 @@ msgid "Deliver goods directly (1 step)"
 msgstr ""
 
 #. module: stock
-#: code:addons/stock/models/stock_warehouse.py:526
+#. odoo-python
+#: code:addons/stock/models/stock_warehouse.py:0
 #, python-format
 msgid "Deliver in 1 step (ship)"
-msgstr ""
+msgstr "Isporuka u jednom koraku (slanje)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:526
@@ -4481,10 +4482,11 @@ msgid "Receive goods in input, then quality and then stock (3 steps)"
 msgstr ""
 
 #. module: stock
-#: code:addons/stock/models/stock_warehouse.py:524
+#. odoo-python
+#: code:addons/stock/models/stock_warehouse.py:0
 #, python-format
 msgid "Receive in 1 step (stock)"
-msgstr ""
+msgstr "Prijem u jednom koraku (zalihe)"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:524
@@ -6003,7 +6005,6 @@ msgstr "Tranzitne lokacije"
 
 #. module: stock
 #: selection:stock.location,usage:0
-#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Inventory Loss"
 msgstr "Inventurisanje"
 
@@ -6011,7 +6012,7 @@ msgstr "Inventurisanje"
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
 #: selection:stock.rule,procure_method:0
 msgid "Trigger Another Rule"
-msgstr ""
+msgstr "Aktiviraj drugo pravilo"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_barcode_rule__type
