@@ -2219,7 +2219,7 @@ msgstr "Stavke Računa"
 #. module: account
 #: model:res.groups,name:account.group_account_invoice
 msgid "Billing"
-msgstr "Računi dobavljača"
+msgstr "Ulazni računi"
 
 #. module: account
 #: model:res.groups,name:account.group_account_manager
@@ -2231,7 +2231,7 @@ msgstr "Upravitelj fakturisanja"
 #: model:ir.ui.menu,name:account.menu_action_invoice_tree2
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "Bills"
-msgstr "Računi dobavljača"
+msgstr "Ulazni računi"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
@@ -3530,7 +3530,7 @@ msgstr "Faktura kupca"
 #: code:addons/account/models/chart_template.py:409
 #, python-format
 msgid "Customer Invoices"
-msgstr "Fakture kupcima"
+msgstr "Izlazne fakture"
 
 #. module: account
 #: code:addons/account/models/account_payment.py:767
@@ -11087,7 +11087,7 @@ msgstr "Račun dobavljača - %s"
 #: model:ir.actions.act_window,name:account.action_vendor_bill_template
 #, python-format
 msgid "Vendor Bills"
-msgstr "Računi dobavljača"
+msgstr "Ulazni računi"
 
 #. module: account
 #: selection:account.invoice,type:0 selection:account.invoice.report,type:0
