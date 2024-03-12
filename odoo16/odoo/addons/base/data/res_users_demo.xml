@@ -19,12 +19,12 @@
         <record id="main_partner" model="res.partner">
             <field name="name">YourCompanyBa</field>
             <field name="company_name">YourCompanyBa</field>
-            <field name="street">250 Executive Park Blvd, Suite 3400</field>
+            <field name="street">Juraja Najtharta 3</field>
             <field name="city">Sarajevo</field>
-            <field name="zip">94134</field>
+            <field name="zip">71000</field>
             <field name='country_id' ref='base.ba'/>
             <field name='state_id' ref='state_us_5'/>
-            <field name="phone">+1 (650) 555-0111 </field>
+            <field name="phone">+387 (61) 141-311 </field>
             <field name="email">info@yourcompany.example.ba</field>
             <field name="website">www.example.ba</field>
         </record>

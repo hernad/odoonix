@@ -7305,3 +7305,22 @@ msgstr "Max količina"
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__qty_to_order
 msgid "To Order"
 msgstr "Naručiti"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_form
+msgid "Forecast Description"
+msgstr "Projekcija zaliha"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__visibility_days
+msgid "Visibility Days"
+msgstr "Vidljivost u danima"
+
+#. module: stock
+#: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__visibility_days
+msgid ""
+"Consider product forecast these many days in the future upon product replenishment, set to 0 for just-in-time.\n"
+"The value depends on the type of the route (Buy or Manufacture)"
+msgstr ""
+"Projekcija zaliha će biti vidljiva u budućnosti po nadopuni, postavi 0 za tačno-na-vrijeme.\n"
+"Vrijednost zavisi o vrsti rute (Kupovina ili Proizvodnja)"
