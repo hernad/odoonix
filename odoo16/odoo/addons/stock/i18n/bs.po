@@ -2494,7 +2494,7 @@ msgstr "Lokacije zalihe"
 #. module: stock
 #: selection:stock.location,usage:0
 msgid "Inventory Loss"
-msgstr "Inventurni manjak"
+msgstr "Inventurisanje"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.stock_picking_type_action
@@ -4862,27 +4862,27 @@ msgstr "Otpad"
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__scrap_location_id
 #: model_terms:ir.ui.view,arch_db:stock.stock_scrap_search_view
 msgid "Scrap Location"
-msgstr "Lokacija otpisa"
+msgstr "Lokacija otpada"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__move_id
 msgid "Scrap Move"
-msgstr "Kretanje otpisa"
+msgstr "Kretanje otpada"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_scrap
 msgid "Scrap Orders"
-msgstr "Nalozi otpisa"
+msgstr "Nalozi otpada"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_stock_scrap
 msgid "Scrap products"
-msgstr "Proizvodi za otpis"
+msgstr "Artikli otpad"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__scrapped
 msgid "Scrapped"
-msgstr "Otpisani"
+msgstr "Otpisano"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_stock_scrap
@@ -4890,6 +4890,8 @@ msgid ""
 "Scrapping a product will remove it from your stock. The product will\n"
 "                end up in a scrap location that can be used for reporting purpose."
 msgstr ""
+"Artikal će otpisom biti uklonjen sa zalihe. Artikal će\n"
+"                završiti na lokaciji otpada, što se može koristiti za izvještavanje."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
