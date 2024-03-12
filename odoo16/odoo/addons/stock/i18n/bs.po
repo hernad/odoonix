@@ -3200,12 +3200,12 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_adv_location
 msgid "Multi-Step Routes"
-msgstr ""
+msgstr "Rute u više koraka"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_multi_warehouses
 msgid "Multi-Warehouses"
-msgstr ""
+msgstr "Više skladišta"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -4941,7 +4941,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Sell and purchase products in different units of measure"
-msgstr ""
+msgstr "Kupovina i prodaja u različitim jedinicama mjere"
 
 #. module: stock
 #: selection:stock.warehouse,delivery_steps:0
@@ -5934,7 +5934,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Track product location in your warehouse"
-msgstr ""
+msgstr "Prati lokaciju artikla u skladištu"
 
 #. module: stock
 #: code:addons/stock/models/stock_inventory.py:173
@@ -7271,3 +7271,18 @@ msgstr "<strong>Naručeno</strong>"
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
 msgid "View Diagram"
 msgstr "Pregled dijagrama"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
+msgid "Trigger Another Rule If No Stock"
+msgstr "Aktiviraj drugo pravilo ako nema zaliha"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
+msgid "Process transfers in batch per worker"
+msgstr "Procesiraj transfere u grupi po radniku"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_res_config_settings__module_stock_picking_batch
+msgid "Batch Transfers"
+msgstr "Grupni prenosi"
