@@ -390,12 +390,12 @@ msgstr "Indeks boje"
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "Company"
-msgstr "Kompanija"
+msgstr "Preduzeće"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_form_view_leads
 msgid "Company Name"
-msgstr "Naziv firme"
+msgstr "Naziv preduzeća"
 
 #. module: crm
 #: model:ir.model,name:crm.model_res_config_settings

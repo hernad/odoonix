@@ -485,7 +485,7 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact__company_name
 msgid "Company Name"
-msgstr "Naziv firme"
+msgstr "Naziv preduzeća"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.layout

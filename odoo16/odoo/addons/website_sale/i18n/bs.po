@@ -731,12 +731,12 @@ msgstr "Kliknite na ovo dogme kako bi vaši kupci mogli da ga vide."
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_res_company
 msgid "Companies"
-msgstr "Kompanije"
+msgstr "Preduzeća"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.address_b2b
 msgid "Company Name"
-msgstr "Naziv firme"
+msgstr "Naziv preduzeće"
 
 #. module: website_sale
 #: model:product.public.category,name:website_sale.Components

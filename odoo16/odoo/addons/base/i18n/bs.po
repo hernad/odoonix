@@ -8054,7 +8054,7 @@ msgstr "Logo preduzeća"
 #: model:ir.model.fields,field_description:base.field_res_partner__company_name
 #: model:ir.model.fields,field_description:base.field_res_users__company_name
 msgid "Company Name"
-msgstr "Naziv firme"
+msgstr "Naziv preduzeća"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner__commercial_company_name
