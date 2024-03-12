@@ -173,6 +173,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- CE-bosnian 
                         <h2>Shipping Connectors</h2>
                         <div class="row mt16 o_settings_container" name="product_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="compute_shipping_costs_ups">
@@ -282,6 +283,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                         <h2>Products</h2>
                         <div class="row mt16 o_settings_container" name="product_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="product_attributes">
