@@ -3948,14 +3948,14 @@ msgid "Preferred Packaging"
 msgstr "Preferirano pakovanje"
 
 #. module: stock
-#: model:ir.model.fields,field_description:stock.field_product_replenish__route_ids
-msgid "Preferred Routes"
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__route_id
+msgid "Preferred Route"
 msgstr "Preferirana ruta"
 
 #. module: stock
-#: model:ir.model.fields,help:stock.field_stock_move__route_ids
-msgid "Preferred route"
-msgstr ""
+#: model:ir.model.fields,field_description:stock.field_product_replenish__route_ids
+msgid "Preferred Routes"
+msgstr "Preferirane rute"
 
 #. module: stock
 #: selection:barcode.rule,type:0
@@ -7288,3 +7288,20 @@ msgstr "Procesiraj transfere u grupi po radniku"
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_stock_picking_batch
 msgid "Batch Transfers"
 msgstr "Grupni prenosi"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__product_min_qty
+msgid "Min Quantity"
+msgstr "Min količina"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__product_max_qty
+msgid "Max Quantity"
+msgstr "Max količina"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_replenishment_info__qty_to_order
+#: model:ir.model.fields,field_description:stock.field_stock_replenishment_option__qty_to_order
+#: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__qty_to_order
+msgid "To Order"
+msgstr "Naručiti"
