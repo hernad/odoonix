@@ -2492,11 +2492,6 @@ msgid "Inventory Locations"
 msgstr "Lokacije zalihe"
 
 #. module: stock
-#: selection:stock.location,usage:0
-msgid "Inventory Loss"
-msgstr "Inventurisanje"
-
-#. module: stock
 #: model:ir.actions.act_window,name:stock.stock_picking_type_action
 msgid "Inventory Overview"
 msgstr "Pregled skladišnih operacija"
@@ -6005,6 +6000,12 @@ msgstr "Tranzitna lokacija"
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Transit Locations"
 msgstr "Tranzitne lokacije"
+
+#. module: stock
+#: selection:stock.location,usage:0
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+msgid "Inventory Loss"
+msgstr "Inventurisanje"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
