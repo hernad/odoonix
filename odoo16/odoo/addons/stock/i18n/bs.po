@@ -7324,3 +7324,18 @@ msgid ""
 msgstr ""
 "Projekcija zaliha će biti vidljiva u budućnosti po nadopuni, postavi 0 za tačno-na-vrijeme.\n"
 "Vrijednost zavisi o vrsti rute (Kupovina ili Proizvodnja)"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+msgid "To Count"
+msgstr "Za brojanje"
+
+. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+msgid "To Apply"
+msgstr "Za primjenu"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+msgid "Starred Products"
+msgstr "Artikli sa zvjezdicom"
