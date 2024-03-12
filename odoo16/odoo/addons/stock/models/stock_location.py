@@ -35,7 +35,6 @@ class Location(models.Model):
     usage = fields.Selection([
         ('supplier', 'Vendor Location'),
         ('view', 'View'),
-        ('virtual', 'Virtual Location'),
         ('internal', 'Internal Location'),
         ('customer', 'Customer Location'),
         ('inventory', 'Inventory Loss'),
