@@ -2356,6 +2356,12 @@ msgid "Internal Locations"
 msgstr "Interne lokacije"
 
 #. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+#: model_terms:ir.ui.view,arch_db:stock.view_location_search
+msgid "Virtual Locations"
+msgstr "Virtuelne lokacije"
+
+#. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot__ref
 msgid "Internal Reference"
 msgstr "Interna referenca"
@@ -5999,12 +6005,12 @@ msgstr "Za prenos"
 #. module: stock
 #: selection:stock.location,usage:0
 msgid "Transit Location"
-msgstr "Prelazna lokacija"
+msgstr "Tranzitna lokacija"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Transit Locations"
-msgstr "Prelazne lokacije"
+msgstr "Tranzitne lokacije"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
@@ -7339,3 +7345,8 @@ msgstr "Za primjenu"
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Starred Products"
 msgstr "Artikli sa zvjezdicom"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.quant_search_view
+msgid "My Counts"
+msgstr "Moja prebrojavanja"
