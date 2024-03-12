@@ -3802,17 +3802,17 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Default taxes applied to local transactions"
-msgstr ""
+msgstr "Tekući porezi primjenjeni na lokalne trasnakcije"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_product_template__supplier_taxes_id
 msgid "Default taxes used when buying the product."
-msgstr ""
+msgstr "Tekući porezi pri kupovini."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_product_template__taxes_id
 msgid "Default taxes used when selling the product."
-msgstr ""
+msgstr "Tekući porezi pri prodaji."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -8540,12 +8540,12 @@ msgstr "Prodaja"
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_onboarding_sale_tax_form
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Sales Tax"
-msgstr "Prodajni porez"
+msgstr "Izlazni PDV"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_open_account_onboarding_sale_tax
 msgid "Sales tax"
-msgstr ""
+msgstr "Izlazni PDV"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice__user_id
@@ -11910,3 +11910,8 @@ msgstr "Adresa za dostavu"
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Accounting Firms mode"
 msgstr "Način rada za računovodstvena preduzeća"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Domestic country of your accounting"
+msgstr "Matična država za računovodstvo"
