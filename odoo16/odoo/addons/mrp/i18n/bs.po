@@ -1849,17 +1849,17 @@ msgstr "Radni nalog proizvodnje"
 #: model_terms:ir.ui.view,arch_db:mrp.view_production_graph
 #: model_terms:ir.ui.view,arch_db:mrp.view_production_pivot
 msgid "Manufacturing Orders"
-msgstr "Radni nalozi proizvodnje"
+msgstr "Proizvodni nalozi"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Manufacturing Orders which are currently in production."
-msgstr "Radni nalozi proizvodnje koji su trenutno u proizvodnji."
+msgstr "Proizvodni nalozi trenutno u proizvodnji."
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Manufacturing Orders which are in confirmed state."
-msgstr "Nalozi proizvodnje koji su u potvrđenom statusu."
+msgstr "Proizvodni nalozi sa statusom 'potvrđen'."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__ready_to_produce
@@ -4614,13 +4614,6 @@ msgid "Starred"
 msgstr "Sa zvjezdicom"
 
 #. module: mrp
-#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__mrp_production_split_id
-#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_split_form
-#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_split_multi_form
-msgid "Split Production"
-msgstr "Podijeli proizvodnju"
-
-#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__date
 msgid "Schedule Date"
 msgstr "Zakazani datum"
@@ -4658,3 +4651,15 @@ msgstr "<span class=\"o_stat_text\">Zaostali nalozi</span>"
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "<span class=\"o_stat_text\">Child MO</span>"
 msgstr "<span class=\"o_stat_text\">Podređeni PN</span>"
+
+#. module: mrp
+#: model:ir.actions.act_window,name:mrp.action_mrp_production_split
+msgid "Split production"
+msgstr "Podjeli proizvodnju"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__mrp_production_split_id
+#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_split_form
+#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_split_multi_form
+msgid "Split Production"
+msgstr "Podijeli proizvodnju"

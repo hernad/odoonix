@@ -4604,7 +4604,7 @@ msgstr "Pravila nadopune"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.warehouse_orderpoint_search
 msgid "Reordering Rules Search"
-msgstr "Pretraga pravila nadopune"
+msgstr "Pretraga pravila za ponovljeno naručivanje"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_product_replenish
@@ -5692,6 +5692,8 @@ msgid ""
 "The stock will be reserved for operations waiting for availability and the "
 "reordering rules will be triggered."
 msgstr ""
+"Zalihe će biti rezervisane za operacije koje čekaju dostupnost."
+" Pravila ponovljenog naručivanja će biti aktivirana."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_rule__propagate_warehouse_id
