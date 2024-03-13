@@ -2981,7 +2981,7 @@ msgstr ""
 #. module: account
 #: model:ir.actions.act_window,name:account.action_open_account_onboarding_invoice_layout
 msgid "Configure your document layout"
-msgstr ""
+msgstr "Konfiguriši izgled dokumenta"
 
 #. module: account
 #. odoo-python
@@ -2992,7 +2992,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 #, python-format
 msgid "Confirm"
-msgstr ""
+msgstr "Potvrdi"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_invoice_confirm
