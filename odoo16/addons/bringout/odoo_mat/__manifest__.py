@@ -4,7 +4,7 @@
 # Author: Ernad Husremovic
 # mail:   hernad@bring.out.ba
 {
-    "name": "Bosnia and Herzegovina",
+    "name": "Odoo materijalno",
     "description": """
 odoo materijalno
 """,
@@ -17,7 +17,7 @@ odoo materijalno
         "account",
         "product",
         "om_account_accountant",
-        "l10n_generic_coa",
+        #"l10n_generic_coa",
         "analytic",
         "mrp",
         "mrp_account",
@@ -36,19 +36,19 @@ odoo materijalno
         "purchase_mrp",
         "sale_management",
         "sale_mrp",
-        "sale_project",
-        "sale_project_stock",
+        #"sale_project",
+        #"sale_project_stock",
         "uom",
         "product_print_zpl_barcode",
         "product_multiple_barcodes",
-        "project",
-        "project_mrp",
-        "project_purchase",
-        "project_sale_expense",
-        "maintenance"
+        #"project",
+        #"project_mrp",
+        #"project_purchase",
+        #"project_sale_expense",
+        #"maintenance"
     ],
     'data': [
     ],
     "active": False,
-    'license': 'MIT',
+    'license': 'LGPL-3',
 }
