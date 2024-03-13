@@ -517,7 +517,7 @@ msgstr "Bilo koji"
 #: code:addons/web/static/src/xml/base.xml:1203
 #, python-format
 msgid "Apply"
-msgstr "Primjeni"
+msgstr "Primijeni"
 
 #. module: web
 #. openerp-web

@@ -6495,7 +6495,7 @@ msgstr "Termini aplikacije"
 #: model_terms:ir.ui.view,arch_db:base.base_onboarding_company_form
 #: model_terms:ir.ui.view,arch_db:base.res_config_view_base
 msgid "Apply"
-msgstr "Primjeni"
+msgstr "Primijeni"
 
 #. module: base
 #: code:addons/base/models/ir_module.py:627

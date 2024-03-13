@@ -919,7 +919,7 @@ msgstr "Primjenjivo na skladište"
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_track_confirmation
 msgid "Apply"
-msgstr ""
+msgstr "Primijeni"
 
 #. module: stock
 #. odoo-javascript
@@ -9481,6 +9481,8 @@ msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
 "<i>apply</i> Odoo will process all the quantities."
 msgstr ""
+"Niste evidentirali <i>preuzete</i> količine, potvrdom "
+"<i>primijeni</i> Odoo će procesirati sve količine."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
