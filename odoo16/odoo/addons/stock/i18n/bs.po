@@ -836,12 +836,13 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move_line__move_id
 msgid "Change to a better name"
-msgstr ""
+msgstr "Promjeni u bolje ime"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+#: model_terms:ir.ui.view,arch_db:stock.vpicktree
 msgid "Check Availability"
-msgstr ""
+msgstr "Provjeri dostupnost"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__has_packages
@@ -3876,7 +3877,7 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_picking
 msgid "Picking Operations"
-msgstr "Operacije prikupljanja"
+msgstr "Prijemna lista"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_picking_type

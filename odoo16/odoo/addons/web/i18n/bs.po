@@ -2829,7 +2829,7 @@ msgstr "Sačuvaj"
 #: code:addons/web/static/src/js/views/view_dialogs.js:137
 #, python-format
 msgid "Save & Close"
-msgstr ""
+msgstr "Snimi pa zatvori"
 
 #. module: web
 #. openerp-web

@@ -564,3 +564,15 @@ msgstr "Podplanovi"
 #, python-format
 msgid "Analytical Plans"
 msgstr "Analitički planovi"
+
+#. module: analytic
+#. odoo-javascript
+#: code:addons/analytic/static/src/components/analytic_distribution/analytic_distribution.js:0
+#, python-format
+msgid "Analytic Distribution Template"
+msgstr "Predložak analitičke distribucije"
+
+#. module: analytic
+#: model_terms:ir.ui.view,arch_db:analytic.account_analytic_distribution_model_form_view
+msgid "Simultaneous conditions to meet"
+msgstr "Uslovi koje treba ispuniti"

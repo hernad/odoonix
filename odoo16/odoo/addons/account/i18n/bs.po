@@ -10307,6 +10307,8 @@ msgid ""
 "This %s has been created from: <a href=# data-oe-model=account.invoice data-"
 "oe-id=%d>%s</a><br>Reason: %s"
 msgstr ""
+"Ovaj %s je kreiran od: <a href=# data-oe-model=account.invoice data-"
+"oe-id=%d>%s</a><br>Razlog: %s"
 
 #. module: account
 #: code:addons/account/models/account_journal_dashboard.py:100
@@ -12081,3 +12083,10 @@ msgstr "Prefiks finansijskih konta"
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Miscellaneous"
 msgstr "Razno"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_journal_dashboard.py:0
+#, python-format
+msgid "Not Due"
+msgstr "Nije dospjelo"

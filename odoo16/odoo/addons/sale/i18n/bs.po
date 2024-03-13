@@ -4155,3 +4155,8 @@ msgstr "Dodajte nekoliko varijanti za narudžbu iz tabele"
 #: model:ir.actions.server,name:sale.model_sale_order_action_quotation_sent
 msgid "Mark Quotation as Sent"
 msgstr "Označi ponudu kao poslanu"
+
+#. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_order_line__analytic_distribution
+msgid "Analytic"
+msgstr "Analitika"
