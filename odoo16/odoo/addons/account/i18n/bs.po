@@ -12061,3 +12061,10 @@ msgstr "Korištenje storniranja u računovodstvu"
 #: model:ir.model.fields,field_description:account.field_account_journal__entries_count
 msgid "Entries Count"
 msgstr "Broj stavki"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/product.py:0
+#, python-format
+msgid "%s Incl. Taxes"
+msgstr "%s sa PDV"

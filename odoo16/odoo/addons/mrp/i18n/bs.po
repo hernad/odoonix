@@ -4792,3 +4792,8 @@ msgstr "? To može dovesti do nedosljednosti zaliha na skladištu."
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__operation_id
 msgid "Produced in Operation"
 msgstr "Proizvedeno u operaciji"
+
+#. module: mrp
+#: model:ir.ui.menu,name:mrp.menu_procurement_compute_mrp
+msgid "Run Scheduler"
+msgstr "Pokreni planer"
