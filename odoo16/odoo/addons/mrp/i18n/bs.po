@@ -3039,7 +3039,7 @@ msgstr "Pretraži radne naloge"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_workcenter_search
 msgid "Search for mrp workcenter"
-msgstr "Pretraži za radnim centrima proizvodnje"
+msgstr "Traži radni centar proizvodnje"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
@@ -3050,7 +3050,7 @@ msgstr "Osiguranje dodatnog vremena"
 #: model:ir.model.fields,help:mrp.field_res_company__manufacturing_lead
 #: model:ir.model.fields,help:mrp.field_res_config_settings__manufacturing_lead
 msgid "Security days for each manufacturing operation."
-msgstr "Rezervni dani za svaku operaciju proizvodnje"
+msgstr "Osiguranje dodatnog vremena za svaku operaciju proizvodnje"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__sequence
