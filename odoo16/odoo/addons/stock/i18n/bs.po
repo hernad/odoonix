@@ -2297,12 +2297,12 @@ msgstr "Uključi proizvode kojih nema na zalihama"
 #: model:ir.model.fields,field_description:stock.field_product_template__incoming_qty
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 msgid "Incoming"
-msgstr "Ulazni"
+msgstr "U dolasku"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_receipt_picking_move
 msgid "Incoming  Products"
-msgstr "Proizvodi u dolasku"
+msgstr "Artikli u dolasku"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__in_date
@@ -2312,7 +2312,7 @@ msgstr "Datum dolaska"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__reception_steps
 msgid "Incoming Shipments"
-msgstr "Dolazeće isporuke"
+msgstr "Pošiljke u dolasku"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__product_uom_qty
@@ -3583,12 +3583,12 @@ msgstr "Izlazni tip"
 #: model:ir.model.fields,field_description:stock.field_product_template__outgoing_qty
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 msgid "Outgoing"
-msgstr "Odlazeći"
+msgstr "U odlasku"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__delivery_steps
 msgid "Outgoing Shipments"
-msgstr ""
+msgstr "Isporuke u odlasku"
 
 #. module: stock
 #: code:addons/stock/models/stock_warehouse.py:446
@@ -7361,3 +7361,18 @@ msgstr "Pravila odlaganja"
 #: model:ir.model.fields,field_description:stock.field_stock_putaway_rule__location_out_id
 msgid "Store to sublocation"
 msgstr "Pohrani na podlokaciju"
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
+#: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Inventory On Hand"
+msgstr "Zaliha na stanju"
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Reserve"
+msgstr "Rezervisati"
