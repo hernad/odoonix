@@ -235,7 +235,7 @@ msgstr "<strong>Razlog: </strong>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "<strong>Responsible:</strong><br/>"
-msgstr "<strong>Odgovororno lice:</strong><br/>"
+msgstr "<strong>Odgovorrno lice:</strong><br/>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
@@ -4797,3 +4797,8 @@ msgstr "Proizvedeno u operaciji"
 #: model:ir.ui.menu,name:mrp.menu_procurement_compute_mrp
 msgid "Run Scheduler"
 msgstr "Pokreni planer"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
+msgid "<strong>Product:</strong><br/>"
+msgstr "<strong>Proizvod:</strong><br/>"
