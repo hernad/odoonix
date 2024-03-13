@@ -2267,9 +2267,9 @@ msgid "Overdue"
 msgstr "Dospjele"
 
 #. module: mrp
-#: model:ir.ui.menu,name:mrp.menu_mrp_dashboard
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_bom_form_view
 msgid "Overview"
-msgstr ""
+msgstr "Pregled"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__bom_id
@@ -4675,3 +4675,31 @@ msgstr "PN spremnost"
 #, python-format
 msgid "Production of Draft MO"
 msgstr "Proizvodnja PN-a u pripremi"
+
+#. module: mrp
+#: model:ir.model.fields,help:mrp.field_mrp_production__components_availability
+msgid ""
+"Latest component availability status for this MO. If green, then the MO's "
+"readiness status is ready, as per BOM configuration."
+msgstr ""
+"Posljednji status dostupnosti komponenti u ovom PN. Ako je zeleno, onda PN spreman "
+"za proizvodnju, u skladu sa konfiguracijom sastavnice."
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__consumption
+msgid "Flexible Consumption"
+msgstr "Fleksibilni utrošak"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_bom__consumption__flexible
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_consumption_warning__consumption__flexible
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__consumption__flexible
+msgid "Allowed"
+msgstr "Dozvoljeno"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_bom__consumption__warning
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_consumption_warning__consumption__warning
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__consumption__warning
+msgid "Allowed with warning"
+msgstr "Dozvoljeno sa upozorenjem"
