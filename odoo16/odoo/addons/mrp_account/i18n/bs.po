@@ -44,7 +44,7 @@ msgstr "Proizvod"
 #. module: mrp_bom_cost
 #: model:ir.model,name:mrp_bom_cost.model_product_template
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška proizvoda"
 
 #. module: mrp_bom_cost
 #: code:addons/mrp_bom_cost/models/product.py:40
@@ -53,3 +53,19 @@ msgid ""
 "The inventory valuation of some products %s is automated. You can only "
 "update their cost from the product form."
 msgstr ""
+
+#. module: mrp_account
+#: code:addons/mrp_account/models/mrp_production.py:0
+#: model:ir.model,name:mrp_account.model_account_analytic_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_bom__analytic_account_id
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_production__analytic_account_id
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter__costs_hour_account_id
+#: model_terms:ir.ui.view,arch_db:mrp_account.mrp_production_form_view_inherited
+#, python-format
+msgid "Analytic Account"
+msgstr "Analitički konto"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_production
+msgid "Production Order"
+msgstr "Proizvodni nalog"
