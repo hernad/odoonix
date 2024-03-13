@@ -153,7 +153,7 @@ msgstr "<span>Akcije</span>"
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_bom_line
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_operation_line
 msgid "<span>Minutes</span>"
-msgstr ""
+msgstr "<span>Minuta</span>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.stock_production_type_kanban
@@ -4730,3 +4730,53 @@ msgstr ""
 #: model:ir.model.fields,field_description:mrp.field_res_config_settings__group_unlocked_by_default
 msgid "Unlock Manufacturing Orders"
 msgstr "Otključaj proizvodne naloge"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
+msgid "Unplan"
+msgstr "Izbaci iz plana"
+
+#. module: mrp
+#. odoo-python
+#: code:addons/mrp/models/mrp_production.py:0
+#, python-format
+msgid ""
+"Some work orders are already done, you cannot unplan this manufacturing "
+"order."
+msgstr ""
+"Neki radni nalozi su već realizovani, ne može se izbaciti iz plana takav "
+"proizvodni nalog."
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_tree_editable_view
+msgid "Open Work Order"
+msgstr "Otvori radni nalog"
+#. module: mrp
+#. odoo-python
+#: code:addons/mrp/report/mrp_report_bom_structure.py:0
+#: code:addons/mrp/report/mrp_report_bom_structure.py:0
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_routing_workcenter_form_view
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
+#, python-format
+msgid "minutes"
+msgstr "minuta"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_workorder__state__pending
+msgid "Waiting for another WO"
+msgstr "Čeka se drugi RN"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_workorder__state__waiting
+msgid "Waiting for components"
+msgstr "Čekaju se komponente"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.stock_warn_insufficient_qty_unbuild_form_view
+msgid "from location"
+msgstr "sa lokacije"
+
+#. module: mrp
+#: model_terms:ir.ui.view,arch_db:mrp.stock_warn_insufficient_qty_unbuild_form_view
+msgid "? This may lead to inconsistencies in your inventory."
+msgstr "? To može dovesti do nedosljednosti zaliha na skladištu."

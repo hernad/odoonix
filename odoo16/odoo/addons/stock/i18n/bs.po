@@ -7391,3 +7391,18 @@ msgstr "Zaliha na stanju"
 #, python-format
 msgid "Reserve"
 msgstr "Rezervisati"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_form_view
+msgid "The product is not available in sufficient quantity"
+msgstr "Artikal nije dostupan u dovoljnoj količini"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_scrap_form_view
+msgid "Do you confirm you want to scrap"
+msgstr "Da li potvrđujete da želite otpisati"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_scrap_form_view
+msgid "from location"
+msgstr "sa lokacije"
