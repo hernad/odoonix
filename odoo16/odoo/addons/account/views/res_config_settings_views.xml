@@ -181,6 +181,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- CE-bosnian
                             <div class="col-12 col-lg-6 o_setting_box"
                                 id="update_exchange_rates"
                                 attrs="{'invisible': [('group_multi_currency', '=', False)]}">
@@ -194,6 +195,7 @@
                                     </div>
                                 </div>
                             </div>
+                            -->
                         </div>
                         <h2>Customer Invoices</h2>
                         <div class="row mt16 o_settings_container" id="invoicing_settings">

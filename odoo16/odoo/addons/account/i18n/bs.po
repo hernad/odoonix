@@ -367,7 +367,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "<span title=\"Latest Statement\">Latest Statement</span>"
-msgstr "<span title=\"Latest Statement\">Zadnji nalog knjiženja</span>"
+msgstr "<span title=\"Latest Statement\">Posljednje stanje</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -11972,3 +11972,27 @@ msgstr "Konto izlazni PDV"
 #: model:ir.model.fields,field_description:account.field_account_tax_group__property_advance_tax_payment_account_id
 msgid "Tax Advance Account"
 msgstr "Konto PDV avansi"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "<span>Running Balance</span>"
+msgstr "<span>Tekuće stanje</span>"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__running_balance
+msgid "Running Balance"
+msgstr "Tekuće stanje"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "New Transaction"
+msgstr "Nova transakcija"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Main Currency</span>\n"
+"                                    <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">Glavna valuta</span>\n"
+"                                    <span class=\"fa fa-lg fa-building-o\" title=\"Vrijednosti su specfične za preduzeće.\" aria-label=\"Vrijednosti su specifične za preduzeće.\" groups=\"base.group_multi_company\" role=\"img\"/>"
