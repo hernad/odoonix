@@ -947,7 +947,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Count"
-msgstr "Broj stavaka"
+msgstr "Broj stavki"
 
 #. module: spreadsheet
 #. odoo-javascript

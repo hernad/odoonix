@@ -12056,3 +12056,8 @@ msgstr "Storniranje"
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Use Storno accounting"
 msgstr "Korištenje storniranja u računovodstvu"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__entries_count
+msgid "Entries Count"
+msgstr "Broj stavki"
