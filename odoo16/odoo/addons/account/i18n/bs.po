@@ -8166,7 +8166,7 @@ msgstr "Zatvaranje na izvodima iz banke"
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_vendor_bill_template
 msgid "Record a new vendor bill"
-msgstr "Evidentiraj novi račun dobavljača"
+msgstr "Evidentiraj novi ulazni račun"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -12067,3 +12067,17 @@ msgstr "Broj stavki"
 #, python-format
 msgid "%s Incl. Taxes"
 msgstr "%s sa PDV"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_analytic_applicability__account_prefix
+msgid "Financial Accounts Prefix"
+msgstr "Prefiks finansijskih konta"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.action_account_moves_journal_misc
+#: model:ir.model.fields.selection,name:account.selection__account_journal__type__general
+#: model_terms:ir.ui.view,arch_db:account.view_account_journal_search
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
+msgid "Miscellaneous"
+msgstr "Razno"
