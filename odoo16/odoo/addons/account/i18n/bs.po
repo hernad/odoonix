@@ -6286,7 +6286,7 @@ msgstr "Gubitak"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__loss_account_id
 msgid "Loss Account"
-msgstr "Konto gubitka"
+msgstr "Gubitak"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template__expense_currency_exchange_account_id
@@ -11996,3 +11996,57 @@ msgid ""
 msgstr ""
 "<span class=\"o_form_label\">Glavna valuta</span>\n"
 "                                    <span class=\"fa fa-lg fa-building-o\" title=\"Vrijednosti su specfične za preduzeće.\" aria-label=\"Vrijednosti su specifične za preduzeće.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Default Accounts"
+msgstr "Tekuća konta"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__income_currency_exchange_account_id
+msgid "Gain Account"
+msgstr "Dobit"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/chart_template.py:0
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_suspense_account_id
+#, python-format
+msgid "Bank Suspense Account"
+msgstr "Prelazni račun banke"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_payment_debit_account_id
+msgid "Outstanding Receipts Account"
+msgstr "Kupci duguju"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_payment_credit_account_id
+msgid "Outstanding Payments Account"
+msgstr "Dobavljači potražuju"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__transfer_account_id
+msgid "Internal Transfer Account"
+msgstr ""
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_early_pay_discount_gain_account_id
+msgid "Cash Discount Gain account"
+msgstr "Rabat prihod"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_early_pay_discount_loss_account_id
+msgid "Cash Discount Loss account"
+msgstr "Rabat rashod"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Storno Accounting"
+msgstr "Storniranje"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_chart_template__use_storno_accounting
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Use Storno accounting"
+msgstr "Korištenje storniranja u računovodstvu"

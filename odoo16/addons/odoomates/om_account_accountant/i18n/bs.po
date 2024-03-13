@@ -3,3 +3,8 @@
 #: model_terms:ir.ui.view,arch_db:om_account_accountant.view_partner_property_form
 msgid "Accounting"
 msgstr "Računovodstvo"
+
+#. module: om_account_accountant
+#: model_terms:ir.ui.view,arch_db:om_account_accountant.res_config_settings_view_form
+msgid "Anglo-Saxon Accounting"
+msgstr "Anglo-saksonsko računovodstvo"
