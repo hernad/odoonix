@@ -5492,6 +5492,8 @@ msgid ""
 "When products are needed in <b>%s</b>, <br/> a manufacturing order is "
 "created to fulfill the need."
 msgstr ""
+"Kada su proizvodi potrebni u <b>%s</b>, <br/> proizvodni nalog PN "
+"se kreira da zatovolji potrebu."
 
 #. module: mrp
 #: model_terms:digest.tip,tip_description:mrp.digest_tip_mrp_0
