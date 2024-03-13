@@ -978,12 +978,15 @@ msgid "Configuration"
 msgstr "Konfiguracija"
 
 #. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.lot_label_layout_form_picking
+#: model_terms:ir.ui.view,arch_db:stock.package_level_form_edit_view
+#: model_terms:ir.ui.view,arch_db:stock.picking_label_type_form
+#: model_terms:ir.ui.view,arch_db:stock.stock_inventory_request_count_form_view
 #: model_terms:ir.ui.view,arch_db:stock.stock_package_destination_form_view
 #: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_form_view
-#: model_terms:ir.ui.view,arch_db:stock.view_overprocessed_transfer
 #: model_terms:ir.ui.view,arch_db:stock.view_product_replenish
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_move_operations
-#: model_terms:ir.ui.view,arch_db:stock.view_stock_track_confirmation
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quantity_history
 msgid "Confirm"
 msgstr "Potvrdi"
 
@@ -7338,6 +7341,16 @@ msgstr "Za brojanje"
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "To Apply"
 msgstr "Za primjenu"
+
+#. module: stock
+#. odoo-python
+#. odoo-javascript
+#: code:addons/stock/models/stock_picking.py:0
+#: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
+#: code:addons/stock/static/src/widgets/forecast_widget.xml:0
+#, python-format
+msgid "Not Available"
+msgstr "Nije dostupno"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view

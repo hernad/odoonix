@@ -4663,3 +4663,15 @@ msgstr "Podjeli proizvodnju"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_split_multi_form
 msgid "Split Production"
 msgstr "Podijeli proizvodnju"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__reservation_state
+msgid "MO Readiness"
+msgstr "PN spremnost"
+
+#. module: mrp
+#. odoo-javascript
+#: code:addons/mrp/static/src/mrp_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Production of Draft MO"
+msgstr "Proizvodnja PN-a u pripremi"
