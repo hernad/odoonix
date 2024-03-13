@@ -9487,7 +9487,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "You have processed less products than the initial demand."
-msgstr "Preuzeli ste manje artikala od inicijalne količine."
+msgstr "Preuzeli ste manje artikala od inicijalnog zahtjeva."
 
 #. module: stock
 #. odoo-python
