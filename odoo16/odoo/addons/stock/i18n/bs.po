@@ -1080,7 +1080,7 @@ msgstr "Broj preuzimanja na čekanju"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
 msgid "Counterpart Locations"
-msgstr ""
+msgstr "Protu-lokacije"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
@@ -1573,7 +1573,7 @@ msgstr "Opis za interne transfere"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
 msgid "Description for Receipts"
-msgstr "Objašnjenje za primke"
+msgstr "Opis za primke"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_template__description_pickingout
@@ -7406,3 +7406,15 @@ msgstr "Da li potvrđujete da želite otpisati"
 #: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_scrap_form_view
 msgid "from location"
 msgstr "sa lokacije"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
+msgid ""
+"This note is added to receipt orders (e.g. where to store the product in the"
+" warehouse)."
+msgstr "Ova bilješka je dodana na primke (npr. gdje pohraniti artikal u skladištu)."
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_template_property_form
+msgid "This note is added to delivery orders."
+msgstr "Ova bilješka je dodana za otpremnice."
