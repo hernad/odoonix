@@ -8968,7 +8968,7 @@ msgstr ""
 #. module: account
 #: model:res.groups,name:account.group_account_user
 msgid "Show Full Accounting Features"
-msgstr "Prikaz svih knjigovodstvenih funkcija"
+msgstr "Prikaz svih računovodstvenih funkcija"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment__show_partner_bank_account
@@ -12043,6 +12043,12 @@ msgstr "Rabat rashod"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Storno Accounting"
+msgstr "Storniranje"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_company__account_storno
+#: model:ir.model.fields,field_description:account.field_res_config_settings__account_storno
+msgid "Storno accounting"
 msgstr "Storniranje"
 
 #. module: account
