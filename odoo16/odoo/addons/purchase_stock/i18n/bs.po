@@ -411,3 +411,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
 msgid "Forecast Report"
 msgstr "Projekcija zaliha"
+
+#. module: purchase_stock
+#. odoo-javascript
+#: code:addons/purchase_stock/static/src/purchase_stock_forecasted/forecasted_details.xml:0
+#, python-format
+msgid "Requests for quotation"
+msgstr "Zahtjevi za ponudu (RFQ-ovi)"
