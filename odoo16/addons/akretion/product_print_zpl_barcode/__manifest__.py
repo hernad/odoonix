@@ -37,9 +37,11 @@ This module has been written by Alexis de Lattre from Akretion
     # because the price barcode rule is added by the point_of_sale module
     # (the weight barcode rule is added by the stock module)
     'depends': [
-        'point_of_sale',
+        #'point_of_sale',
+        'product',
         'barcodes',
-        ],
+        'stock' # stock.picking model
+    ],
     'external_dependencies': {'python': ['python-barcode>=0.14.0']},
     'data': [
         'security/ir.model.access.csv',

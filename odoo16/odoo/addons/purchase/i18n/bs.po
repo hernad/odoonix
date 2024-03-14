@@ -2333,7 +2333,7 @@ msgstr ""
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.portal_my_purchase_rfqs
 msgid "Requests For Quotation"
-msgstr ""
+msgstr "Zahtjevi za ponudu (RFQ-ovi)"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_rfq_form

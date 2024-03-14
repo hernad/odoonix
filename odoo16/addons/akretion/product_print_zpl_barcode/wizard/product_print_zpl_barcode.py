@@ -25,15 +25,15 @@ class ProductPrintZplBarcode(models.TransientModel):
         res = super().default_get(fields_list)
         nomenclature = self.env.ref('barcodes.default_barcode_nomenclature')
         company = self.env.company
-        posconfig = self.env['pos.config'].sudo().search(
-            [('company_id', '=', company.id)], limit=1)
-        if posconfig:
-            pricelist = posconfig.pricelist_id
-        else:
-            pricelist = self.env['product.pricelist'].search([
-                '|', ('company_id', '=', False),
-                ('company_id', '=', company.id),
-                ], limit=1)
+        #posconfig = self.env['pos.config'].sudo().search(
+        #    [('company_id', '=', company.id)], limit=1)
+        #if posconfig:
+        #    pricelist = posconfig.pricelist_id
+        #else:
+        pricelist = self.env['product.pricelist'].search([
+            '|', ('company_id', '=', False),
+            ('company_id', '=', company.id),
+            ], limit=1)
         if not pricelist:
             raise UserError(_(
                 "There are no pricelist in company '%s'.") % company.name)

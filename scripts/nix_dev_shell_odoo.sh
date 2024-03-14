@@ -21,14 +21,14 @@ echo "after entering into nix develop shell, type exit to continue"
 echo "------------------------------------------------------------------------"
 nix develop
 
-echo "idem u odoo16 i pokrecem vscode"
-
-nix shell .#nginx-start \
-          .#postgresql-start .#postgresql-stop \
-          .#odoo-python-311 \
-          .#my-wkhtmltopdf \
-          nixpkgs#pkgs.unzip nixpkgs#pkgs.zip \
-          nixpkgs#pkgs.bashInteractive --command sh -c "cd odoo16 && code ."
+#echo "idem u odoo16 i pokrecem vscode"
+#
+#nix shell .#nginx-start \
+#          .#postgresql-start .#postgresql-stop \
+#          .#odoo-python-311 \
+#          .#my-wkhtmltopdf \
+#          nixpkgs#pkgs.unzip nixpkgs#pkgs.zip \
+#          nixpkgs#pkgs.bashInteractive --command sh -c "cd odoo16 && code ."
 
 XDG_DATA_DIRS=$XDG_DATA_DIRS_SAVED
 
