@@ -18,7 +18,7 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__copies
 msgid "# Labels"
-msgstr ""
+msgstr "# Labele"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields.selection,name:product_print_zpl_barcode.selection__product_print_zpl_barcode__label_size__38x25
@@ -28,22 +28,22 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__barcode
 msgid "Barcode"
-msgstr ""
+msgstr "Barkod"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode__nomenclature_id
 msgid "Barcode Nomenclature"
-msgstr ""
+msgstr "Barkod nomenklatura"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__rule_id
 msgid "Barcode Rule"
-msgstr ""
+msgstr "Barkod pravilo"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__barcode_type
 msgid "Barcode Type"
-msgstr ""
+msgstr "Barkod tip"
 
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.res_config_settings_view_form
@@ -53,17 +53,17 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_print_zpl_barcode_form
 msgid "Cancel"
-msgstr ""
+msgstr "Otkaži"
 
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_print_zpl_barcode_form
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode__company_id
 msgid "Company"
-msgstr ""
+msgstr "Preduzeće"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model,name:product_print_zpl_barcode.model_res_config_settings
@@ -85,7 +85,7 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,help:product_print_zpl_barcode.field_product_print_zpl_barcode_line__uom_id
@@ -197,7 +197,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_product__must_print_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_template__must_print_barcode
 msgid "Must Print Barcode"
-msgstr ""
+msgstr "Barkod se mora štampati"
 
 #. module: product_print_zpl_barcode
 #. odoo-python
