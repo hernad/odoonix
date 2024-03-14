@@ -20,8 +20,8 @@ odoo materijalno
         ##"l10n_generic_coa",
         "analytic",
         "mrp",
-        #d"mrp_account",
-        #d"mrp_landed_costs",
+        "mrp_account",
+        "mrp_landed_costs",
 
         ##"mrp_subcontracting",
         ##"mrp_subcontracting_account",
@@ -30,16 +30,16 @@ odoo materijalno
         "stock",
         "barcodes",
         "barcodes_gs1_nomenclature",
-        #d"stock_account",
-        #d"stock_landed_costs",
+        "stock_account",
+        "stock_landed_costs",
         
         ##"stock_picking_batch",
         "purchase",
         
-        #d"purchase_mrp",
+        "purchase_mrp",
         "sale",
         
-        #d"sale_mrp",
+        "sale_mrp",
         
         #"sale_project",
         #"sale_project_stock",
