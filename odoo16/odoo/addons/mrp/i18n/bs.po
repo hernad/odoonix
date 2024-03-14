@@ -3144,7 +3144,7 @@ msgstr "Normalan"
 #: code:addons/mrp/report/mrp_report_bom_structure.py:0
 #, python-format
 msgid "Not Available"
-msgstr ""
+msgstr "Nedostupno"
 
 #. module: mrp
 #. odoo-python
