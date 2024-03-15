@@ -4166,3 +4166,8 @@ msgstr "Analitika"
 #: model:ir.model.fields,field_description:sale.field_product_template__expense_policy
 msgid "Re-Invoice Expenses"
 msgstr "Prefakturiši troškove"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.account_invoice_form
+msgid "Sale Orders"
+msgstr "Narudžbe"
