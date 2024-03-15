@@ -37,18 +37,21 @@ odoo materijalno
         "purchase",
         
         "purchase_mrp",
+        "sale_management",
         "sale",
         
         "sale_mrp",
         
-        #"sale_project",
-        #"sale_project_stock",
+
         "uom",
         
         "product_print_zpl_barcode",
         "product_multiple_barcodes",
         
-        ##"project",
+        "project",
+        "sale_project",
+        "sale_project_stock",
+
         ##"project_mrp",
         ##"project_purchase",
         ##"project_sale_expense",
