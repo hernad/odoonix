@@ -2653,7 +2653,7 @@ msgstr "Lot/Serijski broj"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Lot/Serial Numbers"
-msgstr ""
+msgstr "LOT/SN"
 
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_traceability
