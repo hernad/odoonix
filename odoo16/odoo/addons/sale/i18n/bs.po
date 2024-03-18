@@ -4183,3 +4183,13 @@ msgstr "Narudžbe"
 #, python-format
 msgid "The ordered quantity has been updated."
 msgstr "Naručena količina je ažurirana."
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.product_template_form_view
+msgid "You can invoice them before they are delivered."
+msgstr "Možete ih fakturisati prije isporuke."
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_order_form
+msgid "UoM"
+msgstr "JMJ"

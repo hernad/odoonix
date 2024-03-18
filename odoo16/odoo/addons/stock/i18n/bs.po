@@ -1085,13 +1085,13 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_id
 msgid "Back Order of"
-msgstr "Predhodna narudžba"
+msgstr "Preostalo od narudžbe"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_ids
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "Back Orders"
-msgstr "Predhodne narudžbe"
+msgstr "Preostale narudžbe"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_backorder_confirmation
@@ -1668,19 +1668,19 @@ msgstr "Protu-lokacije"
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__create_backorder
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Create Backorder"
-msgstr "Kreiraj zaostalu narudžbu"
+msgstr "Kreiraj preostalu narudžbu"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Create Backorder?"
-msgstr "Kreiraj zaostalu narudžbu?"
+msgstr "Kreiraj preostalu narudžbu?"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_type_form
 msgid "Create New"
-msgstr ""
+msgstr "Kreiraj novi"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__picking_type_use_create_lots
@@ -1696,6 +1696,9 @@ msgid ""
 "                            products later. Do not create a backorder if you will not\n"
 "                            process the remaining products."
 msgstr ""
+"Kreiraj zaostalu narudžbu (backorder) ako očekujete obradu preostale\n"
+"                            artikle kasnije. Ne kreirajte zaostalu narudžbu ako nećete\n"
+"                            obrađivati preostale artikle."
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.stock_picking_type_action
@@ -2834,12 +2837,12 @@ msgstr "Projekcija zaliha"
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_product_tree
 #, python-format
 msgid "Forecasted Quantity"
-msgstr "Predviđena količina"
+msgstr "Projicirana količina"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__report_stock_quantity__state__in
 msgid "Forecasted Receipts"
-msgstr ""
+msgstr "Projicirane primke"
 
 #. module: stock
 #. odoo-javascript
@@ -2854,12 +2857,12 @@ msgstr "Projekcija zaliha"
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__report_stock_quantity__state__forecast
 msgid "Forecasted Stock"
-msgstr ""
+msgstr "Projicirana zaliha"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__forecast_weight
 msgid "Forecasted Weight"
-msgstr ""
+msgstr "Projicirana težina"
 
 #. module: stock
 #. odoo-javascript
@@ -8025,7 +8028,7 @@ msgstr ""
 "Ovo je količina proizvoda iz perspektive inventure. Za kretanja u statusu "
 "'Gotovo', ovo je količina proizvoda koji su stvarno preneseni. Za ostala "
 "kretanja, to je količina koja je planirana da se prenese. Smanjenjem ove "
-"količine ne generiše zaostalu narudžbu. Mjenjanjem ove količine na "
+"količine ne generiše preostalu narudžbu. Mjenjanjem ove količine na "
 "dodjeljenim kretanjima utiče na rezervaciju proizvoda i trebalo bi ovo "
 "raditi sa pažnjom."
 

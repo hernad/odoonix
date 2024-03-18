@@ -14853,7 +14853,7 @@ msgstr "Ukupno neoporezovano"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "UoM"
-msgstr ""
+msgstr "JMJ"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form

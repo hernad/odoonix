@@ -3746,7 +3746,7 @@ msgstr "Artikal količina"
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__product_tmpl_id
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__product_tmpl_id
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška proizvoda"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__product_uom_id
@@ -5275,7 +5275,7 @@ msgstr "Ukloni rezervaciju"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_tree_view
 msgid "UoM"
-msgstr ""
+msgstr "JMJ"
 
 #. module: mrp
 #. odoo-javascript

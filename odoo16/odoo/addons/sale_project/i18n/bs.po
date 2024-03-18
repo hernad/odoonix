@@ -146,7 +146,7 @@ msgstr ""
 #: code:addons/sale_project/models/product.py:0
 #, python-format
 msgid "Invoice ordered quantities as soon as this service is sold."
-msgstr ""
+msgstr "Naručene količine se fakturišu čim se usluga proda."
 
 #. module: sale_project
 #. odoo-python
