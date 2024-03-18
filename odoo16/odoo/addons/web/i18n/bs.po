@@ -2338,7 +2338,7 @@ msgstr "Isključeno"
 #: code:addons/web/static/src/xml/base.xml:1443
 #, python-format
 msgid "Ok"
-msgstr "U redu"
+msgstr "Uredu"
 
 #. module: web
 #. openerp-web
@@ -4075,3 +4075,21 @@ msgstr "postavljeno"
 #, python-format
 msgid "set (true)"
 msgstr "postavljeno (tačno)"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/legacy/js/views/form/form_controller.js:0
+#: code:addons/web/static/src/views/form/form_controller.js:0
+#, python-format
+msgid "Are you sure that you want to archive this record?"
+msgstr "Jeste li sigurni da želite arhivirati ovaj zapis?"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/legacy/js/views/basic/basic_controller.js:0
+#: code:addons/web/static/src/views/form/form_controller.js:0
+#: code:addons/web/static/src/views/kanban/kanban_record.js:0
+#: code:addons/web/static/src/views/list/list_controller.js:0
+#, python-format
+msgid "Are you sure you want to delete this record?"
+msgstr "Jeste li sigurni da želite izbrisati ovaj zapis?"

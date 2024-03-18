@@ -4330,7 +4330,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Manage product packagings (e.g. pack of 6 bottles, box of 10 pieces)"
-msgstr ""
+msgstr "Upravljaj paketima artikala (npr. paket 6 boca, kutija sa 10 kom)"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_warehouse_orderpoint__trigger__manual
@@ -9246,6 +9246,8 @@ msgid ""
 "You can not delete product moves if the picking is done. You can only "
 "correct the done quantities."
 msgstr ""
+"Ne možete brisati pomjeranja artikala ako je preuzimanje izvršeno. Možete samo "
+"korigovati preuzete količine."
 
 #. module: stock
 #. odoo-python
@@ -9305,7 +9307,7 @@ msgstr ""
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
 msgid "You cannot change a cancelled stock move, create a new line instead."
-msgstr ""
+msgstr "Ne možete ispravljatiotkazano pomjeranja artikla, kreirajte novu stavku."
 
 #. module: stock
 #. odoo-python

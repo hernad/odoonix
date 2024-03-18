@@ -16279,7 +16279,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.demo_failures_dialog
 msgid "Ok"
-msgstr "U redu"
+msgstr "Uredu"
 
 #. module: base
 #: model:res.country,name:base.om
