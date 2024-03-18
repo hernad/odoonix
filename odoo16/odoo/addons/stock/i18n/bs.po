@@ -7137,12 +7137,12 @@ msgstr "Police (Y)"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse
 msgid "Shipments"
-msgstr ""
+msgstr "Isporuke"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Shipping"
-msgstr ""
+msgstr "Isporuka"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__move_type

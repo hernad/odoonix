@@ -1184,12 +1184,12 @@ msgstr "Upravljaj stavkama cjenovnika"
 #. module: product
 #: model:res.groups,name:product.group_stock_packaging
 msgid "Manage Product Packaging"
-msgstr "Upravljajte pakiranjem proizvoda"
+msgstr "Upravljajte pakovanjem artikala"
 
 #. module: product
 #: model:res.groups,name:product.group_product_variant
 msgid "Manage Product Variants"
-msgstr "Upravljaj varijantama proizvoda"
+msgstr "Upravljaj varijantama artikala"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_item_form_view
@@ -1681,12 +1681,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_value__product_tmpl_id
 #: model_terms:ir.ui.view,arch_db:product.product_search_form_view
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška artikla"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_exclusion
 msgid "Product Template Attribute Exclusion"
-msgstr ""
+msgstr "Predloška artikla isključenje atributa"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_line

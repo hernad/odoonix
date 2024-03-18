@@ -193,7 +193,7 @@ msgstr "Grupa naručivanja"
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_product_template
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška artikla"
 
 #. module: purchase_stock
 #: selection:stock.rule,action:0

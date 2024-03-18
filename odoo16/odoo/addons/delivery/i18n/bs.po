@@ -625,7 +625,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model,name:delivery.model_product_packaging
 msgid "Product Packaging"
-msgstr ""
+msgstr "Pakovanja artikala"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier__delivery_type

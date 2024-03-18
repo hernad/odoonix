@@ -454,12 +454,12 @@ msgstr "Naziv proizvoda"
 #. module: stock_landed_costs
 #: model:ir.model,name:stock_landed_costs.model_product_template
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška artikla"
 
 #. module: stock_landed_costs
 #: model_terms:ir.ui.view,arch_db:stock_landed_costs.stock_landed_cost_tree_view
 msgid "Products"
-msgstr "Proizvodi"
+msgstr "Artikli"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__quantity

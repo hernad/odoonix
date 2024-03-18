@@ -259,6 +259,8 @@ msgid ""
 "The following units of measure are used by the system and cannot be deleted: %s\n"
 "You can archive them instead."
 msgstr ""
+"Sljedeće jedinice mjere su korištene i ne mogu biti izbrisane: %s\n"
+"Možete ih arhivirati."
 
 #. module: uom
 #: model:ir.model.constraint,message:uom.constraint_uom_uom_factor_reference_is_one

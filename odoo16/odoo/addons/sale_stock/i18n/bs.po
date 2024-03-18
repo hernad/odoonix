@@ -346,7 +346,7 @@ msgstr "Grupa naručivanja"
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_product_template
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška artikla"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_stock

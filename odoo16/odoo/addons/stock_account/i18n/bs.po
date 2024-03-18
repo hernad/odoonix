@@ -522,7 +522,7 @@ msgstr ""
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_valuation_layer__product_tmpl_id
 msgid "Product Template"
-msgstr "Predlog proizvoda"
+msgstr "Predloška artikla"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_product_product
