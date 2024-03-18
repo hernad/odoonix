@@ -10398,7 +10398,7 @@ msgstr ""
 #. module: account
 #: model_terms:account.payment.term,note:account.account_payment_term_end_following_month
 msgid "Payment terms: End of Following Month"
-msgstr "Uslovi plaćanja: Krajem pratećeg mjeseca"
+msgstr "Uslovi plaćanja: Kraj sljedećeg mjeseca"
 
 #. module: account
 #: model_terms:account.payment.term,note:account.account_payment_term_immediate

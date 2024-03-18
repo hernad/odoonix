@@ -31,12 +31,12 @@ msgstr "Kategorija proizvoda"
 #: model:ir.model.fields,field_description:product.field_product_product__product_variant_count
 #: model:ir.model.fields,field_description:product.field_product_template__product_variant_count
 msgid "# Product Variants"
-msgstr "# "
+msgstr "# Varijante artikla"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__product_count
 msgid "# Products"
-msgstr "# Proizvoda"
+msgstr "# Artikala"
 
 #. module: product
 #: code:addons/product/models/product_pricelist.py:462
@@ -272,7 +272,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__message_attachment_count
 #: model:ir.model.fields,field_description:product.field_product_template__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute__name
@@ -298,7 +298,7 @@ msgstr "Ekstra cijena atributa"
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_exclusion__product_template_attribute_value_id
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_value__product_attribute_value_id
 msgid "Attribute Value"
-msgstr ""
+msgstr "Ime atributa"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.variants_action
@@ -307,7 +307,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_line__value_ids
 #: model_terms:ir.ui.view,arch_db:product.product_attribute_view_form
 msgid "Attribute Values"
-msgstr "Vrijednost atributa"
+msgstr "Vrijednosti atributa"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.attribute_action
@@ -330,7 +330,7 @@ msgstr "Barkod"
 #. module: product
 #: model:ir.model.fields,help:product.field_product_packaging__barcode
 msgid "Barcode used for packaging identification."
-msgstr ""
+msgstr "Barkod korište za identifikaciju pakovanja."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__base
@@ -563,7 +563,7 @@ msgstr "Kreiraj novi cjenovnik"
 #: model_terms:ir.actions.act_window,help:product.product_template_action
 #: model_terms:ir.actions.act_window,help:product.product_template_action_all
 msgid "Create a new product"
-msgstr "Kreirajte novi proizvod"
+msgstr "Kreirajte novi artikal"
 
 #. module: product
 #: model_terms:ir.actions.act_window,help:product.product_normal_action
@@ -1570,24 +1570,24 @@ msgstr "Ispis"
 #: model_terms:ir.ui.view,arch_db:product.product_template_tree_view
 #: selection:product.pricelist.item,applied_on:0
 msgid "Product"
-msgstr "Proizvod"
+msgstr "Artikal"
 
 #. module: product
 #: model:ir.model,name:product.model_product_attribute
 #: model_terms:ir.ui.view,arch_db:product.product_attribute_view_form
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_value_view_form
 msgid "Product Attribute"
-msgstr "Atribut proizvoda"
+msgstr "Atribut artikla"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_value
 msgid "Product Attribute Value"
-msgstr "Vrijednost atributa proizvoda"
+msgstr "Vrijednost atributa artikla"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template_attribute_line__product_template_value_ids
 msgid "Product Attribute Values"
-msgstr ""
+msgstr "Vrijednosti atributa artikla"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_line_form
@@ -1598,20 +1598,20 @@ msgstr "Atributi i vrijednosti proizvoda"
 #: model:ir.model.fields,field_description:product.field_product_product__attribute_line_ids
 #: model:ir.model.fields,field_description:product.field_product_template__attribute_line_ids
 msgid "Product Attributes"
-msgstr "Atributi proizvoda"
+msgstr "Atributi artikla"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_product_barcode
 #: model:ir.actions.report,name:product.report_product_template_barcode
 msgid "Product Barcode (PDF)"
-msgstr ""
+msgstr "Barkod artikla (PDF)"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_category_action_form
 #: model_terms:ir.ui.view,arch_db:product.product_category_list_view
 #: model_terms:ir.ui.view,arch_db:product.product_category_search_view
 msgid "Product Categories"
-msgstr "Kategorije proizvoda"
+msgstr "Kategorije artikala"
 
 #. module: product
 #: model:ir.model,name:product.model_product_category
@@ -1621,43 +1621,43 @@ msgstr "Kategorije proizvoda"
 #: model_terms:ir.ui.view,arch_db:product.product_category_list_view
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Product Category"
-msgstr "Kategorija proizvoda"
+msgstr "Kategorija artikla"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_label
 #: model:ir.actions.report,name:product.report_product_template_label
 msgid "Product Label (PDF)"
-msgstr ""
+msgstr "Labela artikla (PDF)"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "Product Name"
-msgstr "Naziv proizvoda"
+msgstr "Naziv artikla"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__packaging_ids
 #: model:ir.model.fields,field_description:product.field_product_template__packaging_ids
 msgid "Product Packages"
-msgstr "Paketi proizvoda"
+msgstr "Paketi artikala"
 
 #. module: product
 #: model:ir.model,name:product.model_product_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_form_view
 msgid "Product Packaging"
-msgstr ""
+msgstr "Pakovanje artikla"
 
 #. module: product
 #: model:ir.actions.report,name:product.report_product_packaging
 msgid "Product Packaging (PDF)"
-msgstr ""
+msgstr "Pakovanja artikla (PDF)"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.action_packaging_view
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_stock_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_tree_view
 msgid "Product Packagings"
-msgstr "Paketi artikala"
+msgstr "Pakovanja artikala"
 
 #. module: product
 #: model:ir.model,name:product.model_product_price_history
@@ -1667,12 +1667,12 @@ msgstr "Istorija cjenovnika"
 #. module: product
 #: model:ir.model,name:product.model_report_product_report_pricelist
 msgid "Product Price List Report"
-msgstr ""
+msgstr "Izvještaj cjenovnik"
 
 #. module: product
 #: model:ir.model,name:product.model_product_price_list
 msgid "Product Price per Unit Based on Pricelist Version"
-msgstr ""
+msgstr "Cijena artikla po jedinici bazirano na verziji cjenovnika"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template
@@ -1689,18 +1689,18 @@ msgstr "Predloška artikla"
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_exclusion
 msgid "Product Template Attribute Exclusion"
-msgstr "Predloška artikla isključenje atributa"
+msgstr "Predloška artikla bez atributa"
 
 #. module: product
 #: model:ir.model,name:product.model_product_template_attribute_line
 msgid "Product Template Attribute Line"
-msgstr ""
+msgstr "Predloška artikla stavka atributa"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__type
 #: model:ir.model.fields,field_description:product.field_product_template__type
 msgid "Product Type"
-msgstr "Tip proizvoda"
+msgstr "Tip artikla"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo__product_id
@@ -1708,12 +1708,12 @@ msgstr "Tip proizvoda"
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 #: selection:product.pricelist.item,applied_on:0
 msgid "Product Variant"
-msgstr "Varijante proizvoda"
+msgstr "Varijante artikala"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_attribute_value_action
 msgid "Product Variant Values"
-msgstr ""
+msgstr "Vrijednosti varijanti artikala"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_normal_action
@@ -1721,7 +1721,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:product.product_variant_action
 #: model_terms:ir.ui.view,arch_db:product.product_product_tree_view
 msgid "Product Variants"
-msgstr "Varijante proizvoda"
+msgstr "Varijante artikala"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_template_action
@@ -1731,29 +1731,29 @@ msgstr "Varijante proizvoda"
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 #: model_terms:ir.ui.view,arch_db:product.res_config_settings_view_form
 msgid "Products"
-msgstr "Proizvodi"
+msgstr "Artikli"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_search
 msgid "Products Price"
-msgstr "Cijena proizvoda"
+msgstr "Cijena artikla"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_tree
 msgid "Products Price List"
-msgstr "Cjenovnik proizvoda"
+msgstr "Cjenovnik artikala"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_search
 msgid "Products Price Search"
-msgstr "Pretraži cijene proizvoda"
+msgstr "Pretraži cijene artikala"
 
 #. module: product
 #: code:addons/product/models/product.py:475
 #, python-format
 msgid "Products: "
-msgstr "Proizvodi: "
+msgstr "Artikli: "
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template__lst_price
