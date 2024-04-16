@@ -1186,7 +1186,7 @@ msgstr "Kompanije"
 #: model:ir.model.fields,field_description:website.field_website__company_id
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Company"
-msgstr "Kompanija"
+msgstr "Preduzeće"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout_footer_copyright

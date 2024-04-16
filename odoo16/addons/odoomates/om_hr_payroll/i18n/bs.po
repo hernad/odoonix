@@ -350,7 +350,7 @@ msgstr "Kompanije"
 #: model:ir.model.fields,field_description:om_hr_payroll.field_hr_salary_rule__company_id
 #: model:ir.model.fields,field_description:om_hr_payroll.field_hr_salary_rule_category__company_id
 msgid "Company"
-msgstr "Kompanija"
+msgstr "Preduzeće"
 
 #. module: om_hr_payroll
 #: model:hr.salary.rule.category,name:om_hr_payroll.COMP

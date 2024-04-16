@@ -139,7 +139,7 @@ msgstr "Kompanije"
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__company_id
 msgid "Company"
-msgstr "Kompanija"
+msgstr "Preduzeće"
 
 #. module: base_setup
 #: model:ir.model,name:base_setup.model_res_config_settings
