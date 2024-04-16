@@ -6188,3 +6188,11 @@ msgstr ""
 #, python-format
 msgid "Next Activity"
 msgstr "Sljedeća aktivnost"
+
+#. module: mail
+#. odoo-javascript
+#: code:addons/mail/static/src/components/discuss_sidebar/discuss_sidebar.xml:0
+#: code:addons/mail/static/src/components/discuss_sidebar/discuss_sidebar.xml:0
+#, python-format
+msgid "Start a meeting"
+msgstr "Započnite sastanak"
