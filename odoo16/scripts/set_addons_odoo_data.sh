@@ -8,7 +8,7 @@ sudo chmod -R +w odoo-data
 
 for dir in akretion bringout cybrosys OCA bringout_p odoomates ventor
 do 
-   ln -sf `pwd`/addons/${dir}/* $ADDONS/
+   ln -sf `pwd`/3p_addons/${dir}/* $ADDONS/
 done
 
 echo " "
