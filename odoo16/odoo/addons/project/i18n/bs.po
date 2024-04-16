@@ -2777,7 +2777,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Name of the tasks"
-msgstr ""
+msgstr "Naziv zadataka"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__name
@@ -3468,7 +3468,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.edit_project
 msgid "Project description..."
-msgstr ""
+msgstr "Opis projekta..."
 
 #. module: project
 #: model:mail.template,subject:project.project_done_email_template
