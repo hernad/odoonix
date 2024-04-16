@@ -110,7 +110,7 @@ msgstr "Rezervirano"
 #: code:addons/spreadsheet_dashboard_stock_account/data/files/inventory_on_hand_dashboard.json:0
 #, python-format
 msgid "Stock Quantity by Location"
-msgstr ""
+msgstr "Količina zaliha po lokacijama"
 
 #. module: spreadsheet_dashboard_stock_account
 #. openerp-web
