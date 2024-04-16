@@ -2545,6 +2545,7 @@ msgstr "Prijemno sanduče"
 msgid ""
 "Indicates this activity has been created automatically and not by any user."
 msgstr ""
+"Ova aktivnost je kreirana automatski."
 
 #. module: mail
 #. openerp-web
@@ -6196,3 +6197,11 @@ msgstr "Sljedeća aktivnost"
 #, python-format
 msgid "Start a meeting"
 msgstr "Započnite sastanak"
+
+#. module: mail
+#. odoo-javascript
+#: code:addons/mail/static/src/components/message_list/message_list.xml:0
+#: code:addons/mail/static/src/models/mailbox.js:0
+#, python-format
+msgid "History"
+msgstr "Istorija"
