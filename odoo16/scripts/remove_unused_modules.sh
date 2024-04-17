@@ -149,7 +149,7 @@ if [[ $L10N == "off" ]] ; then
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_gcc_invoice"
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_gcc_invoice_stock_account"
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_gcc_pos"
-    MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_generic_coa"
+    #MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_generic_coa"
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_gr"
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_gt"
     MODULES+=" ${ODOO_ADDONS_ROOT}/l10n_hk"
