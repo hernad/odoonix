@@ -178,6 +178,7 @@ in
       ];
 
       shellHook = ''
+        alias np="scripts/start_nginx_then_local_postgresql.sh"
         echo Let’s Nix with nginx !
         echo run: nginx-start\&
         echo "run: export PGDATA=\$(pwd)/pgdata"
@@ -185,8 +186,6 @@ in
         echo "run psql client: psql -h 127.0.0.1 -U postgres -p 15432 postgres"
         echo "create odoo in local database: CREATE ROLE odoo WITH LOGIN PASSWORD 'odoo' CREATEDB;"
         echo "ako je lokalna postgresql baza napravljena, dovoljno je pokreniti skriptu:"
-        echo " "
-        echo "run: scripts/start_nginx_then_local_postgresql.sh"
         echo " "
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
@@ -198,7 +197,10 @@ in
         ln -sf ${python-311}/bin/python ./odoo16/python311        
         ln -sf ${python-311}/bin/python ./odoo17/python311
 
-        echo "type 'exit' to go to nix shell"
+        echo -e "Start nginx and postgresql local server with command: \033[1;32mnp\033[0m"
+        echo " "
+
+        echo "type 'exit' before command 'scripts/nix_shell_odoo.sh'"
 
         
       '';

@@ -3,7 +3,7 @@
 #MODULES="odoo_payroll_oca/payroll_account"
 #MODULES+=" odoo_payroll_oca/payroll_contract_advantages"
 
-ODOO_ADDONS_ROOT="odoo16/odoo/addons"
+ODOO_ADDONS_ROOT="odoo/addons"
 
 ACCOUNT=on
 PRODUCT=on
@@ -17,22 +17,22 @@ MRP=on
 POS=on
 CRM=on
 
-EVENT=off
+EVENT=on
 
 HW=on
 PAYMENT=off
 SMS=off
 
-WEBSITE=off
+WEBSITE=on
 
 L10N=off
 IAP=off
-GAMIFICATION=off
-FLEET=off
-IM_LIVECHAT=off
-HR=off
+GAMIFICATION=on
+FLEET=on
+IM_LIVECHAT=on
+HR=on
 
-REPAIR=off
+REPAIR=on
 MAINTENANCE=on
 
 MICROSOFT=off
@@ -45,8 +45,8 @@ SPREADSHEET=on
 MASS_MAILING=on
 
 SOCIAL_MEDIA=on
-SURVEY=off
-LUNCH=off
+SURVEY=on
+LUNCH=on
 
 
 if [[ $MRP == "off" ]] ; then
