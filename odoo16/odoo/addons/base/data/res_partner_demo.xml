@@ -114,7 +114,7 @@
         </record>
 
         <record id="res_partner_12" model="res.partner">
-            <field name="name">Rebalans doo Sarajevo</field>
+            <field name="name">Sarabon doo Sarajevo</field>
             <field eval="[Command.set([ref('res_partner_category_11')])]" name="category_id"/>
             <field name="is_company">1</field>
             <field name="street">Koševska 55</field>
