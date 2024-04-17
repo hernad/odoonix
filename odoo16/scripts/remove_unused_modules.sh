@@ -338,6 +338,9 @@ fi
 #    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment"
 #    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment_invoice_online_payment_patch"
 
+# wire transfer
+#    MODULES+=" ${ODOO_ADDONS_ROOT}/payment_custom"
+
 if [[ "$PAYMENT" == "off" ]] ; then
     echo ================ remove PAYMENT ========================
 
@@ -348,7 +351,7 @@ if [[ "$PAYMENT" == "off" ]] ; then
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_asiapay"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_authorize"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_buckaroo"
-    MODULES+=" ${ODOO_ADDONS_ROOT}/payment_custom"
+
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_demo"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_flutterwave"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_mercado_pago"
