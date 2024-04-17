@@ -57,17 +57,17 @@
             <field name="image_1920" type="base64" file="base/static/img/res_partner_1-image.png"/>
         </record>
         <record id="res_partner_2" model="res.partner">
-            <field name="name">Deco Addict</field>
+            <field name="name">Zmajevac doo Zenica</field>
             <field eval="[Command.set([ref('base.res_partner_category_14')])]" name="category_id"/>
             <field name="is_company">1</field>
-            <field name="street">77 Santa Barbara Rd</field>
-            <field name="city">Pleasant Hill</field>
+            <field name="street">Travnička 11</field>
+            <field name="city">Zenica</field>
             <field name="state_id" ref='state_us_5'/>
-            <field name="zip">94523</field>
+            <field name="zip">72000</field>
             <field name="country_id" ref="base.ba"/>
-            <field name="email">deco.addict82@example.com</field>
+            <field name="email">zmajevac@zmaj.test.ba</field>
             <field name="phone">(603)-996-3829</field>
-            <field name="website">http://www.deco-addict.com</field>
+            <field name="website">http://www.zmaj.test.ba</field>
             <field name="image_1920" type="base64" file="base/static/img/res_partner_2-image.png"/>
         </record>
         <record id="res_partner_3" model="res.partner">
@@ -114,17 +114,17 @@
         </record>
 
         <record id="res_partner_12" model="res.partner">
-            <field name="name">Azure Interior</field>
+            <field name="name">Rebalans doo Sarajevo</field>
             <field eval="[Command.set([ref('res_partner_category_11')])]" name="category_id"/>
             <field name="is_company">1</field>
-            <field name="street">4557 De Silva St</field>
-            <field name="city">Fremont</field>
+            <field name="street">Koševska 55</field>
+            <field name="city">Sarajevo</field>
             <field name="state_id" ref='state_us_5'/>
-            <field name="zip">94538</field>
+            <field name="zip">71000</field>
             <field name="phone">(870)-931-0505</field>
             <field name="country_id" ref="base.ba"/>
-            <field name="email">azure.Interior24@example.com</field>
-            <field name="website">http://www.azure-interior.com</field>
+            <field name="email">rebalans@test.ba</field>
+            <field name="website">http://rebalans.test.ba</field>
             <field name="image_1920" type="base64" file="base/static/img/res_partner_12-image.png"/>
         </record>
 

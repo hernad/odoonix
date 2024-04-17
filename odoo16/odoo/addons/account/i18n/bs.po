@@ -728,6 +728,8 @@ msgid ""
 "<span class=\"o_form_label\">The following default accounts are used with "
 "certain features.</span>"
 msgstr ""
+"<span class=\"o_form_label\">Slijede tekuća konta za određene "
+"transakcije.</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_form
