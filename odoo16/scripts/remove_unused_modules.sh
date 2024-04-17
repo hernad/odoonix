@@ -332,9 +332,15 @@ if [[ "$POS" == "off" ]] ; then
 
 fi
 
+#payment je bazni modul o kome ovise account_payment, a o account_payment ovisi sale modul
+#    MODULES+=" ${ODOO_ADDONS_ROOT}/payment"
+
+#    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment"
+#    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment_invoice_online_payment_patch"
+
 if [[ "$PAYMENT" == "off" ]] ; then
     echo ================ remove PAYMENT ========================
-    MODULES+=" ${ODOO_ADDONS_ROOT}/payment"
+
     #/data/odoo/odoo-plate/${ODOO_ADDONS_ROOT}/payment/data/payment_provider_data.xml
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_adyen"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_alipay"
@@ -370,8 +376,6 @@ if [[ "$ACCOUNT" == "off" ]] ; then
     MODULES+=" ${ODOO_ADDONS_ROOT}/account_fleet"
 
     MODULES+=" ${ODOO_ADDONS_ROOT}/account_lock"
-    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment"
-    MODULES+=" ${ODOO_ADDONS_ROOT}/account_payment_invoice_online_payment_patch"
     MODULES+=" ${ODOO_ADDONS_ROOT}/account_qr_code_sepa"
     MODULES+=" ${ODOO_ADDONS_ROOT}/account_sequence"
     MODULES+=" ${ODOO_ADDONS_ROOT}/account_tax_python"
