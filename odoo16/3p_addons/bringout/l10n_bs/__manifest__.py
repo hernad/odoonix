@@ -30,6 +30,7 @@ Bosnian cities
         "data/l10n_bs_fbih_chart_data.xml",
         "data/account.group.template.csv",
         "data/account_tax_template_data.xml",
+        "data/account_tax_group_data.xml",
         'data/account_tax_report_data.xml',
         'data/country_enforce_cities.xml',
         'data/res.country.state.csv',
