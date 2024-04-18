@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="bs_sale_vat_17" model="account.tax.template">
+        <field name="sequence">10</field>
+        <field name="description">PDV 17%</field>
+        <field name="name">17%</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">17</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_17"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_003_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_470'),
+                'plus_report_expression_ids': [ref('tax_report_line_103_tag')],
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_470'),
+                'minus_report_expression_ids': [ref('tax_report_line_103_tag')],
+            }),
+        ]"/>
+    </record>
+
+    
+    <record id="bs_sale_vat_0" model="account.tax.template">
+        <field name="sequence">30</field>
+        <field name="description">PDV 0%</field>
+        <field name="name">0%</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_471'),
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_471'),
+            }),
+        ]"/>
+    </record>
+   
+    <record id="bs_purchase_vat_17" model="account.tax.template">
+        <field name="sequence">60</field>
+        <field name="description">PDV 17%</field>
+        <field name="name">17%</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">17</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_17"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_008_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_270'),
+                'plus_report_expression_ids': [ref('tax_report_line_108_tag')],
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_270'),
+                'minus_report_expression_ids': [ref('tax_report_line_108_tag')],
+            }),
+        ]"/>
+    </record>
+   
+    <record id="bs_purchase_vat_0" model="account.tax.template">
+        <field name="sequence">80</field>
+        <field name="description">PDV 0%</field>
+        <field name="name">0%</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+    </record>
+    <record id="bs_purchase_import_vat_0" model="account.tax.template">
+        <field name="sequence">90</field>
+        <field name="description">PDV 0% - uvoz</field>
+        <field name="name">0% - uvoz</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_006_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+    </record>
+    <record id="bs_purchase_import_vat_17" model="account.tax.template">
+        <field name="sequence">100</field>
+        <field name="description">PDV 17% - import general rate</field>
+        <field name="name">17% - import</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">17</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_17"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_006_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_274'),
+                'plus_report_expression_ids': [ref('tax_report_line_106_tag')],
+             }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_fbih_274'),
+                'minus_report_expression_ids': [ref('tax_report_line_106_tag')],
+            }),
+        ]"/>
+    </record>
+   
+    <record id="bs_purchase_farmer_deductible_vat_5" model="account.tax.template">
+        <field name="sequence">120</field>
+        <field name="description">PDV 5% - poljoprivrednici naknada</field>
+        <field name="name">5% - poljoprivrednici deductible</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">5</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_compensation"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_007_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_278'),
+                'plus_report_expression_ids': [ref('tax_report_line_107_tag')],
+             }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('bs_278'),
+                'minus_report_expression_ids': [ref('tax_report_line_107_tag')],
+            }),
+        ]"/>
+    </record>
+    <record id="bs_purchase_farmer_non_deductible_vat_5" model="account.tax.template">
+        <field name="sequence">130</field>
+        <field name="description">PDV 5% - bespovratno poljoprivrednici</field>
+        <field name="name">5% - poljoprivrednici bespovratno</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">5</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="active" eval="True"/>
+        <field name="chart_template_id" ref="l10n_rs_chart_template"/>
+        <field name="tax_group_id" ref="tax_group_vat_compensation"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'plus_report_expression_ids': [ref('tax_report_line_007_tag')],
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0, 0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+    </record>
+</odoo>
