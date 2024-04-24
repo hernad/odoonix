@@ -1,47 +1,26 @@
-"id","name","code","account_type","chart_template_id/id","tag_ids/id","reconcile"
-"current_assets","Gotovina","20","asset_current","l10n_generic_coa.configurable_chart_template","","False"
-"stock_valuation","Stock Valuation","1101","asset_current","l10n_generic_coa.configurable_chart_template","","False"
-"stock_in","Stock Interim (Received)","1102","asset_current","l10n_generic_coa.configurable_chart_template","","True"
-"stock_out","Stock Interim (Delivered)","1103","asset_current","l10n_generic_coa.configurable_chart_template","","True"
-"to_receive_rec","Products to receive","1211","asset_current","l10n_generic_coa.configurable_chart_template","","True"
-"tax_paid","Ulazni PDV plaćen","2609","asset_current","l10n_generic_coa.configurable_chart_template","","False"
-"tax_receivable","Izlazni PDV","470","asset_current","l10n_generic_coa.configurable_chart_template","","False"
-
-"pos_receivable","Kupci maloprodaja (PoS)","1013","asset_receivable","l10n_generic_coa.configurable_chart_template","","True"
-"receivable","Kratkoročna potraživanja","21","asset_receivable","l10n_generic_coa.configurable_chart_template","","True"
-
-"prepayments","Avansi","1410","asset_prepayments","l10n_generic_coa.configurable_chart_template","","False"
-"fixed_assets","Stalna sredstva materijalna","02","asset_fixed","l10n_generic_coa.configurable_chart_template","","False"
-"non_current_assets","Non-current assets","1910","asset_non_current","l10n_generic_coa.configurable_chart_template","","False"
-
-"current_liabilities","Kratkoročne obaveze","42","liability_current","l10n_generic_coa.configurable_chart_template","","False"
-"to_receive_pay","Računi dobavljača za plaćanje","2111","liability_current","l10n_generic_coa.configurable_chart_template","","True"
-"tax_received","Izlazni pdv naplaćen","4709","liability_current","l10n_generic_coa.configurable_chart_template","","False"
-"tax_payable","Ulazni PDV obaveza","260","liability_current","l10n_generic_coa.configurable_chart_template","","False"
-
-"payable","Obaveze iz poslovanja","43","liability_payable","l10n_generic_coa.configurable_chart_template","","True"
-"non_current_liabilities","Non-current Liabilities","2910","liability_non_current","l10n_generic_coa.configurable_chart_template","","False"
-
-"capital","Kapital","3010","equity","l10n_generic_coa.configurable_chart_template","","False"
-"dividends","Dividende","3020","equity","l10n_generic_coa.configurable_chart_template","","False"
-
-"income","Prihodi","60","income","l10n_generic_coa.configurable_chart_template","account.account_tag_operating","False"
-"income_currency_exchange","Prihodi od kursnih razlika","4410","income","l10n_generic_coa.configurable_chart_template","account.account_tag_financing","False"
-"cash_diff_income","Kursne razlike pozitivna razlika u novcu","4420","income","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"cash_discount_gain","Cash Discount Gain","4430","income","l10n_generic_coa.configurable_chart_template","","False"
-"other_income","Ostali prihodi","4500","income_other","l10n_generic_coa.configurable_chart_template","","False"
-
-
-"cost_of_goods_sold","Nabavna vrijednost","5100","expense_direct_cost","l10n_generic_coa.configurable_chart_template","account.account_tag_operating","False"
-
-"expense","Troškovi","5000","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_operating","False"
-"expense_invest","Troškovi nabavke opreme","6110","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"expense_rent","Troškovi rente","6120","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"expense_finance","Troškovi banke","6200","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_financing","False"
-"expense_salary","Troškovi plata","6300","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_operating","False"
-"expense_currency_exchange","Troškovi kursnih razlika","6410","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_financing","False"
-"cash_diff_expense","Kursne razlike gubitak u novcu","6420","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"expense_rd","Troškovi razvoja","9610","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"expense_sales","Troškovi prodaje","9620","expense","l10n_generic_coa.configurable_chart_template","account.account_tag_investing","False"
-"cash_discount_loss","Rabat u maloprodaji","6430","expense","l10n_generic_coa.configurable_chart_template","","False"
-
+"id","code","account_type","chart_template_id/id","name","note","reconcile"
+"non_current_assets","0","asset_non_current","l10n_generic_coa.configurable_chart_template","STALNA SREDSTVA I DUGOROČNI PLASMANI",,
+"fixed_assets","022","asset_non_current","l10n_generic_coa.configurable_chart_template","Postrojenja i oprema (mašine)",,
+"to_receive_rec","120","asset_current","l10n_generic_coa.configurable_chart_template","Proizvodi u skladištu",,
+"stock_valuation","130","asset_current","l10n_generic_coa.configurable_chart_template","Obračun troška nabavke robe",,
+"stock_in","1301","asset_current","l10n_generic_coa.configurable_chart_template","Ulaz u magacin",,
+"stock_out","1302","asset_current","l10n_generic_coa.configurable_chart_template","Izlaz iz magacina",,
+"prepayments","151","asset_prepayments","l10n_generic_coa.configurable_chart_template","Dati avansi za zalihe i usluge ostalim pravnim licima",,
+"current_assets","20","asset_current","l10n_generic_coa.configurable_chart_template","Gotovina i gotovinski ekvivalenti",,
+"pos_receivable","205","asset_current","l10n_generic_coa.configurable_chart_template","Blagajne, domaća valuta",,
+"receivable","211","asset_receivable","l10n_generic_coa.configurable_chart_template","Kupci u zemlji",,"True"
+"tax_paid","270","asset_current","l10n_generic_coa.configurable_chart_template","PDV u primljenim fakturama",,
+"tax_receivable","2701","asset_current","l10n_generic_coa.configurable_chart_template","PDV u primljenim fakturama",,
+"capital","30","equity","l10n_generic_coa.configurable_chart_template","Osnovni kapital",,
+"dividends","300","equity","l10n_generic_coa.configurable_chart_template","Dionički kapital",,
+"non_current_liabilities","40","liability_non_current","l10n_generic_coa.configurable_chart_template","Dugoročna rezervisanja i odložene porezne obaveze",,
+"current_liabilities","42","liability_current","l10n_generic_coa.configurable_chart_template","Kratkoročne finansijske obaveze",,
+"payable","43","liability_current","l10n_generic_coa.configurable_chart_template","Obaveze iz poslovanja",,
+"to_receive_pay","432","liability_payable","l10n_generic_coa.configurable_chart_template","Dobavljači u zemlji",,"True"
+"tax_payable","470","liability_current","l10n_generic_coa.configurable_chart_template","PDV po osnovu isporuka drugim obveznicima PDV-a",,
+"tax_received","4700","liability_current","l10n_generic_coa.configurable_chart_template","PDV po osnovu isporuka drugim obveznicima PDV-a",,
+"income","6","income","l10n_generic_coa.configurable_chart_template","PRIHODI",,
+"income_currency_exchange","662","income","l10n_generic_coa.configurable_chart_template","Pozitivne kursne razlike",,
+"cash_diff_income","6620","income","l10n_generic_coa.configurable_chart_template","Pozitivne kursne razlike",,
+"cash_discount_gain","6621","income","l10n_generic_coa.configurable_chart_template","Prihod od rabata dobavljača",,
+"other_income","67","income","l10n_generic_coa.configurable_chart_template","Ostali prihodi i dobici",,
