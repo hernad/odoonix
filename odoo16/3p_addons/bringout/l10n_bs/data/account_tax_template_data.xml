@@ -248,7 +248,7 @@
             (0, 0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('bs_278'),
+                'account_id': ref('bs_fbih_278'),
                 'plus_report_expression_ids': [ref('tax_report_line_107_tag')],
              }),
         ]"/>
@@ -261,7 +261,7 @@
             (0, 0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('bs_278'),
+                'account_id': ref('bs_fbih_278'),
                 'minus_report_expression_ids': [ref('tax_report_line_107_tag')],
             }),
         ]"/>
@@ -275,7 +275,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="active" eval="True"/>
-        <field name="chart_template_id" ref="l10n_rs_chart_template"/>
+        <field name="chart_template_id" ref="l10n_bs_fbih_chart_template"/>
         <field name="tax_group_id" ref="tax_group_vat_compensation"/>
         <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
             (0, 0, {

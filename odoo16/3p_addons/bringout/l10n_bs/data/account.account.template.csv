@@ -122,9 +122,7 @@ code,id,account_type,chart_template_id/id,name,note,reconcile
 21,bs_fbih_21,asset_current,l10n_bs.l10n_bs_fbih_chart_template,Potraživanja od prodaje,,
 210,bs_fbih_210,asset_receivable,l10n_bs.l10n_bs_fbih_chart_template,Kupci - povezana pravna lica,,True
 211,bs_fbih_211,asset_receivable,l10n_bs.l10n_bs_fbih_chart_template,Kupci u zemlji,,True
-2110,bs_fbih_2110,asset_receivable,l10n_bs.l10n_bs_fbih_chart_template,Kupci u zemlji,,True
 212,bs_fbih_212,asset_receivable,l10n_bs.l10n_bs_fbih_chart_template,Kupci u inostranstvu,,True
-2120,bs_fbih_2120,asset_receivable,l10n_bs.l10n_bs_fbih_chart_template,Kupci u inostranstvu,,True
 219,bs_fbih_219,asset_current,l10n_bs.l10n_bs_fbih_chart_template,Ispravka vrijednosti potraživanja od kupaca,,
 22,bs_fbih_22,asset_current,l10n_bs.l10n_bs_fbih_chart_template,Potraživanja iz specifičnih poslova,,
 220,bs_fbih_220,asset_current,l10n_bs.l10n_bs_fbih_chart_template,Potraživanja od izvoznika,,
@@ -240,7 +238,6 @@ code,id,account_type,chart_template_id/id,name,note,reconcile
 430,bs_fbih_430,liability_current,l10n_bs.l10n_bs_fbih_chart_template,"Primljeni avansi, depoziti i kaucije",,
 431,bs_fbih_431,liability_payable,l10n_bs.l10n_bs_fbih_chart_template,Dobavljači - povezana pravna lica,,True
 432,bs_fbih_432,liability_payable,l10n_bs.l10n_bs_fbih_chart_template,Dobavljači u zemlji,,True
-4320,bs_fbih_4320,liability_payable,l10n_bs.l10n_bs_fbih_chart_template,Dobavljači u zemlji,,True
 433,bs_fbih_433,liability_payable,l10n_bs.l10n_bs_fbih_chart_template,Dobavljači u inostranstvu,,True
 439,bs_fbih_439,liability_current,l10n_bs.l10n_bs_fbih_chart_template,Ostale obaveze iz poslovanja,,
 44,bs_fbih_44,liability_current,l10n_bs.l10n_bs_fbih_chart_template,Obaveze iz specifičnih poslova,,
@@ -298,7 +295,6 @@ code,id,account_type,chart_template_id/id,name,note,reconcile
 50,bs_fbih_50,expense,l10n_bs.l10n_bs_fbih_chart_template,Nabavna vrijednost prodate robe,,
 500,bs_fbih_500,expense,l10n_bs.l10n_bs_fbih_chart_template,Nabavka robe,,
 501,bs_fbih_501,expense,l10n_bs.l10n_bs_fbih_chart_template,Nabavna vrijednost prodate robe,,
-5010,bs_fbih_5010,expense,l10n_bs.l10n_bs_fbih_chart_template,Nabavna vrijednost prodate robe,,
 502,bs_fbih_502,expense,l10n_bs.l10n_bs_fbih_chart_template,Nabavna vrijednost prodatih nekretnina pribavljenih radi prodaje,,
 51,bs_fbih_51,expense,l10n_bs.l10n_bs_fbih_chart_template,Materijalni troškovi,,
 510,bs_fbih_510,expense,l10n_bs.l10n_bs_fbih_chart_template,"Nabavka sirovina, materijala, rezervnih dijelova i inventara",,

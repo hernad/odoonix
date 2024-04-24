@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Chart template -->
-    <record id="l10n_rs_chart_template" model="account.chart.template">
+  <data>
+    <record id="l10n_bs_fbih_chart_template" model="account.chart.template">
         <field name="name">Bosna i Hercegovina - Kontni plan FBiH</field>
         <field name="code_digits">7</field>
-
-<!--
-        Many countries use this accounting type for managing their accounting operations. 
-        In anglo- saxon accounting, the costs of sold products are reported only after they are sold/delivered 
-        to the respective customer. But, the costs of the products will be taken into account as soon as 
-        they are received in stock of the company in Continental accounting.
-
-        The expense account will not be affected even if you receive a product or create a bill 
-        in Anglo- Saxon accounting. It will be affected only after the product is invoiced to the final customer. 
-        Create a purchase order for a product (set the inventory valuation of the product as Automated to automatically 
-        record the accounting entries).
--->
         <field name="use_anglo_saxon" eval="False"/>
         <field name="bank_account_code_prefix">200</field>
         <field name="cash_account_code_prefix">205</field>
         <field name="transfer_account_code_prefix">2009</field>
-
         <field name="currency_id" ref="base.BAM"/>
         <field name="country_id" ref="base.bs"/>
     </record>
+
+   </data>
 </odoo>
