@@ -1,5 +1,4 @@
 "code","id","account_type","chart_template_id/id","name","note","reconcile"
-"01","bs_fbih_01","asset_non_current","l10n_bs.l10n_bs_fbih_chart_template","Nematerijalna sredstva",,
 "010","bs_fbih_010","asset_non_current","l10n_bs.l10n_bs_fbih_chart_template","Kapitalizirana ulaganja u razvoj",,
 "011","bs_fbih_011","asset_non_current","l10n_bs.l10n_bs_fbih_chart_template","Koncesije, patenti, licence, zaštitni znakovi i druga prava",,
 "012","bs_fbih_012","asset_non_current","l10n_bs.l10n_bs_fbih_chart_template","Goodwill",,
@@ -104,9 +103,7 @@
 "209","bs_fbih_209","asset_current","l10n_bs.l10n_bs_fbih_chart_template","Oročena novčana sredstva",,
 "210","bs_fbih_210","asset_receivable","l10n_bs.l10n_bs_fbih_chart_template","Kupci - povezana pravna lica",,"True"
 "211","bs_fbih_211","asset_receivable","l10n_bs.l10n_bs_fbih_chart_template","Kupci u zemlji",,"True"
-"2110","bs_fbih_2110","asset_receivable","l10n_bs.l10n_bs_fbih_chart_template","Kupci u zemlji",,"True"
 "212","bs_fbih_212","asset_receivable","l10n_bs.l10n_bs_fbih_chart_template","Kupci u inostranstvu",,"True"
-"2120","bs_fbih_2120","asset_receivable","l10n_bs.l10n_bs_fbih_chart_template","Kupci u inostranstvu",,"True"
 "219","bs_fbih_219","asset_current","l10n_bs.l10n_bs_fbih_chart_template","Ispravka vrijednosti potraživanja od kupaca",,
 "220","bs_fbih_220","asset_current","l10n_bs.l10n_bs_fbih_chart_template","Potraživanja od izvoznika",,
 "221","bs_fbih_221","asset_current","l10n_bs.l10n_bs_fbih_chart_template","Potraživanja po osnovu uvoza za tuđi račun",,
@@ -219,7 +216,6 @@
 "456","bs_fbih_456","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze za ostala neto primanja, naknade troškova i materijalna prava zaposlenih",,
 "457","bs_fbih_457","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze za porez i posebne dažbine na ostala primanja zaposlenih",,
 "458","bs_fbih_458","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze za doprinose u vezi ostalih primanja zaposlenih",,
-"46","bs_fbih_46","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Druge obaveze",,
 "460","bs_fbih_460","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze po osnovu kamata i troškova finansiranja",,
 "461","bs_fbih_461","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze za dividende",,
 "462","bs_fbih_462","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Obaveze za učešće u dobiti",,
