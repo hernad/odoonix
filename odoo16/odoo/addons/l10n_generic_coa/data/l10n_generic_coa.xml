@@ -2,7 +2,7 @@
 <odoo>
     <!-- Account Tax Group -->
     <record id="configurable_chart_template" model="account.chart.template">
-        <field name="name">Kontni plan uzorak</field>
+        <field name="name">Kontni plan generički uzorak</field>
         <field name="code_digits">7</field>
         <field name="bank_account_code_prefix">2000</field>
         <field name="cash_account_code_prefix">2050</field>
