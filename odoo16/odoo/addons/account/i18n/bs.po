@@ -3079,7 +3079,7 @@ msgstr "Datum računa"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Bill Reference"
-msgstr ""
+msgstr "Referenca ulaznog računa"
 
 #. module: account
 #: model:res.groups,name:account.group_account_invoice
