@@ -5,7 +5,7 @@
         <field name="name">Bosna i Hercegovina - Kontni plan FBiH</field>
 
         <!-- Cost of merchandise sold -->
-        <field name="property_account_expense_categ_id" ref="bs_fbih_50"/>
+        <field name="property_account_expense_categ_id" ref="bs_fbih_500"/>
 
         <!-- Sales of merchandise to domestic customers -->
         <field name="property_account_income_categ_id" ref="bs_fbih_601"/>

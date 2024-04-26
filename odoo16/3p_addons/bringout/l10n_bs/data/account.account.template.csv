@@ -197,7 +197,7 @@
 "425","bs_fbih_425","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Kratkoročni dio dugoročnih obaveza po finansijskom lizingu",,
 "427","bs_fbih_427","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Kratkoročne obaveze po fer vrijednosti kroz račun dobiti i gubitka",,
 "429","bs_fbih_429","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Ostale kratkoročne finansijske obaveze",,
-"430","bs_fbih_430","liability_payable","l10n_bs.l10n_bs_fbih_chart_template","Primljeni avansi, depoziti i kaucije",,
+"430","bs_fbih_430","liability_current","l10n_bs.l10n_bs_fbih_chart_template","Primljeni avansi, depoziti i kaucije",,
 "431","bs_fbih_431","liability_payable","l10n_bs.l10n_bs_fbih_chart_template","Dobavljači - povezana pravna lica",,"True"
 "432","bs_fbih_432","liability_payable","l10n_bs.l10n_bs_fbih_chart_template","Dobavljači u zemlji",,"True"
 "433","bs_fbih_433","liability_payable","l10n_bs.l10n_bs_fbih_chart_template","Dobavljači u inostranstvu",,"True"
