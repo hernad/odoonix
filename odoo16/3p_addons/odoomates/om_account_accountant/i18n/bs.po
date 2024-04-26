@@ -8,3 +8,9 @@ msgstr "Računovodstvo"
 #: model_terms:ir.ui.view,arch_db:om_account_accountant.res_config_settings_view_form
 msgid "Anglo-Saxon Accounting"
 msgstr "Anglo-saksonsko računovodstvo"
+
+#. module: om_account_accountant
+#: model:ir.actions.act_window,name:om_account_accountant.action_account_chart_template_form
+#: model:ir.ui.menu,name:om_account_accountant.menu_account_coa_template
+msgid "Chart of Accounts Templates"
+msgstr "Predlošci kontnog plana"

@@ -42,7 +42,6 @@ odoo materijalno
         
         "sale_mrp",
         
-
         "uom",
         
         "product_print_zpl_barcode",
@@ -56,6 +55,10 @@ odoo materijalno
         ##"project_purchase",
         ##"project_sale_expense",
         ##"maintenance"
+
+        "account_reconcile_oca",
+
+        "ventor_base"
     ],
     'data': [
     ],
