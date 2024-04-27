@@ -4636,7 +4636,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "Cust. Payments"
-msgstr ""
+msgstr "Kupci plaćanja"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_column__custom_audit_action_id
@@ -7877,12 +7877,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account.view_move_tree
 #, python-format
 msgid "Journal Entries"
-msgstr "Finansijski nalozi"
+msgstr "Stavke žurnala"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 msgid "Journal Entries by Date"
-msgstr "Finansijski nalozi (datum)"
+msgstr "Stavke žurnala (datum)"
 
 #. module: account
 #. odoo-javascript
@@ -7901,7 +7901,7 @@ msgstr "Finansijski nalozi (datum)"
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_tree
 #, python-format
 msgid "Journal Entry"
-msgstr "Finansijski nalog"
+msgstr "Žurnal"
 
 #. module: account
 #. odoo-python
@@ -7911,6 +7911,8 @@ msgid ""
 "Journal Entry %s is not valid. In order to proceed, the journal items must "
 "include one and only one outstanding payments/receipts account."
 msgstr ""
+"Stavka žurnala %s nije ispravna. Stavke žurnala moraju "
+"uključiti jedan i samo jedan konto neizmirenih plaćanja/priliva."
 
 #. module: account
 #. odoo-python
@@ -9909,35 +9911,35 @@ msgstr ""
 #: code:addons/account/models/chart_template.py:0
 #, python-format
 msgid "Outstanding Payments"
-msgstr "Neplaćene obaveze"
+msgstr "Plaćanje dobavljačima"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_payment_credit_account_id
 msgid "Outstanding Payments Account"
-msgstr "Konto dobavljača"
+msgstr "Konto plaćanja dobavljačima"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
 msgid "Outstanding Payments accounts"
-msgstr "Konta dobavljača"
+msgstr "Konta plaćanja dobavljačima"
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/chart_template.py:0
 #, python-format
 msgid "Outstanding Receipts"
-msgstr "Neplaćeni računi"
+msgstr "Prilivi od kupaca"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__account_journal_payment_debit_account_id
 msgid "Outstanding Receipts Account"
-msgstr "Konto kupaca"
+msgstr "Konto prilova od kupaca"
 
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
 msgid "Outstanding Receipts accounts"
-msgstr "Konta neplaćenih računa"
+msgstr "Konta priliva od kupaca"
 
 #. module: account
 #. odoo-python
