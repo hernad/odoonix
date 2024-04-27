@@ -648,6 +648,8 @@ msgid ""
 "Please upload in specified format ! \n"
 "date, payment reference, reference, partner, amount, currency !"
 msgstr ""
+"Molimo koristite sljedeći format ! \n"
+"date, payment reference, reference, partner, amount, currency !"
 
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,field_description:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__profit_account_id

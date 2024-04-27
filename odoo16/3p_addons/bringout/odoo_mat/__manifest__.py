@@ -57,6 +57,7 @@ odoo materijalno
         ##"maintenance"
 
         "account_reconcile_oca",
+        "account_statement_import_sheet_file",
 
         "ventor_base"
     ],

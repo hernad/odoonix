@@ -125,7 +125,7 @@ class AccountBankStatementImport(models.TransientModel):
                                     'payment_ref': line[1],
                                     'ref': line[2],
                                     'partner_id': self.get_partner(line[3]),
-                                    'amount': line[4],
+                                    'amount': float(line[4]) if isinstance(line[4], str) else line[4],
                                     'currency_id': self.get_currency(line[5])
                                 })
                                 vals_list.append((0, 0, values))
