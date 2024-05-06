@@ -10,7 +10,7 @@ do
 
   
   zip -r ../${ZIP_NAME}.zip --exclude="./.git/*/*" --exclude="./3p_addons/*/*" \
-       --exclude="./odoo-data/*/*" --exclude="./scripts/*/*"  $ADDON/*
+       --exclude="./odoo-data/*/*" --exclude="./*.zip"  --exclude="./scripts/*/*"  $ADDON/*
 
   rsync -avz ../${ZIP_NAME}.zip root@download.svc.bring.out.ba:/data/download/
 done
