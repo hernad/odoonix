@@ -8550,7 +8550,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_move_tree
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
 msgid "Unit"
-msgstr ""
+msgstr "JMJ"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__price_unit
