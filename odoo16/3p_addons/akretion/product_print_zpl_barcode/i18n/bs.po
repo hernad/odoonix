@@ -184,7 +184,7 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode__line_ids
 msgid "Lines"
-msgstr ""
+msgstr "Linije"
 
 #. module: product_print_zpl_barcode
 #. odoo-python
@@ -224,30 +224,30 @@ msgstr ""
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode_line__price_uom
 msgid "Price/UoM"
-msgstr ""
+msgstr "Cijena/JMJ"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model.fields,field_description:product_print_zpl_barcode.field_product_print_zpl_barcode__pricelist_id
 msgid "Pricelist"
-msgstr ""
+msgstr "Cjenovnik"
 
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_print_zpl_barcode_form
 msgid "Print"
-msgstr ""
+msgstr "Štampaj"
 
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_normal_form_view
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_template_only_form_view
 msgid "Print Barcode"
-msgstr ""
+msgstr "Štampa barkoda"
 
 #. module: product_print_zpl_barcode
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_product_tree_view
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.product_template_tree_view
 #: model_terms:ir.ui.view,arch_db:product_print_zpl_barcode.view_picking_form
 msgid "Print Barcodes"
-msgstr ""
+msgstr "Štampa barkodova"
 
 #. module: product_print_zpl_barcode
 #: model:ir.model,name:product_print_zpl_barcode.model_product_template

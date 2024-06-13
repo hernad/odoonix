@@ -84,7 +84,7 @@ class ProductPrintZplBarcode(models.TransientModel):
         if product.barcode:
             line_ids.append((0, 0, {
                 'barcode': product.barcode,
-                'product_name': product.name,
+                'product_name': product.display_name,
                 'product_id': product.id,
                 'copies': copies,
                 }))
@@ -120,9 +120,11 @@ class ProductPrintZplBarcode(models.TransientModel):
         """Called by button for the wizard, 1st step"""
         self.ensure_one()
         zpl_strings = []
+        print_price = False
         for line in self.line_ids:
             barcode = line.barcode
             product_name = line.product_name
+            
             assert barcode
             barcode_len = len(barcode)
             if barcode_len not in (8, 13):
@@ -141,7 +143,7 @@ class ProductPrintZplBarcode(models.TransientModel):
             if line.barcode_type in ('price', 'weight'):
                 barcode, zpl_str = line._prepare_price_weight_barcode_type()
             elif line.barcode_type == 'product':
-                barcode, zpl_str = line._prepare_product_barcode_type()
+                barcode, zpl_str = line._prepare_product_barcode_type(print_price)
             else:
                 raise UserError(_(
                     "Line '%s': barcode type '%s' is not supported for the moment")
@@ -337,25 +339,33 @@ class ProductPrintZplBarcodeLine(models.TransientModel):
         return label
 
     @api.model
-    def _product_barcode_type_zpl(self):
-        label = """
+    def _product_barcode_type_zpl(self, print_price):
+        label_start = """
 ^XA
 ^CI28
 ^PW304
 ^LL200
 ^LH0,20
 ^CF0,30
+"""
+        if print_price:
+            label_price = """
 ^FO15,0^FB270,1,0,C^FD%(price_uom).2f %(currency_symbol)s^FS
+"""
+        else:
+            label_price = ""
+
+        label_end = """
 ^CF0,20
 ^FO15,30^FB270,3,0,C^FD%(product_name)s^FS
 ^FO60,100^%(ean_zpl_command)sN,60^FD%(ean_no_checksum)s^FS
 ^PQ%(copies)s
 ^XZ
 """
-        return label
+        return label_start + label_price + label_end
 
-    def _prepare_product_barcode_type(self):
-        zpl_str = self._product_barcode_type_zpl() % {
+    def _prepare_product_barcode_type(self, print_price):
+        zpl_str = self._product_barcode_type_zpl(print_price) % {
             'product_name': self.product_name,
             'ean_zpl_command': len(self.barcode) == 8 and 'B8' or 'BE',
             'ean_no_checksum': self.barcode[:-1],
