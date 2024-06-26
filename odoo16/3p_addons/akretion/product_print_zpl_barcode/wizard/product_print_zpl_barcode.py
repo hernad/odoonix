@@ -207,7 +207,7 @@ class ProductPrintZplBarcodeLine(models.TransientModel):
     # 1 line = a bit less than 30
     # I don't make product_name a stored computed field because I'm afraid
     # that we may not take the lang of the user
-    product_name = fields.Char('Product Label', required=True, size=56)
+    product_name = fields.Char('Product Label', required=True) #, size=56)
     rule_id = fields.Many2one(
         'barcode.rule', string='Barcode Rule', compute='_compute_rule_id')
     barcode_type = fields.Selection(related='rule_id.type', string="Barcode Type")
@@ -329,7 +329,7 @@ class ProductPrintZplBarcodeLine(models.TransientModel):
 ^CF0,30
 ^FO15,0^FB270,1,0,C^FD%(price).2f %(currency_symbol)s^FS
 ^CF0,20
-^FO15,30^FB270,3,0,C^FD%(product_name)s^FS
+^FO15,30^FB290,4,0,C^FD%(product_name)s^FS
 ^CF0,25
 ^FO15,75^FB270,1,0,C^FD%(quantity).3f %(uom_name)s    %(price_uom).2f %(currency_symbol)s/%(uom_name)s^FS
 ^FO60,110^%(ean_zpl_command)sN,50^FD%(ean_no_checksum)s^FS
@@ -357,8 +357,8 @@ class ProductPrintZplBarcodeLine(models.TransientModel):
 
         label_end = """
 ^CF0,20
-^FO15,30^FB270,3,0,C^FD%(product_name)s^FS
-^FO60,100^%(ean_zpl_command)sN,60^FD%(ean_no_checksum)s^FS
+^FO15,30^FB290,4,0,C^FD%(product_name)s^FS
+^FO60,110^%(ean_zpl_command)sN,60^FD%(ean_no_checksum)s^FS
 ^PQ%(copies)s
 ^XZ
 """
