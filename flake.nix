@@ -141,12 +141,11 @@ in
        
        
        my-odoo-16 = import ./odoo.nix  { inherit pkgs; odooVersion = odooVersion16; python = python-311; };
-       my-odoo-17 = import ./odoo.nix  { inherit pkgs; odooVersion = odooVersion17; python = python-311; };
+       #my-odoo-17 = import ./odoo.nix  { inherit pkgs; odooVersion = odooVersion17; python = python-311; };
 
        
        odoo-16-start = odoo-16-start;
-       odoo-17-start = odoo-17-start;
-       #odoo-17-11-start = odoo-17-11-start;
+       #odoo-17-start = odoo-17-start;
        
        #default = self.packages.${system}.odoo-start;
        #nginx-start = nginx-start;
@@ -169,7 +168,7 @@ in
         nginx-start
      
         odoo-16-start
-        odoo-17-start
+        #odoo-17-start
         postgresql-start
         postgresql-stop
 
@@ -202,7 +201,6 @@ in
 
         echo "type 'exit' before command 'scripts/nix_shell_odoo.sh'"
 
-        
       '';
 
      };
