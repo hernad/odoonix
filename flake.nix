@@ -194,8 +194,7 @@ in
         ln -sf ${python-311}/bin/python ./python311
 
         ln -sf ${python-311}/bin/python ./odoo16/python311        
-        ln -sf ${python-311}/bin/python ./odoo17/python311
-
+        
         echo -e "Start nginx and postgresql local server with command: \033[1;32mnp\033[0m"
         echo " "
 
