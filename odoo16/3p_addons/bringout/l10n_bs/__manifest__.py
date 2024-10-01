@@ -26,7 +26,9 @@ Bosnian cities
         "account"
     ],
     'data': [
+        "data/account_chart_template_data_1.xml",
         "data/account.account.template.csv",
+        "data/account_chart_template_data_2.xml",
         "data/account.group.template.csv",
         "data/account_tax_group_data.xml",
         'data/account_tax_report_data.xml',
