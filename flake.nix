@@ -113,8 +113,8 @@ let
     odooVersion16 = {
        version = "16.0";
        release = "hernad-20240210";
-       hash = "sha256-Wl+/rvfQ3LKTQcchnnWPp9+SHsttc5he02gwlu2EKVM=";
-       url = "https://download.cloud.out.ba/odoo-16-hernad.zip";
+       hash = "sha256-OUPXozGQa3TpWDuy9Ld8QnAdViU/nXS4WCaAMH1kq1A=";
+       url = "https://download.cloud.out.ba/odoo-16-bosnian-20240613.zip";
 
        #release = "20240204";
        #hash = "sha256-ieAlkbUS5b8j/2wRleLkzkVi0H0s7ZreCHbCjFnyKsA=";
