@@ -138,14 +138,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/wizard/accrued_orders.py:0
 #, python-format
-msgid "%s - %s; %s Billed, %s Received at %s each"
+msgid "%s - %s; %s Fakturisano, %s primljeno na %s svaki"
 msgstr ""
 
 #. module: account
 #. odoo-python
 #: code:addons/account/wizard/accrued_orders.py:0
 #, python-format
-msgid "%s - %s; %s Invoiced, %s Delivered at %s each"
+msgid "%s - %s; %s Fakturisano, %s isporučeno na %s each"
 msgstr ""
 
 #. module: account
