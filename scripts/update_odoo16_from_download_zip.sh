@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ODOO16=odoo16
-ODOO16_ZIP=odoo-16-hernad
+ODOO16_ZIP=odoo-16-bosnian-20240613
 
 URL=https://download.cloud.out.ba/${ODOO16_ZIP}.zip
 

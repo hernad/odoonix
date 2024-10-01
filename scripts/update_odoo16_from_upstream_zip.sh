@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "ne koristiti ovo"
+exit 1
+
 ODOO16=odoo16
 ODOO16_ZIP=odoo_16.0.latest
 
