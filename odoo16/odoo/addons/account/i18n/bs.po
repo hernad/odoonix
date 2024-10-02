@@ -550,6 +550,11 @@ msgid ""
 "                                    </span>\n"
 "                                    <span>Followers of the document and</span>"
 msgstr ""
+"<span attrs=\"{'invisible': [('composition_mode', '!=', 'mass_mail')]}\">\n"
+"                                        <strong>Masovno slanje email-ova</strong> za\n"
+"                                        <span>odabrane zapise</span>\n"
+"                                    </span>\n"
+"                                    <span>Pratioci dokumenta i:</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
