@@ -1145,7 +1145,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/discuss.xml:144
 #, python-format
 msgid "Channel settings"
-msgstr ""
+msgstr "Podešenja kanala"
 
 #. module: mail
 #. openerp-web
@@ -6207,3 +6207,13 @@ msgstr "Započnite sastanak"
 #, python-format
 msgid "History"
 msgstr "Istorija"
+
+#. module: mail
+#. odoo-javascript
+#: code:addons/mail/static/src/models/call_view.js:0
+#: model:ir.model.fields,field_description:mail.field_res_users__res_users_settings_id
+#: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
+#: model_terms:ir.ui.view,arch_db:mail.email_template_form
+#, python-format
+msgid "Settings"
+msgstr "Podešenja"
