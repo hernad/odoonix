@@ -15,7 +15,7 @@ description = "odoo nixos developer environment";
 
 inputs = {
     #nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 };
 
 outputs = { self, nixpkgs, ... }@inputs:
@@ -88,13 +88,6 @@ let
       exec ${odoo16}/bin/odoo -c ${./odoo.conf} "$@"
     '';
 
-    odoo-17-start = pkgs.writeShellScriptBin "odoo-17-start" ''
-      exec ${odoo17}/bin/odoo -c ${./odoo.conf} "$@"
-    '';
-    
-    odoo-17-11-start = pkgs.writeShellScriptBin "odoo-17-11-start" ''
-      exec ${odoo17-11}/bin/odoo -c ${./odoo.conf} "$@"
-    '';
 
     #nginx-start = pkgs.writeShellScriptBin "nginx-start" ''
     #   exec ${pkgs.nginx}/bin/nginx -c ${./nginx/nginx.conf} "$@"
@@ -112,7 +105,7 @@ let
 
     odooVersion16 = {
        version = "16.0";
-       release = "hernad-20240210";
+       release = "bosnian-20240613";
        hash = "sha256-OUPXozGQa3TpWDuy9Ld8QnAdViU/nXS4WCaAMH1kq1A=";
        url = "https://download.cloud.out.ba/odoo-16-bosnian-20240613.zip";
 
@@ -189,7 +182,7 @@ in
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
 
-        echo "set (ln -sf) ./python311 ./odoo16/python311 ./odoo17/python311"
+        echo "set (ln -sf) ./python311 ./odoo16/python311"
         
         ln -sf ${python-311}/bin/python ./python311
 
