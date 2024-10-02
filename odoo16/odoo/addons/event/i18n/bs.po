@@ -785,12 +785,12 @@ msgstr "Kompanija"
 #: code:addons/event/models/event.py:504
 #, python-format
 msgid "Compose Email"
-msgstr "Sastavi e-poštu"
+msgstr "Kreiranje email-a"
 
 #. module: event
 #: model:event.type,name:event.event_type_2
 msgid "Conference"
-msgstr ""
+msgstr "Konferencija"
 
 #. module: event
 #: model:event.event,name:event.event_2

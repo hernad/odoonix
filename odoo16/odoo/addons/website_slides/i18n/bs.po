@@ -1709,12 +1709,20 @@ msgstr ""
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.home
 msgid "is empty."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "je prazno."
+>>>>>>> 4d2b66c99c8d875c8713b38e4da62d15e89d5e2b
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_detail_view
 msgid "is private"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "je privatno"
+>>>>>>> 4d2b66c99c8d875c8713b38e4da62d15e89d5e2b
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.embed_slide
@@ -1752,3 +1760,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_social_email
 msgid "your-friend@domain.com"
 msgstr ""
+
+#. module: website_slides
+#: model_terms:ir.ui.view,arch_db:website_slides.slide_channel_invite_view_form
+msgid "Compose Email"
+msgstr "Kreiranje email-a"

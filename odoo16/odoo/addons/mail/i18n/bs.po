@@ -249,16 +249,18 @@ msgstr ""
 msgid "<p>Creating a new record...</p>"
 msgstr ""
 
+
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 msgid ""
-"<span attrs=\"{'invisible': [('composition_mode', '!=', 'mass_mail')]}\">\n"
-"                                <strong>Email mass mailing</strong> on\n"
-"                                <span attrs=\"{'invisible': [('use_active_domain', '=', True)]}\">the selected records</span>\n"
-"                                <span attrs=\"{'invisible': [('use_active_domain', '=', False)]}\">the current search filter</span>.\n"
-"                            </span>\n"
-"                            <span name=\"document_followers_text\" attrs=\"{'invisible':['|', ('model', '=', False), ('composition_mode', '=', 'mass_mail')]}\">Followers of the document and</span>"
+"<span name=\"document_followers_text\" attrs=\"{'invisible':['|', ('model', "
+"'=', False), ('composition_mode', '=', 'mass_mail')]}\">Followers of the "
+"document and</span>"
 msgstr ""
+"<span name=\"document_followers_text\" attrs=\"{'invisible':['|', ('model', "
+"'=', False), ('composition_mode', '=', 'mass_mail')]}\">Pratioci "
+"dokumenta i:</span>"
+
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
@@ -1143,7 +1145,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/discuss.xml:144
 #, python-format
 msgid "Channel settings"
-msgstr ""
+msgstr "Podešenja kanala"
 
 #. module: mail
 #. openerp-web
@@ -1180,7 +1182,7 @@ msgstr "Razgovor"
 #. module: mail
 #: selection:mail.channel,channel_type:0
 msgid "Chat Discussion"
-msgstr "Rasprava razgovora"
+msgstr "Razgovor"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_shortcode_action
@@ -1211,7 +1213,7 @@ msgstr "Zatvori"
 #: code:addons/mail/static/src/xml/abstract_thread_window.xml:67
 #, python-format
 msgid "Close chat window"
-msgstr ""
+msgstr "Zatvori pregled diskusije"
 
 #. module: mail
 #: selection:mail.channel.partner,fold_state:0
@@ -1234,18 +1236,18 @@ msgstr "Zarezom odvojeni id-ovi partnera primaoca"
 msgid ""
 "Comma-separated ids of recipient partners (placeholders may be used here)"
 msgstr ""
-"IDovi zarezom odvojeni partnera primatelja(mogu se koristiti držači mjesta)"
+"Lista partnera za prijem pošte (odvajanje zarezom)"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
 msgid "Comma-separated recipient addresses"
-msgstr "Zarezom odvojenie adrese primaoca"
+msgstr "Lista prijemnih adresa (odvajanje zarezom)"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_email_template_preview__email_to
 #: model:ir.model.fields,help:mail.field_mail_template__email_to
 msgid "Comma-separated recipient addresses (placeholders may be used here)"
-msgstr "Adrese primatelja odvojene zarezom"
+msgstr "Lista prijemnih adresa (odvajanje zarezom)"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
@@ -1266,7 +1268,7 @@ msgstr "Kompanije"
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
 msgid "Compose Email"
-msgstr "Sastavi e-poštu"
+msgstr "Kreiraj email:"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message__composition_mode
@@ -1276,7 +1278,7 @@ msgstr "Mod sastavljanja"
 #. module: mail
 #: model:ir.model,name:mail.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
@@ -2538,7 +2540,7 @@ msgstr "Neaktivni nadimci"
 #: code:addons/mail/static/src/xml/discuss.xml:216
 #, python-format
 msgid "Inbox"
-msgstr "Prijemno sanduče"
+msgstr "Inbox"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_activity__automated
@@ -2557,7 +2559,7 @@ msgstr "Informacija"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity_type__initial_res_model_id
 msgid "Initial model"
-msgstr ""
+msgstr "Inicijalni model"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__parent_id
@@ -6205,3 +6207,23 @@ msgstr "Započnite sastanak"
 #, python-format
 msgid "History"
 msgstr "Istorija"
+
+#. module: mail
+#. odoo-javascript
+#: code:addons/mail/static/src/models/call_view.js:0
+#: model:ir.model.fields,field_description:mail.field_res_users__res_users_settings_id
+#: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
+#: model_terms:ir.ui.view,arch_db:mail.email_template_form
+#, python-format
+msgid "Settings"
+msgstr "Podešenja"
+
+#. module: mail
+#: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
+msgid "Load template"
+msgstr "Učitaj predložak"
+
+#. module: mail
+#: model_terms:ir.ui.view,arch_db:mail.email_template_form
+msgid "Reset Template"
+msgstr "Resetuj predložak"

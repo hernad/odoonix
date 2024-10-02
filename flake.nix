@@ -15,7 +15,7 @@ description = "odoo nixos developer environment";
 
 inputs = {
     #nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 };
 
 outputs = { self, nixpkgs, ... }@inputs:
@@ -88,13 +88,6 @@ let
       exec ${odoo16}/bin/odoo -c ${./odoo.conf} "$@"
     '';
 
-    odoo-17-start = pkgs.writeShellScriptBin "odoo-17-start" ''
-      exec ${odoo17}/bin/odoo -c ${./odoo.conf} "$@"
-    '';
-    
-    odoo-17-11-start = pkgs.writeShellScriptBin "odoo-17-11-start" ''
-      exec ${odoo17-11}/bin/odoo -c ${./odoo.conf} "$@"
-    '';
 
     #nginx-start = pkgs.writeShellScriptBin "nginx-start" ''
     #   exec ${pkgs.nginx}/bin/nginx -c ${./nginx/nginx.conf} "$@"
@@ -112,8 +105,8 @@ let
 
     odooVersion16 = {
        version = "16.0";
-       release = "hernad-20240210";
-       hash = "sha256-OUPXozGQa3TpWDuy9Ld8QnAdViU/nXS4WCaAMH1kq1A=";
+       release = "bosnian-20240613";
+       hash = "sha256-2Ou4EkwvyEc50ZdgLH19q5TKDCrL0ngJP1pXggZC4zQ=";
        url = "https://download.cloud.out.ba/odoo-16-bosnian-20240613.zip";
 
        #release = "20240204";
@@ -189,7 +182,7 @@ in
 
         echo "my-wkhtmltopdf: `${my-wkhtmltopdf}/bin/wkhtmltopdf --version`"
 
-        echo "set (ln -sf) ./python311 ./odoo16/python311 ./odoo17/python311"
+        echo "set (ln -sf) ./python311 ./odoo16/python311"
         
         ln -sf ${python-311}/bin/python ./python311
 
@@ -205,43 +198,6 @@ in
      };
 
 };
-
-#  # Executed by `nix run .#<name>`
-#  apps."<system>"."<name>" = {
-#    type = "app";
-#    program = "<store-path>";
-#  };
-#  # Executed by `nix run . -- <args?>`
-#  apps."<system>".default = { type = "app"; program = "..."; };
-#
-#  # Formatter (alejandra, nixfmt or nixpkgs-fmt)
-#  formatter."<system>" = derivation;
-#  # Used for nixpkgs packages, also accessible via `nix build .#<name>`
-#  legacyPackages."<system>"."<name>" = derivation;
-#  # Overlay, consumed by other flakes
-#  overlays."<name>" = final: prev: { };
-#  # Default overlay
-#  overlays.default = final: prev: { };
-#  # Nixos module, consumed by other flakes
-#  nixosModules."<name>" = { config }: { options = {}; config = {}; };
-#  # Default module
-#  nixosModules.default = { config }: { options = {}; config = {}; };
-#  # Used with `nixos-rebuild switch --flake .#<hostname>`
-#  # nixosConfigurations."<hostname>".config.system.build.toplevel must be a derivation
-#  nixosConfigurations."<hostname>" = {};
-#  # Used by `nix develop .#<name>`
-#  devShells."<system>"."<name>" = derivation;
-#  # Used by `nix develop`
-#  devShells."<system>".default = derivation;
-#  # Hydra build jobs
-#  hydraJobs."<attr>"."<system>" = derivation;
-#  # Used by `nix flake init -t <flake>#<name>`
-#  templates."<name>" = {
-#    path = "<store-path>";
-#    description = "template description goes here?";
-#  };
-#  # Used by `nix flake init -t <flake>`
-#  templates.default = { path = "<store-path>"; description = ""; };
 
 
 }
