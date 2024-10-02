@@ -6222,3 +6222,8 @@ msgstr "Podešenja"
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 msgid "Load template"
 msgstr "Učitaj predložak"
+
+#. module: mail
+#: model_terms:ir.ui.view,arch_db:mail.email_template_form
+msgid "Reset Template"
+msgstr "Resetuj predložak"
