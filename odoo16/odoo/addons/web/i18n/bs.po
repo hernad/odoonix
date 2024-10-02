@@ -3070,11 +3070,18 @@ msgid "Still loading...<br />Please be patient."
 msgstr "Još se učitava...<br />Molimo budite strpljivi."
 
 #. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/core/ui/block_ui.js:0
+#, python-format
+msgid "Please be patient."
+msgstr "Molimo za strpljenje."
+
+#. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/web_calendar.xml:96
 #, python-format
 msgid "Summary:"
-msgstr "Sažetak:"
+msgstr "Rezime:"
 
 #. module: web
 #. openerp-web

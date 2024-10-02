@@ -1180,7 +1180,7 @@ msgstr "Razgovor"
 #. module: mail
 #: selection:mail.channel,channel_type:0
 msgid "Chat Discussion"
-msgstr "Rasprava razgovora"
+msgstr "Razgovor"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_shortcode_action
@@ -1211,7 +1211,7 @@ msgstr "Zatvori"
 #: code:addons/mail/static/src/xml/abstract_thread_window.xml:67
 #, python-format
 msgid "Close chat window"
-msgstr ""
+msgstr "Zatvori pregled diskusije"
 
 #. module: mail
 #: selection:mail.channel.partner,fold_state:0
@@ -1234,18 +1234,18 @@ msgstr "Zarezom odvojeni id-ovi partnera primaoca"
 msgid ""
 "Comma-separated ids of recipient partners (placeholders may be used here)"
 msgstr ""
-"IDovi zarezom odvojeni partnera primatelja(mogu se koristiti držači mjesta)"
+"Lista partnera za prijem pošte (odvajanje zarezom)"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
 msgid "Comma-separated recipient addresses"
-msgstr "Zarezom odvojenie adrese primaoca"
+msgstr "Lista prijemnih adresa (odvajanje zarezom)"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_email_template_preview__email_to
 #: model:ir.model.fields,help:mail.field_mail_template__email_to
 msgid "Comma-separated recipient addresses (placeholders may be used here)"
-msgstr "Adrese primatelja odvojene zarezom"
+msgstr "Lista prijemnih adresa (odvajanje zarezom)"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
@@ -2538,7 +2538,7 @@ msgstr "Neaktivni nadimci"
 #: code:addons/mail/static/src/xml/discuss.xml:216
 #, python-format
 msgid "Inbox"
-msgstr "Prijemno sanduče"
+msgstr "Inbox"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_activity__automated
@@ -2557,7 +2557,7 @@ msgstr "Informacija"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity_type__initial_res_model_id
 msgid "Initial model"
-msgstr ""
+msgstr "Inicijalni model"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__parent_id
