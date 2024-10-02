@@ -823,7 +823,7 @@ msgstr "Valuta preduzeća"
 #: code:addons/purchase/models/purchase.py:0
 #, python-format
 msgid "Compose Email"
-msgstr "Sastavi e-poštu"
+msgstr "Kreiraj email:"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_config
