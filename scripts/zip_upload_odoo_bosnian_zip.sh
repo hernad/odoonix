@@ -10,7 +10,7 @@ rm -rf odoo-16-bosnian/addons
 # odoo local data
 rm -rf odoo-16-bosnian/odoo-data
 
-rm odoo-16-bosnian.zip
+rm $ZIP_NAME.zip
 
 zip -r $ZIP_NAME.zip --exclude="./.git/*/*"  \
    --exclude="./scripts/*/*" \
