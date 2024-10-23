@@ -2,6 +2,7 @@
 
 ZIP_NAME=odoo-16-bosnian-`date +"%Y%m%d"`
 
+if [[ "$1" != "--upload-only" ]] ; then
 rm odoo-16-bosnian/python311
 rm odoo-16-bosnian/odoo.conf
 
@@ -23,8 +24,9 @@ zip -r $ZIP_NAME.zip --exclude="./.git/*/*"  \
    --exclude="./*/python311" \
    --exclude="./*/odoo.conf" \
     odoo16
+fi
 
-if [ "$1" == "--upload" ] ; then
+if [[ "$1" =~ "--upload" ]] ; then
 
   rsync -avz ${ZIP_NAME}.zip root@download.svc.bring.out.ba:/data/download/
   ssh root@download.svc.bring.out.ba ls -lh /data/download
