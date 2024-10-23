@@ -117,7 +117,7 @@ class StockWarehouse(models.Model):
                     'procure_method': 'make_to_order',
                     'company_id': self.company_id.id,
                     'picking_type_id': self.manu_type_id.id,
-                    'route_id': self._find_global_route('mrp.route_warehouse0_manufacture', _('Manufacture')).id
+                    'route_id': self._find_or_create_global_route('mrp.route_warehouse0_manufacture', _('Manufacture')).id
                 },
                 'update_values': {
                     'active': self.manufacture_to_resupply,
@@ -133,7 +133,7 @@ class StockWarehouse(models.Model):
                     'company_id': self.company_id.id,
                     'action': 'pull',
                     'auto': 'manual',
-                    'route_id': self._find_global_route('stock.route_warehouse0_mto', _('Make To Order')).id,
+                    'route_id': self._find_or_create_global_route('stock.route_warehouse0_mto', _('Make To Order')).id,
                     'location_dest_id': production_location.id,
                     'location_src_id': location_src.id,
                     'picking_type_id': self.manu_type_id.id
@@ -150,7 +150,7 @@ class StockWarehouse(models.Model):
                     'company_id': self.company_id.id,
                     'action': 'pull',
                     'auto': 'manual',
-                    'route_id': self._find_global_route('stock.route_warehouse0_mto', _('Make To Order')).id,
+                    'route_id': self._find_or_create_global_route('stock.route_warehouse0_mto', _('Make To Order')).id,
                     'name': self._format_rulename(self.lot_stock_id, self.pbm_loc_id, 'MTO'),
                     'location_dest_id': self.pbm_loc_id.id,
                     'location_src_id': self.lot_stock_id.id,
@@ -173,7 +173,7 @@ class StockWarehouse(models.Model):
                     'company_id': self.company_id.id,
                     'action': 'pull',
                     'auto': 'manual',
-                    'route_id': self._find_global_route('mrp.route_warehouse0_manufacture', _('Manufacture')).id,
+                    'route_id': self._find_or_create_global_route('mrp.route_warehouse0_manufacture', _('Manufacture')).id,
                     'name': self._format_rulename(self.sam_loc_id, self.lot_stock_id, False),
                     'location_dest_id': self.lot_stock_id.id,
                     'location_src_id': self.sam_loc_id.id,
@@ -213,13 +213,9 @@ class StockWarehouse(models.Model):
     def _get_sequence_values(self, name=False, code=False):
         values = super(StockWarehouse, self)._get_sequence_values(name=name, code=code)
         values.update({
-            #'pbm_type_id': {'name': self.name + ' ' + _('Sequence picking before manufacturing'), 'prefix': self.code + '/PC/', 'padding': 5, 'company_id': self.company_id.id},
-            #'sam_type_id': {'name': self.name + ' ' + _('Sequence stock after manufacturing'), 'prefix': self.code + '/SFP/', 'padding': 5, 'company_id': self.company_id.id},
-            #'manu_type_id': {'name': self.name + ' ' + _('Sequence production'), 'prefix': self.code + '/MO/', 'padding': 5, 'company_id': self.company_id.id},
-            # CE-bosnian
-            'pbm_type_id': {'name': self.name + ' ' + _('Sequence picking before manufacturing'), 'prefix': self.code + '/PRP/', 'padding': 5, 'company_id': self.company_id.id},
-            'sam_type_id': {'name': self.name + ' ' + _('Sequence stock after manufacturing'), 'prefix': self.code + '/SNP/', 'padding': 5, 'company_id': self.company_id.id},
-            'manu_type_id': {'name': self.name + ' ' + _('Sequence production'), 'prefix': self.code + '/PN/', 'padding': 5, 'company_id': self.company_id.id},
+            'pbm_type_id': {'name': self.name + ' ' + _('Sequence picking before manufacturing'), 'prefix': self.code + '/PC/', 'padding': 5, 'company_id': self.company_id.id},
+            'sam_type_id': {'name': self.name + ' ' + _('Sequence stock after manufacturing'), 'prefix': self.code + '/SFP/', 'padding': 5, 'company_id': self.company_id.id},
+            'manu_type_id': {'name': self.name + ' ' + _('Sequence production'), 'prefix': self.code + '/MO/', 'padding': 5, 'company_id': self.company_id.id},
         })
         return values
 
@@ -234,7 +230,7 @@ class StockWarehouse(models.Model):
                 'default_location_src_id': self.lot_stock_id.id,
                 'default_location_dest_id': self.pbm_loc_id.id,
                 'sequence': next_sequence + 1,
-                'sequence_code': 'PRP',  # CE-bosnian eng PC
+                'sequence_code': 'PC',
                 'company_id': self.company_id.id,
             },
             'sam_type_id': {
@@ -245,7 +241,7 @@ class StockWarehouse(models.Model):
                 'default_location_src_id': self.sam_loc_id.id,
                 'default_location_dest_id': self.lot_stock_id.id,
                 'sequence': next_sequence + 3,
-                'sequence_code': 'SNP',  # CE-bosnian eng SFP
+                'sequence_code': 'SFP',
                 'company_id': self.company_id.id,
             },
             'manu_type_id': {
@@ -254,7 +250,7 @@ class StockWarehouse(models.Model):
                 'use_create_lots': True,
                 'use_existing_lots': True,
                 'sequence': next_sequence + 2,
-                'sequence_code': 'PN', # CE-bosnian eng MO
+                'sequence_code': 'MO',
                 'company_id': self.company_id.id,
             },
         })

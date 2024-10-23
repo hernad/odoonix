@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!--
     <record id="payment_icon_cc_visa" model="payment.icon">
         <field name="sequence">10</field>
         <field name="name">VISA</field>
@@ -181,6 +180,5 @@
         <field name="name">CitiBanamex</field>
         <field name="image" type="base64" file="payment/static/img/citibanamex.png"/>
     </record>
--->
 
 </odoo>

@@ -11,8 +11,7 @@
     """,
     'category': 'Hidden/Tools',
     'depends': [
-        'iap_mail', 
-        'nonexisting' # CE-bosnia ne trebamo partner-autocomplete
+        'iap_mail',
     ],
     'data': [
         'security/ir.model.access.csv',

@@ -71,10 +71,10 @@ class AccountFiscalPosition(models.Model):
     @api.constrains('zip_from', 'zip_to')
     def _check_zip(self):
         for position in self:
-            if position.zip_from and position.zip_to and position.zip_from > position.zip_to:
-                raise ValidationError(_('Invalid "Zip Range", please configure it properly.'))
+            if bool(position.zip_from) != bool(position.zip_to) or position.zip_from > position.zip_to:
+                raise ValidationError(_('Invalid "Zip Range", You have to configure both "From" and "To" values for the zip range and "To" should be greater than "From".'))
 
-    @api.constrains('country_id', 'state_ids', 'foreign_vat')
+    @api.constrains('country_id', 'country_group_id', 'state_ids', 'foreign_vat')
     def _validate_foreign_vat_country(self):
         for record in self:
             if record.foreign_vat:
@@ -87,15 +87,28 @@ class AccountFiscalPosition(models.Model):
                             raise ValidationError(_("You cannot create a fiscal position with a foreign VAT within your fiscal country without assigning it a state."))
                         else:
                             raise ValidationError(_("You cannot create a fiscal position with a foreign VAT within your fiscal country."))
+                if record.country_group_id and record.country_id:
+                    if record.country_id not in record.country_group_id.country_ids:
+                        raise ValidationError(_("You cannot create a fiscal position with a country outside of the selected country group."))
 
                 similar_fpos_domain = [
                     ('foreign_vat', '!=', False),
-                    ('country_id', '=', record.country_id.id),
                     ('company_id', '=', record.company_id.id),
                     ('id', '!=', record.id),
                 ]
+
+                if record.country_group_id:
+                    foreign_vat_country = self.country_group_id.country_ids.filtered(lambda c: c.code == record.foreign_vat[:2].upper())
+                    if not foreign_vat_country:
+                        raise ValidationError(_("The country code of the foreign VAT number does not match any country in the group."))
+                    similar_fpos_domain += [('country_group_id', '=', record.country_group_id.id), ('country_id', '=', foreign_vat_country.id)]
+                elif record.country_id:
+                    similar_fpos_domain += [('country_id', '=', record.country_id.id), ('country_group_id', '=', False)]
+
                 if record.state_ids:
                     similar_fpos_domain.append(('state_ids', 'in', record.state_ids.ids))
+                else:
+                    similar_fpos_domain.append(('state_ids', '=', False))
 
                 similar_fpos_count = self.env['account.fiscal.position'].search_count(similar_fpos_domain)
                 if similar_fpos_count:
@@ -106,7 +119,7 @@ class AccountFiscalPosition(models.Model):
             return taxes
         result = self.env['account.tax']
         for tax in taxes:
-            taxes_correspondance = self.tax_ids.filtered(lambda t: t.tax_src_id == tax._origin)
+            taxes_correspondance = self.tax_ids.filtered(lambda t: t.tax_src_id == tax._origin and (not t.tax_dest_id or t.tax_dest_active))
             result |= taxes_correspondance.tax_dest_id if taxes_correspondance else tax
         return result
 
@@ -130,23 +143,24 @@ class AccountFiscalPosition(models.Model):
     @api.onchange('country_id')
     def _onchange_country_id(self):
         if self.country_id:
-            self.zip_from = self.zip_to = self.country_group_id = False
+            self.zip_from = self.zip_to = False
             self.state_ids = [(5,)]
             self.states_count = len(self.country_id.state_ids)
 
     @api.onchange('country_group_id')
     def _onchange_country_group_id(self):
         if self.country_group_id:
-            self.zip_from = self.zip_to = self.country_id = False
+            self.zip_from = self.zip_to = False
             self.state_ids = [(5,)]
 
     @api.model
     def _convert_zip_values(self, zip_from='', zip_to=''):
-        max_length = max(len(zip_from), len(zip_to))
-        if zip_from.isdigit():
-            zip_from = zip_from.rjust(max_length, '0')
-        if zip_to.isdigit():
-            zip_to = zip_to.rjust(max_length, '0')
+        if zip_from and zip_to:
+            max_length = max(len(zip_from), len(zip_to))
+            if zip_from.isdigit():
+                zip_from = zip_from.rjust(max_length, '0')
+            if zip_to.isdigit():
+                zip_to = zip_to.rjust(max_length, '0')
         return zip_from, zip_to
 
     @api.model_create_multi
@@ -219,16 +233,38 @@ class AccountFiscalPosition(models.Model):
         if not partner:
             return self.env['account.fiscal.position']
 
-        company = self.env.company
-        intra_eu = vat_exclusion = False
-        if company.vat and partner.vat:
-            eu_country_codes = set(self.env.ref('base.europe').country_ids.mapped('code'))
-            intra_eu = company.vat[:2] in eu_country_codes and partner.vat[:2] in eu_country_codes
-            vat_exclusion = company.vat[:2] == partner.vat[:2]
-
-        # If company and partner have the same vat prefix (and are both within the EU), use invoicing
-        if not delivery or (intra_eu and vat_exclusion):
+        # If no "delivery" partner is specified, we assume it will be the "invoicing" partner.
+        if not delivery:
             delivery = partner
+
+        company = self.env.company
+
+        # The purpose of this part is to avoid making (lot of) extra queries by using ref on 'base.europe'
+        res_model, res_id = self.env['ir.model.data']._xmlid_to_res_model_res_id('base.europe')
+        eu_country_group = self.env[res_model].browse(res_id)
+        eu_country_codes = set(eu_country_group.country_ids.mapped('code'))
+
+        delivery_country = delivery.country_id
+
+        eu_vat_partner = partner.vat and partner.vat[:2] in eu_country_codes
+        eu_partner = partner.country_code in eu_country_codes
+        eu_delivery = delivery.country_code in eu_country_codes
+        domestic_delivery = delivery_country == company.country_id
+
+        vat_required = bool(partner.vat) or domestic_delivery
+
+        # If the delivery is within the EU, the partner does not have a valid EU VAT number and is not from the EU,
+        # then assign the company's country as the delivery country and force vat_required to True
+        # in order to get the domestic FP
+        if eu_delivery and not eu_vat_partner and not eu_partner:
+            delivery_country = company.country_id
+            vat_required = True
+
+        # If the delivery is to the same country as the company's country (domestic delivery),
+        # the partner has a valid EU VAT number but is not from the EU,
+        # we need to force vat_required to False in order to get the EU private FP
+        if domestic_delivery and eu_vat_partner and not eu_partner:
+            vat_required = False
 
         # partner manually set fiscal position always win
         manual_fiscal_position = (
@@ -239,12 +275,11 @@ class AccountFiscalPosition(models.Model):
             return manual_fiscal_position
 
         # First search only matching VAT positions
-        vat_required = bool(partner.vat)
-        fp = self._get_fpos_by_region(delivery.country_id.id, delivery.state_id.id, delivery.zip, vat_required)
+        fp = self._get_fpos_by_region(delivery_country.id, delivery.state_id.id, delivery.zip, vat_required)
 
         # Then if VAT required found no match, try positions that do not require it
         if not fp and vat_required:
-            fp = self._get_fpos_by_region(delivery.country_id.id, delivery.state_id.id, delivery.zip, False)
+            fp = self._get_fpos_by_region(delivery_country.id, delivery.state_id.id, delivery.zip, False)
 
         return fp or self.env['account.fiscal.position']
 
@@ -264,6 +299,7 @@ class AccountFiscalPositionTax(models.Model):
     company_id = fields.Many2one('res.company', string='Company', related='position_id.company_id', store=True)
     tax_src_id = fields.Many2one('account.tax', string='Tax on Product', required=True, check_company=True)
     tax_dest_id = fields.Many2one('account.tax', string='Tax to Apply', check_company=True)
+    tax_dest_active = fields.Boolean(related="tax_dest_id.active")
 
     _sql_constraints = [
         ('tax_src_dest_uniq',
@@ -456,24 +492,24 @@ class ResPartner(models.Model):
 
     credit = fields.Monetary(compute='_credit_debit_get', search=_credit_search,
         string='Total Receivable', help="Total amount this customer owes you.",
-        groups='account.group_account_invoice,account.group_account_manager')
+        groups='account.group_account_invoice,account.group_account_readonly')
     credit_limit = fields.Float(
         string='Credit Limit', help='Credit limit specific to this partner.',
-        groups='account.group_account_invoice,account.group_account_manager',
+        groups='account.group_account_invoice,account.group_account_readonly',
         company_dependent=True, copy=False, readonly=False)
     use_partner_credit_limit = fields.Boolean(
-        string='Partner Limit', groups='account.group_account_invoice,account.group_account_manager',
+        string='Partner Limit', groups='account.group_account_invoice,account.group_account_readonly',
         compute='_compute_use_partner_credit_limit', inverse='_inverse_use_partner_credit_limit')
     show_credit_limit = fields.Boolean(
         default=lambda self: self.env.company.account_use_credit_limit,
-        compute='_compute_show_credit_limit', groups='account.group_account_invoice,account.group_account_manager')
+        compute='_compute_show_credit_limit', groups='account.group_account_invoice,account.group_account_readonly')
     debit = fields.Monetary(
         compute='_credit_debit_get', search=_debit_search, string='Total Payable',
         help="Total amount you have to pay to this vendor.",
-        groups='account.group_account_invoice,account.group_account_manager')
+        groups='account.group_account_invoice,account.group_account_readonly')
     debit_limit = fields.Monetary('Payable Limit')
     total_invoiced = fields.Monetary(compute='_invoice_total', string="Total Invoiced",
-        groups='account.group_account_invoice,account.group_account_manager')
+        groups='account.group_account_invoice,account.group_account_readonly')
     currency_id = fields.Many2one('res.currency', compute='_get_company_currency', readonly=True,
         string="Currency") # currency of amount currency
     journal_item_count = fields.Integer(compute='_compute_journal_item_count', string="Journal Items")

@@ -31,7 +31,6 @@
                 <group expand='0' string='Filters'>
                     <filter name='internal_loc' string="Internal Locations" domain="[('location_id.usage','=', 'internal')]"/>
                     <filter name='transit_loc' string="Transit Locations" domain="[('location_id.usage' ,'=', 'transit')]"/>
-                    <filter name='inventory_loc' string="Inventurisanje" domain="[('location_id.usage' ,'=', 'inventory')]"/>                    
                     <separator/>
                     <filter name="on_hand" string="On Hand" domain="[('on_hand', '=', True)]"/>
                     <filter name="to_count" string="To Count" domain="[('inventory_date', '&lt;=', context_today().strftime('%Y-%m-%d'))]"/>

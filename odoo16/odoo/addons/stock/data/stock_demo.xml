@@ -166,7 +166,7 @@
         </record>
 
         <record id="base.main_company" model="res.company">
-            <field name="name">Moje preduzeće (Sarajevo)</field>
+            <field name="name">My Company (San Francisco)</field>
         </record>
 
         <!-- Create a ir data with the autocreated warehouse -->

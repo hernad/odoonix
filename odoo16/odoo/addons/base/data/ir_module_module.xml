@@ -2,7 +2,6 @@
 <odoo>
     <data>
 
-<!-- CE only
         <record model="ir.module.module" id="base.module_web_studio">
             <field name="name">web_studio</field>
             <field name="shortdesc">Studio</field>
@@ -304,7 +303,5 @@
             <field name="to_buy" eval="True"/>
             <field name="icon">/base/static/img/icons/payment_sepa_direct_debit.png</field>
         </record>
--->
-
     </data>
 </odoo>

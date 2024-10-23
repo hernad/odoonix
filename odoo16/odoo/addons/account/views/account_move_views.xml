@@ -35,7 +35,7 @@
                                         <field name="statement_line_id" readonly="True" attrs="{'invisible': [('statement_line_id','=',False)]}"/>
                                     </group>
                                     <group string="Dates">
-                                        <field name="date" groups="account.group_account_manager"/>
+                                        <field name="date" groups="account.group_account_readonly"/>
                                         <field name="date_maturity"/>
                                     </group>
 
@@ -167,7 +167,7 @@
                     <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
                     <field name="journal_id" readonly="1" options='{"no_open":True}' optional="hide"/>
                     <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
-                    <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('company_id', '=', company_id)]" groups="account.group_account_manager"/>
+                    <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('company_id', '=', company_id)]" groups="account.group_account_readonly"/>
                     <field name="partner_id" optional="show" attrs="{'readonly':[('move_type', '!=', 'entry')]}"/>
                     <field name="ref" optional="hide" readonly="False"/>
                     <field name="product_id" readonly="1" optional="hide"/>
@@ -177,7 +177,7 @@
                     <field name="currency_id" readonly="1" groups="base.group_multi_currency" optional="hide" string="Currency" attrs="{'invisible':[('is_same_currency', '=', True)]}"/>
                     <field name="debit" sum="Total Debit" readonly="1"/>
                     <field name="credit" sum="Total Credit" readonly="1"/>
-                    <field name="tax_tag_ids" string="Tax Grids" widget="many2many_tags" width="0.5" optional="hide"/>
+                    <field name="tax_tag_ids" string="Tax Grids" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" width="0.5" optional="hide"/>
                     <field name="discount_date" string="Discount Date" optional="hide" />
                     <field name="discount_amount_currency" string="Discount Amount" optional="hide" />
                     <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
@@ -344,6 +344,7 @@
                     <filter string="Report Dates" name="date_between" domain="[('date', '&gt;=', context.get('date_from')), ('date', '&lt;=', context.get('date_to'))]" invisible="1"/>
                     <filter string="Report Dates" name="date_before" domain="[('date', '&lt;=', context.get('date_to'))]" invisible="1"/>
                     <separator/>
+                    <filter string="Analytic Accounts" name="analytic_accounts" domain="[('analytic_distribution', 'in', context.get('analytic_ids'))]" invisible="1"/>
                     <group expand="0" string="Group By">
                         <filter string="Journal Entry" name="group_by_move" domain="[]" context="{'group_by': 'move_name'}"/>
                         <filter string="Account" name="group_by_account" domain="[]" context="{'group_by': 'account_id'}"/>
@@ -543,7 +544,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
-                                        <span><field name="amount_total" widget='monetary'/></span>
+                                        <span><field name="amount_total_in_currency_signed" widget='monetary'/></span>
                                         <span><field name="currency_id" invisible="1"/></span>
                                     </div>
                                     <div class="col-6">
@@ -626,27 +627,27 @@
                         />
                     </div>
                     <!-- Invoice outstanding credits -->
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-warning mb-0" role="alert"
                          attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('tax_lock_date_message', '=', False)]}">
                         <field name="tax_lock_date_message" nolabel="1"/>
                     </div>
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-info mb-0" role="alert"
                          attrs="{'invisible': ['|', '|', ('move_type', 'not in', ('out_invoice', 'out_receipt')), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
                         You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding credits</a></bold> for this customer. You can allocate them to mark this invoice as paid.
                     </div>
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-info mb-0" role="alert"
                          attrs="{'invisible': ['|', '|', ('move_type', 'not in', ('in_invoice', 'in_receipt')), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
                         You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding debits</a></bold> for this vendor. You can allocate them to mark this bill as paid.
                     </div>
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-info mb-0" role="alert"
                          attrs="{'invisible': ['|', '|', ('move_type', '!=', 'out_refund'), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
                         You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding debits</a></bold> for this customer. You can allocate them to mark this credit note as paid.
                     </div>
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-info mb-0" role="alert"
                          attrs="{'invisible': ['|', '|', ('move_type', '!=', 'in_refund'), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
                         You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding credits</a></bold> for this vendor. You can allocate them to mark this credit note as paid.
@@ -659,7 +660,7 @@
                          attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('auto_post', '=', 'no'), ('auto_post', '=', 'at_date')]}">
                          <field name="auto_post" readonly="1"/> auto-posting enabled. Next accounting date: <field name="date" readonly="1"/>.<span attrs="{'invisible': [('auto_post_until', '=', False)]}"> The recurrence will end on <field name="auto_post_until" readonly="1"/> (included).</span>
                     </div>
-                    <div groups="account.group_account_invoice,account.group_account_manager"
+                    <div groups="account.group_account_invoice,account.group_account_readonly"
                          class="alert alert-warning mb-0" role="alert"
                          attrs="{'invisible': [('partner_credit_warning', '=', '')]}">
                         <field name="partner_credit_warning"/>
@@ -832,15 +833,15 @@
                                 </div>
 
                                 <label for="journal_id"
-                                       groups="account.group_account_manager"
+                                       groups="account.group_account_readonly"
                                        invisible="context.get('default_journal_id') and context.get('move_type', 'entry') != 'entry'"/>
                                 <div name="journal_div"
                                      class="d-flex"
-                                     groups="account.group_account_manager"
+                                     groups="account.group_account_readonly"
                                      invisible="context.get('default_journal_id') and context.get('move_type', 'entry') != 'entry'">
                                     <field name="journal_id"
                                         options="{'no_create': True, 'no_open': True}"
-                                        attrs="{'readonly': [('posted_before', '=', True)]}"/>
+                                        attrs="{'readonly': [('posted_before', '=', True), ('name', 'not in', (False, '', '/'))]}"/>
                                     <span class="oe_inline o_form_label mx-3"
                                           groups="base.group_multi_currency"
                                           attrs="{'invisible': [('move_type', '=', 'entry')]}"> in </span>
@@ -851,7 +852,7 @@
 
                                 <field name="currency_id"
                                        attrs="{'readonly': [('state', '!=', 'draft')]}"
-                                       groups="!account.group_account_manager,base.group_multi_currency"/>
+                                       groups="!account.group_account_readonly,base.group_multi_currency"/>
 
                             </group>
                         </group>
@@ -891,7 +892,7 @@
                                         <field name="name" widget="section_and_note_text" optional="show"/>
                                         <field name="account_id"
                                                context="{'partner_id': partner_id, 'move_type': parent.move_type}"
-                                               groups="account.group_account_manager"
+                                               groups="account.group_account_readonly"
                                                options="{'no_create': True}"
                                                domain="[('deprecated', '=', False), ('account_type', 'not in', ('asset_receivable', 'liability_payable')), ('company_id', '=', parent.company_id), ('is_off_balance', '=', False)]"
                                                attrs="{'required': [('display_type', 'not in', ('line_note', 'line_section'))]}"/>
@@ -1039,7 +1040,7 @@
                                     </group>
                                 </group>
                             </page>
-                            <page id="aml_tab" string="Journal Items" groups="account.group_account_manager" name="aml_tab">
+                            <page id="aml_tab" string="Journal Items" groups="account.group_account_readonly" name="aml_tab">
                                 <field name="line_ids"
                                        mode="tree,kanban"
                                        context="{
@@ -1306,6 +1307,8 @@
                     <filter name="open" string="Unpaid" domain="[('state', '=', 'posted'), ('payment_state', 'in', ('not_paid', 'partial'))]"/>
                     <!-- in_payment & paid -->
                     <filter name="closed" string="Paid" domain="[('state', '=', 'posted'), ('payment_state', 'in', ('in_payment', 'paid'))]"/>
+                    <!-- reversed -->
+                    <filter name="reversed" string="Reversed" domain="[('state', '=', 'posted'), ('payment_state', '=', 'reversed')]"/>
                     <!-- overdue -->
                     <filter name="late" string="Overdue" domain="[
                         ('invoice_date_due', '&lt;', time.strftime('%Y-%m-%d')),
@@ -1326,10 +1329,14 @@
                         domain="[('my_activity_date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))]"/>
                     <group expand="0" string="Group By">
                         <filter string="Salesperson" name="salesperson" context="{'group_by':'invoice_user_id'}"/>
-                        <filter name="status" string="Status" context="{'group_by':'state'}"/>
+                        <filter string="Partner" name="groupy_by_partner" domain="[]" context="{'group_by': 'partner_id'}"/>
+                        <filter string="Status" name="status" context="{'group_by':'state'}"/>
+                        <filter string="Journal" name="groupy_by_journal" domain="[]" context="{'group_by': 'journal_id'}"/>
                         <separator/>
                         <filter string="Invoice Date" name="invoicedate" context="{'group_by': 'invoice_date'}"/>
                         <filter string="Due Date" name="duedate" context="{'group_by': 'invoice_date_due'}"/>
+                        <filter string="Date" name="group_by_date" context="{'group_by': 'date'}"/>
+                        <filter string="Company" name="group_by_company" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
                         <filter string="Sequence Prefix" name="group_by_sequence_prefix" context="{'group_by': 'sequence_prefix'}" invisible="1"/>
                     </group>
                </search>

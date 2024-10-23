@@ -3,15 +3,15 @@
     <data noupdate="1">
         <!-- Analytic Plans -->
         <record id="analytic_plan_projects" model="account.analytic.plan">
-            <field name="name">Projekti</field>
+            <field name="name">Projects</field>
             <field name="default_applicability">optional</field>
         </record>
         <record id="analytic_plan_departments" model="account.analytic.plan">
-            <field name="name">Odjeljenja</field>
+            <field name="name">Departments</field>
             <field name="default_applicability">optional</field>
         </record>
         <record id="analytic_plan_internal" model="account.analytic.plan">
-            <field name="name">Interno</field>
+            <field name="name">Internal</field>
             <field name="default_applicability">unavailable</field>
         </record>
         <!-- Analytic Accounts -->
@@ -24,7 +24,7 @@
             <field name="plan_id" ref="analytic.analytic_plan_internal"/>
         </record>
         <record id="analytic_our_super_product" model="account.analytic.account">
-            <field name="name">Naš Super Proizvod</field>
+            <field name="name">Our Super Product</field>
             <field name="partner_id" ref="base.res_partner_2"/>
             <field name="plan_id" ref="analytic.analytic_plan_projects"/>
         </record>
@@ -97,7 +97,7 @@
             <field name="plan_id" ref="analytic.analytic_plan_departments"/>
         </record>
         <record id="analytic_rd_department" model="account.analytic.account">
-            <field name="name">Istraživanje &amp; Razvoj</field>
+            <field name="name">Research &amp; Development</field>
             <field name="plan_id" ref="analytic.analytic_plan_departments"/>
         </record>
     </data>

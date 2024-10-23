@@ -2,12 +2,12 @@
 <odoo>
     <!-- Account Tax Group -->
     <record id="configurable_chart_template" model="account.chart.template">
-        <field name="name">Kontni plan generički uzorak</field>
-        <field name="code_digits">7</field>
-        <field name="bank_account_code_prefix">2000</field>
-        <field name="cash_account_code_prefix">2050</field>
-        <field name="transfer_account_code_prefix">2009</field>
-        <field name="currency_id" ref="base.BAM"/>
+        <field name="name">Configurable Account Chart Template</field>
+        <field name="code_digits">6</field>
+        <field name="bank_account_code_prefix">1014</field>
+        <field name="cash_account_code_prefix">1015</field>
+        <field name="transfer_account_code_prefix">1017</field>
+        <field name="currency_id" ref="base.USD"/>
         <field name="country_id" eval="False"/>
     </record>
 </odoo>

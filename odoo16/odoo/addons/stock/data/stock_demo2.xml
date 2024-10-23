@@ -18,7 +18,7 @@
         </function>
 
         <record id="location_refrigerator_small" model="stock.location">
-            <field name="name">Mali frižider</field>
+            <field name="name">Small Refrigerator</field>
             <field name="usage">internal</field>
             <field name="location_id" ref="stock.stock_location_14"/>
             <field name="barcode">WH-SHELF-REF</field>
