@@ -362,7 +362,7 @@ if [[ "$PAYMENT" == "off" ]] ; then
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_payumoney"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_razorpay"
     MODULES+=" ${ODOO_ADDONS_ROOT}/payment_sips"
-    MODULES+=" ${ODOO_ADDONS_ROOT}/payment_stripe"
+    #MODULES+=" ${ODOO_ADDONS_ROOT}/payment_stripe"
 fi
 
 if [[ "$ACCOUNT" == "off" ]] ; then
