@@ -2,6 +2,14 @@
 
 ZIP_NAME=odoo-16-bosnian-`date +"%Y%m%d"`
 
+if [[ "$1" == "" ]]; then
+   echo "usage:"
+   echo "      zip only: $0 --zip"
+   echo "zip and upload: $0 --upload"
+   echo "   upload only: $0 --upload-only"
+   exit 0
+fi
+
 if [[ "$1" != "--upload-only" ]] ; then
 rm odoo-16-bosnian/python311
 rm odoo-16-bosnian/odoo.conf
