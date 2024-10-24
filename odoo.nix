@@ -46,7 +46,21 @@ python.pkgs.buildPythonApplication rec {
 
     preBuild = ''
       #no payment provider
-      echo '<?xml version="1.0" encoding="utf-8"?><odoo noupdate="1"></odoo>' > odoo/addons/payment/data/payment_provider_data.xml
+      cat <<EOF > > odoo/addons/payment/data/payment_provider_data.xml
+        <?xml version="1.0" encoding="utf-8"?><odoo noupdate="0">
+          <record id="payment_provider_transfer" model="payment.provider">
+            <field name="name">Wire Transfer</field>
+            <field name="sequence">30</field>
+            <field name="image_128"
+                  type="base64"
+                  file="payment_custom/static/description/icon.png"/>
+            <field name="module_id" ref="base.module_payment_custom"/>
+          </record>
+        </odoo>
+      EOF
+
+      echo '' > 
+      echo '</odoo>' 
 
     '';
 
