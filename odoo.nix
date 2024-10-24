@@ -45,20 +45,19 @@ python.pkgs.buildPythonApplication rec {
     # [BUG] distutils cannot be imported on Python 3.12 (without distutils) if pip was imported #3661
 
     preBuild = ''
-      #no payment provider
-      cat <<EOF > > odoo/addons/payment/data/payment_provider_data.xml
-        <?xml version="1.0" encoding="utf-8"?><odoo noupdate="0">
-          <record id="payment_provider_transfer" model="payment.provider">
-            <field name="name">Wire Transfer</field>
-            <field name="sequence">30</field>
-            <field name="image_128"
-                  type="base64"
-                  file="payment_custom/static/description/icon.png"/>
-            <field name="module_id" ref="base.module_payment_custom"/>
-          </record>
-        </odoo>
-      EOF
-
+    cat <<EOF > odoo/addons/payment/data/payment_provider_data.xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <odoo noupdate="0">
+      <record id="payment_provider_transfer" model="payment.provider">
+        <field name="name">Wire Transfer</field>
+        <field name="sequence">30</field>
+        <field name="image_128"
+              type="base64"
+              file="payment_custom/static/description/icon.png"/>
+        <field name="module_id" ref="base.module_payment_custom"/>
+      </record>
+    </odoo>
+    EOF
     '';
 
     #dontConfigure = true;

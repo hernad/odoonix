@@ -105,7 +105,7 @@ let
 
     odooVersion16 = {
        version = "16.0";
-       release = "bosnian-20240613";
+       release = "bosnian-20241024";
        hash = "sha256-2Ou4EkwvyEc50ZdgLH19q5TKDCrL0ngJP1pXggZC4zQ=";
        url = "https://download.cloud.out.ba/odoo-16-bosnian-20240613.zip";
 
