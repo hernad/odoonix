@@ -59,9 +59,6 @@ python.pkgs.buildPythonApplication rec {
         </odoo>
       EOF
 
-      echo '' > 
-      echo '</odoo>' 
-
     '';
 
     #dontConfigure = true;
