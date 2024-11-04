@@ -18,6 +18,7 @@ do
   echo $ZIP_NAME
 
   zip -r ../${ZIP_NAME}.zip --exclude="./.git/*/*" --exclude="./3p_addons/*/*" \
+       --exclude="./*/*/.git" \
        --exclude="./odoo-data/*/*" --exclude="./*.zip"  --exclude="./scripts/*/*"  $ADDON/*
 
 
