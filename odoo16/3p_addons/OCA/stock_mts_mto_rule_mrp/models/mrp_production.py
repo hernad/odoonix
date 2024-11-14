@@ -7,7 +7,7 @@ from odoo.tools import float_compare, float_is_zero
 class MrpProduction(models.Model):
     _inherit = "mrp.production"
 
-    @api.multi
+    #@api.multi
     def _adjust_procure_method(self):
         # we call super()._adjust_procure_method first and then come back to
         # check for split_procurement rules on the move.
