@@ -8459,7 +8459,7 @@ msgstr "Tranzitne lokacije"
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__trigger
 #: model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
 msgid "Trigger"
-msgstr ""
+msgstr "Aktiviraj"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_rule__procure_method__make_to_order
@@ -8475,7 +8475,7 @@ msgstr "Aktiviraj drugo pravilo ako nema zaliha"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
 msgid "Trigger Manual"
-msgstr ""
+msgstr "Aktiviraj ručno"
 
 #. module: stock
 #. odoo-javascript
