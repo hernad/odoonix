@@ -574,8 +574,8 @@ class HrPayslip(models.Model):
                 return "9"
             elif '#R#' in line.name:  # stavke koje su na drugi način već isplaćene (npr. data roba)
                 return "8"
-            elif line.work_type_id.code in ['30_WF', '31_W', '40_XF', '41_X', '60_G']:
-                # rad na drzavni praznik, godišnji odmor neiskorišten
+            elif line.work_type_id.code in ['30_WF', '31_W', '40_XF', '41_X', '60_G', '80_SF', '81_S', '90_SNF', '91_SN', 'A0_SDF', 'A1_SD', 'B0_SNDF', 'B1_SND']:
+                # rad na drzavni praznik, godišnji odmor neiskorišten, sve varijante rada na dane sedmicnog odmora 
                 return "7"
             elif line.work_type_id.code in ['20_NF', '21_N']:
                 # nocni rad
@@ -643,19 +643,28 @@ class HrPayslip(models.Model):
                 # already spent
                 continue
 
+            # ove linije se obavezno generisu
+            obaveznoUzetiLiniju = ('#P#' in line.name) or ('#R#' in line.name)
+
             # ostalo iz fonda dana za TO
             food_days_rest = food_max_days - food_included_days
 
             # nothing left to spend - ni sati ni dana TO
             if hours_to_spend <= 0 and food_days_rest <= 0:
-                break
+                    if not obaveznoUzetiLiniju:
+                        break
 
-            splited = line.split_as_needed(hours_to_spend=hours_to_spend, food_days_rest=food_days_rest)
+            if not obaveznoUzetiLiniju:
+                splited = line.split_as_needed(hours_to_spend=hours_to_spend, food_days_rest=food_days_rest)
+            else:
+                splited = False
+            
 
+            # 70_T je topli obrok only
             if line.work_type_id.code == '70_T' and food_days_rest == 0:
                 if not '#P#' in line.name:
                     continue
-            elif (hours_to_spend > 0) or ((hours_to_spend <= 0) and (food_days_rest > 0) and splited):
+            elif obaveznoUzetiLiniju or (hours_to_spend > 0) or ((hours_to_spend <= 0) and (food_days_rest > 0) and splited):
                 # ova linija se uzima u obzir samo ako nismo potrosili sate ili smo u slucaju da imamo
                 # samo TO za raspodjelu napravili split - generisali 70_T stavku
                 self.analytic_line_spent.append(line)
@@ -667,7 +676,7 @@ class HrPayslip(models.Model):
             # TODO: day = timesheet_hours / 8?  use _get_work_hours?
 
             # imamo sati za potrositi "potrositi"
-            if (hours_to_spend > 0) and (hours_to_spend >= line.unit_amount):
+            if obaveznoUzetiLiniju or ((hours_to_spend > 0) and (hours_to_spend >= line.unit_amount)):
                 # this timesheet item has food included
                 if line.work_type_id.food_included:
                     food_included_days += 1
