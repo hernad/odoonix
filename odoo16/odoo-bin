@@ -27,7 +27,7 @@ import sys
 print("python:", sys. version)
 
 from importlib import metadata
-for pkg in ['werkzeug','reportlab', 'pypdf2', 'pillow', 'xlrd', 'zeep', 'gevent', 'psycopg2','freezegun','greenlet','jinja2','libsass','lxml','markupsafe','urllib3','vobject','xlwt','pydot','pyopenssl','python-ldap','pytz','qrcode','requests','rjsmin','XlsxWriter']: print(pkg, ':', metadata.version(pkg))
+for pkg in ['werkzeug','reportlab', 'pypdf2', 'pillow', 'xlrd', 'zeep', 'gevent', 'psycopg2','freezegun','greenlet','jinja2','libsass','lxml','markupsafe','urllib3','vobject','xlwt','pydot','pyopenssl','python-ldap','pytz','pandas','qrcode','requests','rjsmin','XlsxWriter']: print(pkg, ':', metadata.version(pkg))
 
 if __name__ == "__main__":
     odoo.cli.main()

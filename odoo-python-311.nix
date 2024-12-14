@@ -47,5 +47,8 @@ pkgs.python311.withPackages (ps: [
     ps.reportlab
     ps.xlrd
     ps.python-barcode
+    ps.numpy
+    ps.pandas
+    ps.openpyxl
 ])
 
