@@ -8,7 +8,11 @@ from odoo import models, _
 
 import base64
 import pandas as pd
+
+import json
+
 import tempfile
+import requests
 
 
 class MailBot(models.AbstractModel):
@@ -53,7 +57,7 @@ class MailBot(models.AbstractModel):
         odoobot_state = self.env.user.odoobot_state
         if self._is_bot_in_private_channel(record):
             # main flow
-            if self._is_xlsx_requested(body) and odoobot_state == 'idle':
+            if self._is_xlsx_requested(body): #and odoobot_state == 'idle'
                 self.env.user.odoobot_state = "xlsx"
                 self.env.user.odoobot_failed = False
                 return _("Trebate neki izvjestaj? Odlično. Molim navedite koji, npr: <span class=\"o_odoobot_command\">isplate</span> ")
@@ -69,10 +73,38 @@ class MailBot(models.AbstractModel):
                     self.env.user.odoobot_failed = True
                     period = body
 
+                   #curl -X 'GET' \
+                   #'https://postgrest-odoo-fuelboss-1.api.out.ba:443/rpc/rpt_isplate_banke?dat_od=2024-09-01&dat_do=2024-09-30' \
+                   #-H 'accept: application/json'
+
+
+                   #curl -X 'GET' \
+                   #'https://postgrest-odoo-fuelboss-1.api.out.ba:443/rpc/rpt_isplate_banke?dat_od=2024-09-01&dat_do=2024-09-30' \
+                   # -H 'accept: application/json'
+
                 
-                    df = pd.read_json("http://test.bring.out.ba:3000/roles_example")
+                    #print(self.env.user.name, self.env.user.oauth_access_token)
+
+                    endpoint = "https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_isplate_banke"
+                    headers = {
+                        "Authorization": "Bearer %s" % self.env.user.oauth_access_token,
+                        "Content-type": "application/json",
+                        "accept": "application/json"
+                    }
+                    data = {
+                        "dat_od": "2024-09-01",
+                        "dat_do": "2024-09-30"
+                    }
+                
+                    # https://stackoverflow.com/questions/42518864/convert-json-data-from-request-into-pandas-dataframe
+                    response = requests.post(endpoint, json=data, headers=headers)
+
+                    #print(response.status_code)
+                    #print(response.content)
+
+                    df = pd.DataFrame.from_dict(response.json())
                     temp_f = tempfile.NamedTemporaryFile(suffix='.xlsx')
-                    df.to_excel(temp_f.name) #, index=False)
+                    df.to_excel(temp_f.name, index=False)
 
                     fh = open(temp_f.name, "r")
                     content = fh.buffer.read()
@@ -80,7 +112,7 @@ class MailBot(models.AbstractModel):
                     
                     attachment = self.env['ir.attachment'].create({
                        'type': 'binary',
-                       'name': 'INV-%s-0001.xlsx' %  period,   #invoice_date.strftime('%Y-%m'),
+                       'name': 'isplate_%s_%s.xlsx' %  (data["dat_od"], data["dat_do"]),   #invoice_date.strftime('%Y-%m'),
                        'res_model': 'mail.compose.message',
                        'datas': base64.encodebytes(content),
                     })
