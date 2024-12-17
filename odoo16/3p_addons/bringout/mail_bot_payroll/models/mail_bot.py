@@ -60,11 +60,16 @@ class MailBot(models.AbstractModel):
             if self._is_xlsx_requested(body): #and odoobot_state == 'idle'
                 self.env.user.odoobot_state = "xlsx"
                 self.env.user.odoobot_failed = False
-                return _("Trebate neki izvjestaj? Odlično. Molim navedite koji, npr: <span class=\"o_odoobot_command\">isplate</span> ")
+                return _("Trebate izvjestaj? Odlično. Molim navedite koji, npr: <span class=\"o_odoobot_command\">isplate</span>,<span class=\"o_odoobot_command\">bruto detaširani</span>  ")
             else:
-                # repeat question
+
                 if odoobot_state == 'xlsx' and self._is_xlsx_rpt_1_requested(body):
                     self.env.user.odoobot_state = "xlsx_rpt1"
+                    self.env.user.odoobot_failed = False
+                    return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
+                             )
+                if odoobot_state == 'xlsx' and self._is_xlsx_rpt_2_requested(body):
+                    self.env.user.odoobot_state = "xlsx_rpt2"
                     self.env.user.odoobot_failed = False
                     return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
                              )
@@ -117,13 +122,54 @@ class MailBot(models.AbstractModel):
                        'datas': base64.encodebytes(content),
                     })
 
-                    
+                    return {
+                        "attachment": attachment,
+                        "content": "u prilogu izvještaj"
+                    }
+                
+                elif odoobot_state == "xlsx_rpt2":
+                    self.env.user.odoobot_state = 'idle'
+                    self.env.user.odoobot_failed = True
+                    period = body
 
+                    rpt_name = "bruto_detasirani"
+                
+                    #print(self.env.user.name, self.env.user.oauth_access_token)
+
+                    endpoint = "https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s" % (rpt_name)
+                    headers = {
+                        "Authorization": "Bearer %s" % self.env.user.oauth_access_token,
+                        "Content-type": "application/json",
+                        "accept": "application/json"
+                    }
+                    data = {
+                        "dat_od": "2024-09-01",
+                        "dat_do": "2024-09-30"
+                    }
+                
+                    # https://stackoverflow.com/questions/42518864/convert-json-data-from-request-into-pandas-dataframe
+                    response = requests.post(endpoint, json=data, headers=headers)
+
+                    df = pd.DataFrame.from_dict(response.json())
+                    temp_f = tempfile.NamedTemporaryFile(suffix='.xlsx')
+                    df.to_excel(temp_f.name, index=False)
+
+                    fh = open(temp_f.name, "r")
+                    content = fh.buffer.read()
+                    fh.close()
+                    
+                    attachment = self.env['ir.attachment'].create({
+                       'type': 'binary',
+                       'name': 'rpt_%s_%s_%s.xlsx' %  (rpt_name, data["dat_od"], data["dat_do"]),   #invoice_date.strftime('%Y-%m'),
+                       'res_model': 'mail.compose.message',
+                       'datas': base64.encodebytes(content),
+                    })
 
                     return {
                         "attachment": attachment,
                         "content": "u prilogu izvještaj"
                     }
+
                     
                     #return _("evo link na rpt1: za period: " + body + "<br/>" +
                     #         "<span class=\"o_odoobot_command\"><a href=\"http://test.bring.out.ba/roles_example\" target=\"_blank\">Report isplate</a></span>"
@@ -147,7 +193,11 @@ class MailBot(models.AbstractModel):
         """
         return any(token in body for token in ['rpt1', 'Report 1', 'Isplate', "isplate", "ISPLATE"])
 
-  
+    def _is_xlsx_rpt_2_requested(self, body):
+        """da li korisnik traži excel report rpt2
+        """
+        return any(token in body for token in ['rpt2', 'bruto detasirni', 'bruto detaširani', "brutod", "detaširani"])
+    
     def _is_xlsx_requested(self, body):
         """da li korisnik traži excel report
         """

@@ -9,7 +9,13 @@ class Users(models.Model):
     odoobot_state = fields.Selection(
         selection_add=[
             ("xlsx", "XLSX"), 
-            ("xlsx_rpt1", "Excel isplate"),
+            ("xlsx_rpt1", "isplate"),
+            ("xlsx_rpt2", "bruto_detasirani"),
+            ("xlsx_rpt3", "bruto"),
+            ("xlsx_rpt4", "ugovori"),
+            ("xlsx_rpt5", "cekanje"),
+            ("xlsx_rpt6", "stimulacije"),
+            ("xlsx_svi", "svi izvjestaji"),
             ("period", "datumski period"),
         ]
     )
