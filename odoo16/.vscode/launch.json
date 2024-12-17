@@ -18,18 +18,38 @@
             "python": "./python311"
         },
         {
-            "name": "odoo-bin-i18n",
+            "name": "odoo-shell-fuelboss1",
             "type": "debugpy",
             "request": "launch",
             "program": "./odoo-bin",
             "console": "integratedTerminal",
             "args": [
-                "gevent",
+                "shell",
                 "-c",
                 "odoo.conf",
-                "--i18n-overwrite",
+                "-d",
+                "fuelboss1"
+            ],
+            "env": {
+               "GEVENT_SUPPORT": "True"
+            },
+            "python": "./python311"
+        },
+        {
+            "name": "odoo-upgrade",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./odoo-bin",
+            "console": "integratedTerminal",
+            "args": [
+                "shell",
+                "-c",
+                "odoo.conf",
                 "-u",
-                "base,hr_timesheet,payroll,l10n_bs_hr_timesheet,l10n_bs_hr_payroll,l10n_bs_hr_payroll_fuelboss"
+                "base,l10n_bs,",
+                "-d",
+                "fuelboss1"
+                
             ],
             "env": {
                "GEVENT_SUPPORT": "True"
