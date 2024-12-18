@@ -320,7 +320,8 @@ class HrPayslip(models.Model):
                 #payslip.contract_id.ids
                 #or
                 payslip.employee_id._get_contracts(
-                    date_from=payslip.date_from, date_to=payslip.date_to
+                    date_from=payslip.date_from, date_to=payslip.date_to,
+                    state=("open", "close")
                 ).ids
             )
             # write payslip lines
