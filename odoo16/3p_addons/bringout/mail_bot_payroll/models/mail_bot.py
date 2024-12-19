@@ -83,6 +83,28 @@ class MailBot(models.AbstractModel):
                         return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
                                 )
                     
+                    elif self._is_xlsx_rpt_3_requested(body):
+                        self.env.user.odoobot_state = "xlsx_rpt3"
+                        self.env.user.odoobot_failed = False
+                        return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
+                                )
+                    
+                    elif self._is_xlsx_rpt_4_requested(body):
+                        self.env.user.odoobot_state = "xlsx_rpt4"
+                        self.env.user.odoobot_failed = False
+                        return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
+                                )
+                    
+                    elif self._is_xlsx_rpt_5_requested(body):
+                        self.env.user.odoobot_state = "xlsx_rpt5"
+                        self.env.user.odoobot_failed = False
+                        return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
+                                )
+                    elif self._is_xlsx_rpt_6_requested(body):
+                        self.env.user.odoobot_state = "xlsx_rpt6"
+                        self.env.user.odoobot_failed = False
+                        return _("unesite period u formatu DD.MM.GG-DD.MM.GG npr: <span class=\"o_odoobot_command\">10.01.24-31.12.24</span>"
+                                )
                     elif self._is_xlsx_rpt_svi_requested(body):
                         self.env.user.odoobot_state = "xlsx_svi"
                         self.env.user.odoobot_failed = False
@@ -113,16 +135,61 @@ class MailBot(models.AbstractModel):
                         json_data=self._get_json_dat_period(body)
                     )
           
-                    #return _("evo link na rpt1: za period: " + body + "<br/>" +
-                    #         "<span class=\"o_odoobot_command\"><a href=\"http://test.bring.out.ba/roles_example\" target=\"_blank\">Report isplate</a></span>"
-                    #         )
-
+                elif odoobot_state == "xlsx_rpt3":
+                    self.env.user.odoobot_state = 'idle'
+                    self.env.user.odoobot_failed = True
+                    #period = body
+                    url="https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s"
+                    rpt_name = "bruto"
+                    
+                    return self._run_report(rpt_names=[rpt_name], 
+                        url=url,
+                        json_data=self._get_json_dat_period(body)
+                    )
+                
+                elif odoobot_state == "xlsx_rpt4":
+                    self.env.user.odoobot_state = 'idle'
+                    self.env.user.odoobot_failed = True
+                    #period = body
+                    url="https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s"
+                    rpt_name = "ugovori"
+                    return self._run_report(rpt_names=[rpt_name], 
+                        url=url,
+                        json_data=self._get_json_dat_period(body)
+                    )
+                elif odoobot_state == "xlsx_rpt5":
+                    self.env.user.odoobot_state = 'idle'
+                    self.env.user.odoobot_failed = True
+                    #period = body
+                    url="https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s"
+                    rpt_name = "cekanje"
+                    return self._run_report(rpt_names=[rpt_name], 
+                        url=url,
+                        json_data=self._get_json_dat_period(body)
+                    )
+                elif odoobot_state == "xlsx_rpt6":
+                    self.env.user.odoobot_state = 'idle'
+                    self.env.user.odoobot_failed = True
+                    #period = body
+                    url="https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s"
+                    rpt_name = "stimulacije"
+                    return self._run_report(rpt_names=[rpt_name], 
+                        url=url,
+                        json_data=self._get_json_dat_period(body)
+                    )
                 elif odoobot_state == "xlsx_svi":
                     self.env.user.odoobot_state = 'idle'
                     self.env.user.odoobot_failed = True
                     #period = body
                     url="https://postgrest-odoo-fuelboss-1.api.out.ba/rpc/rpt_%s"
-                    rpt_names = [ "isplate_banke", "bruto_detasirani" ]
+                    rpt_names = [ 
+                        "isplate_banke", 
+                        "bruto_detasirani",
+                        "bruto",
+                        "ugovori",
+                        "cekanje",
+                        "stimulacije"  
+                    ]
                    
                     return self._run_report(rpt_names=rpt_names, 
                         url=url,
@@ -148,12 +215,33 @@ class MailBot(models.AbstractModel):
     def _is_xlsx_rpt_1_requested(self, body):
         """da li korisnik traži excel report rpt1
         """
-        return any(token in body for token in ['rpt1', 'Report 1', 'Isplate', "isplate", "ISPLATE"])
+        return any(token in body for token in ['rpt1', 'Report 1', 'Isplate', "isplate", "ISPLATE", "isplate banke"])
 
     def _is_xlsx_rpt_2_requested(self, body):
         """da li korisnik traži excel report rpt2
         """
-        return any(token in body for token in ['rpt2', 'bruto detasirni', 'bruto detaširani', "brutod", "detaširani"])
+        return any(token in body for token in ['rpt2', 'bruto detasirani', 'bruto detaširani', "brutod", "detaširani"])
+    
+
+    def _is_xlsx_rpt_3_requested(self, body):
+        """da li korisnik traži excel report rpt3
+        """
+        return any(token in body for token in ['rpt3', 'bruto'])
+    
+    def _is_xlsx_rpt_4_requested(self, body):
+        """da li korisnik traži excel report rpt4
+        """
+        return any(token in body for token in ['rpt4', 'ugovori'])
+    
+    def _is_xlsx_rpt_5_requested(self, body):
+        """da li korisnik traži excel report rpt5
+        """
+        return any(token in body for token in ['rpt5', 'cekanje'])
+    
+    def _is_xlsx_rpt_6_requested(self, body):
+        """da li korisnik traži excel report rpt6
+        """
+        return any(token in body for token in ['rpt6', 'stimulacije'])
     
     def _is_xlsx_rpt_svi_requested(self, body):
         return any(token in body for token in ['svi', 'daj mi sve izvještaje'])
